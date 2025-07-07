@@ -45,7 +45,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  text-white" href="{% url "user:users_cart" %}">Корзина</a>
+                            <a class="nav-link  text-white" href="{% url "user:users_cart" %}">Наши работы</a>
                         </li>
 
                         {% if not user.is_authenticated %}
@@ -59,7 +59,7 @@
                                 Мой профиль
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item  text-white" href="carts/cart.html">Корзина</a></li>
+                                <li><a class="dropdown-item  text-white" href="{% url "user:users_cart" %}">Корзина</a></li>
                                 <li><a class="dropdown-item  text-white" href="{% url "user:profile" %}">Личный кабинет</a>
                                 </li>
                                 {% if user.is_admin or user.is_staff %}
@@ -96,7 +96,6 @@
                     <ul class="dropdown-menu bg-dark" data-bs-theme="dark">
                         {% tag_categories as categories %}
                         {% for category in categories %}
-                            {% comment %} {% if {{ category.}} %}{% endif %} {% endcomment %}
                             <li><a class="dropdown-item text-white" href={% url "catalog:index" category.slug %}>{{ category.name }}</a></li>
                         {% endfor %}
                     </ul>

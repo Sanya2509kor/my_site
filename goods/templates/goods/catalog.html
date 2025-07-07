@@ -73,7 +73,7 @@
             {% if product.image %}
                 <img src="{{ product.image.url }}" class="card-img-top custom-image" style="height: 400px;"  alt="...">
             {% else %}
-                <img src="{% static "/deps/images/Not found image.png" %}" class="card-img-top" alt="{{ product.name }}">
+                <img src="{% static "/deps/images/Not found image.png" %}" class="card-img-top custom-image" style="height: 400px;" alt="{{ product.name }}">
             {% endif %}
             <div class="card-body">
                 <a href={% url "catalog:product" product.slug %}>

@@ -1,3 +1,5 @@
+import re
+from django import forms
 from django.forms import ValidationError
 from django.shortcuts import redirect, render
 from django.db import transaction
@@ -17,11 +19,25 @@ class CreateOrderView(LoginRequiredMixin, FormView):
     form_class = CreateOrderForm
     success_url = reverse_lazy('users:profile')
 
+    def clean_phone_number(self):
+        if Order.phone_number:
+            phone = Order.objects.filter(user=self.request.user).last().phone_number
+            digits = re.sub(r'\D', '', phone)
+            if len(digits) < 10:
+                return None
+            return "({}) {}-{}".format(digits[:3], digits[3:6], digits[6:])
+        return None
+
     def get_initial(self):
         initial = super().get_initial()
         initial['first_name'] = self.request.user.first_name
         initial['last_name'] = self.request.user.last_name
-        # initial['username'] = self.request.user.username
+        last_order = Order.objects.filter(user=self.request.user).last()
+        if last_order:
+            if last_order.phone_number:
+                initial['phone_number'] = self.clean_phone_number()
+            if last_order.delivery_address:
+                initial['delivery_address'] = last_order.delivery_address if Order.delivery_address else None
         return initial
 
 

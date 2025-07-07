@@ -69,8 +69,8 @@
                             <label for="id_delivery_address" class="form-label">Адрес
                                 доставки*:</label>
                             <textarea class="form-control" id="id_delivery_address"
-                                value="{% if form.delivery_address.value %}{{ form.delivery_address.value }}{% endif %}"
-                                name="delivery_address" rows="2"></textarea>
+                                name="delivery_address" rows="2">{% if form.delivery_address.value %}{{ form.delivery_address.value }}{% endif %}
+                            </textarea>
                             {% if form.delivery_address.errors %}
                                 <div class="alert alert-danger alert-dismissible fade show">{{form.delivery_address.errors}}</div>
                             {% endif %}

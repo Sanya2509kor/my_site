@@ -11,7 +11,7 @@ class CatalogView(ListView):
     # queryset = Products.objects.all().order_by("-id")
     template_name = 'goods/catalog.html'
     context_object_name = 'goods'
-    paginate_by = 3
+    paginate_by = 30
     allow_empty = False
 
 
