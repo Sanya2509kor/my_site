@@ -1,0 +1,24 @@
+python -m venv venv
+
+активация на windows 
+myenv\Scripts\activate
+
+если ошибка
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+
+активация на mac и linux
+source myenv/bin/activate
+
+pip install 
+    Django
+    psycopg2
+    django-debug-toolbar
+    traitlets
+    Pillow
+
+python manage.py makemigrations
+python manage.py migrate  
+
+python manage.py runserver    
+    

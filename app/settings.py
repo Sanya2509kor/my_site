@@ -89,12 +89,26 @@ WSGI_APPLICATION = 'app.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
+
+# на макбуке
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'home',
+#         'USER': 'home',
+#         'PASSWORD': 'home',
+#         'HOST': 'localhost',
+#         'PORT': '5432',
+#     }
+# }
+
+# на пк
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'home',
-        'USER': 'home',
-        'PASSWORD': 'home',
+        'USER': 'aleksandr',
+        'PASSWORD': '89526136205Sa',
         'HOST': 'localhost',
         'PORT': '5432',
     }
@@ -159,3 +173,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'users.User'
 LOGIN_URL = '/user/login/'
+LOGIN_REDIRECT_URL = '/'
