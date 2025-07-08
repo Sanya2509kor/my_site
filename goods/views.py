@@ -12,7 +12,7 @@ class CatalogView(ListView):
     template_name = 'goods/catalog.html'
     context_object_name = 'goods'
     paginate_by = 30
-    allow_empty = False
+    allow_empty = True
 
 
     def get_context_data(self, **kwargs):
