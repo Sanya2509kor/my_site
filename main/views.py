@@ -44,3 +44,26 @@ class AboutView(TemplateView):
 #     }
 
 #     return render(request, 'main/about.html', contex)
+
+
+class ContactsView(TemplateView):
+    template_name = 'main/contacts.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['title'] = 'Контакты'
+        context['content'] = 'Наши контакты'
+        context['text_on_page'] = 'Контакты, адрес, и другая информация'
+        return context
+
+
+
+class DeliveryView(TemplateView):
+    template_name = 'main/delivery.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['title'] = 'Доставка и оплата'
+        context['content'] = 'Доставка и Оплата'
+        context['text_on_page'] = 'Описание как происходит доставка, и т.д'
+        return context

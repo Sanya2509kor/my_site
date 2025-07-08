@@ -90,29 +90,29 @@ WSGI_APPLICATION = 'app.wsgi.application'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 
-# на макбуке
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'home',
-        'USER': 'home',
-        'PASSWORD': 'home',
-        'HOST': 'localhost',
-        'PORT': '5432',
-    }
-}
-
-# # на пк
+# # на макбуке
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql',
 #         'NAME': 'home',
-#         'USER': 'aleksandr',
-#         'PASSWORD': '89526136205Sa',
+#         'USER': 'home',
+#         'PASSWORD': 'home',
 #         'HOST': 'localhost',
 #         'PORT': '5432',
 #     }
 # }
+
+# на пк
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'home',
+        'USER': 'aleksandr',
+        'PASSWORD': '89526136205Sa',
+        'HOST': 'localhost',
+        'PORT': '5432',
+    }
+}
 
 
 # Password validation

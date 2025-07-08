@@ -7,5 +7,7 @@ app_name = 'main'
 urlpatterns = [
     path('', views.IndexView.as_view(), name='index'),
     path('about/', views.AboutView.as_view(), name='about'),
+    path('contacts/', views.ContactsView.as_view(), name='contacts'),
+    path('delivery/', views.DeliveryView.as_view(), name='delivery'),
 
 ]

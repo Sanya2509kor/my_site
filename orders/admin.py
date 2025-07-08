@@ -23,6 +23,7 @@ class OrderItemAdmin(admin.ModelAdmin):
         "product",
         "name",
     )
+    ordering = ('-id',)
 
 
 class OrderTabulareAdmin(admin.TabularInline):
@@ -56,6 +57,7 @@ class OrderAdmin(admin.ModelAdmin):
         "is_paid",
         "created_timestamp",
     )
+    list_editable = ('status', 'is_paid')  # если хотите редактировать прямо из списка
 
     search_fields = (
         "id",
@@ -68,3 +70,5 @@ class OrderAdmin(admin.ModelAdmin):
         "is_paid",
     )
     inlines = (OrderItemTabulareAdmin,)
+
+    ordering = ('-id',)
