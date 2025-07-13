@@ -3,51 +3,96 @@
 
 {% block modal_cart %}
 {% include "includes/cart_button.html" %}
-{% endblock  %}
-
+{% endblock %}
 
 {% block content %}
 <div class="container mt-5">
-    <div class="card mb-4 custom-shadow">
+    <div class="card mb-5 custom-shadow">
         <div class="row">
-            <!-- Миниатюры -->
+            <!-- Миниатюра -->
             <div class="col-md-4">
                 <img src="{{ product.image.url }}"
                     class="img-thumbnail custom-image" style="height: 400px;" data-bs-toggle="modal" data-bs-target="#imageModal1">
             </div>
-            <div class="col-md-4 ">
+            
+            <!-- Текст справа от картинки -->
+            <div class="col-md-8">
                 <p class="product_id mt-3">id: {{ product.display_id }}</p>
+                <!-- Перенесём сюда часть контента из card-body -->
+                <h5 class="card-title">{{ product.name }}</h5>
+                <div class="product-description" style="white-space: pre-wrap;">{{ product.description }}</div>
             </div>
-            <!-- Увеличить изображение в модальном окне -->
-            <div class="modal fade" id="imageModal1" tabindex="-1"
-                aria-labelledby="imageModal1Label" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="imageModal1Label"> {{ product.name }}</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                aria-label="Закрыть"></button>
-                        </div>
-                        <div class="modal-body">
-                            <img src="{{ product.image.url }}"
-                                class="img-fluid" alt="Изображение 1">
-                        </div>
+            <div class="col-md-8">
+                <h4 class="card-text">Цена: <strong>{{ product.sell_price }} Руб</strong></h4>
+                <div class="text-center">
+                    <a href="{% url "cart:cart_add" %}" class="btn btn-info add-to-cart"
+                        data-product-id="{{ product.id }}" style="padding: 15px 100px; font-size: 18px;">
+                        {% csrf_token %}
+                        Добавить в корзину
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Увеличить изображение в модальном окне -->
+        <div class="modal fade" id="imageModal1" tabindex="-1"
+            aria-labelledby="imageModal1Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="imageModal1Label">{{ product.name }}</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Закрыть"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="{{ product.image.url }}"
+                            class="img-fluid" alt="Изображение 1">
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Описание товара -->
+    </div>
+
+    <!-- Блок сопутствующих товаров -->
+    {% if related_products %}
+    <div class="card mt-5 mb-4 custom-shadow">
+        <div class="card-header bg-dark text-white">
+            <h4 class="mb-0">С этим товаром покупают</h4>
+        </div>
         <div class="card-body">
-            {% comment %} <input > shirina
-            <input> visota {% endcomment %}
-            <p class="card-text">Цена: <strong>{{ product.sell_price }} Руб</strong></p>
-            <h5 class="card-title">{{ product.name }}</h5>
-            <p class="card-text">{{ product.description }}</p>
-            <a href="{% url "cart:cart_add" %}" class="btn btn-dark add-to-cart"
-            data-product-id="{{ product.id }}">
-            {% csrf_token %}
-            Добавить в корзину</a>
+            <div class="row">
+                {% for related in related_products %}
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <div class="card h-100">
+                        <a href="{{ related.get_absolute_url }}">
+                            <img src="{{ related.image.url }}" 
+                                 class="card-img-top img-fluid" 
+                                 alt="{{ related.name }}"
+                                 style="height: 200px; object-fit: cover;">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <a href="{{ related.get_absolute_url }}" class="text-dark">{{ related.name }}</a>
+                            </h5>
+                            <p class="card-text">
+                                <strong>{{ related.sell_price }} ₽</strong>
+                                {% if related.discount %}
+                                <span class="text-danger"><s>{{ related.price }} ₽</s></span>
+                                {% endif %}
+                            </p>
+                            <a href="{% url "cart:cart_add" %}" 
+                               class="btn btn-sm btn-dark add-to-cart"
+                               data-product-id="{{ related.id }}">
+                                {% csrf_token %}
+                                Добавить в корзину
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
         </div>
     </div>
+    {% endif %}
 </div>
-{% endblock  %}
+{% endblock %}

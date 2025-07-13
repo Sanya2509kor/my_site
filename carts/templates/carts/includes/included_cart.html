@@ -19,8 +19,10 @@
                                     {% csrf_token %}
                                     -</button>
                             </span>
+                            <div>
                             <input type="text" class="form-control number" value="{{ cart.quantity }}"
                                 readonly>
+                            </div>
                             <span class="input-group-btn">
                                 <button type="button" class="btn btn-dark btn-sm increment"
                                     data-cart-id="{{ cart.id }}"

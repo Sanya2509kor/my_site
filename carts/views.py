@@ -128,39 +128,39 @@ class CartChangeView(CartMixin, View):
 #     return JsonResponse(response_data)
 
 
-class CartRemoveView(CartMixin, View):
-    def post(self, request):
-        cart_id = request.POST.get('cart_id')
+# class CartRemoveView(CartMixin, View):
+#     def post(self, request):
+#         cart_id = request.POST.get('cart_id')
 
-        cart = self.get_cart(request, cart_id=cart_id)
-        quantity = cart.quantity
-        cart.delete()
+#         cart = self.get_cart(request, cart_id=cart_id)
+#         quantity = cart.quantity
+#         cart.delete()
 
-        response_data = {
-            "message": "Товар удален",
-            "cart_items_html": self.get_cart(request),
-            "quantity_deleted": quantity
-        }    
+#         response_data = {
+#             "message": "Товар удален",
+#             "cart_items_html": self.get_cart(request),
+#             "quantity_deleted": quantity
+#         }    
 
-        return JsonResponse(response_data)
+#         return JsonResponse(response_data)
 
-# def cart_remove(request):
+def cart_remove(request):
 
-#     cart_id = request.POST.get("cart_id")
+    cart_id = request.POST.get("cart_id")
 
-#     cart = Cart.objects.get(id=cart_id)
-#     quantity = cart.quantity
-#     cart.delete()
+    cart = Cart.objects.get(id=cart_id)
+    quantity = cart.quantity
+    cart.delete()
 
-#     user_cart = get_user_carts(request)
-#     cart_items_html = render_to_string("carts/includes/included_cart.html", {"carts": user_cart}, request=request)
+    user_cart = get_user_carts(request)
+    cart_items_html = render_to_string("carts/includes/included_cart.html", {"carts": user_cart}, request=request)
 
-#     response_data = {
-#         "message": "Товар удален",
-#         "cart_items_html": cart_items_html,
-#         "quantity_deleted": quantity
+    response_data = {
+        "message": "Товар удален",
+        "cart_items_html": cart_items_html,
+        "quantity_deleted": quantity
 
-#     }    
+    }    
 
-#     return JsonResponse(response_data)
+    return JsonResponse(response_data)
 

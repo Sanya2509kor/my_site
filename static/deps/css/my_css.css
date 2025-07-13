@@ -36,3 +36,12 @@ body {
   border-radius: 15px;
   font-size: 0.7rem;
 }
+
+
+@media (max-width: 992px) {
+    .dropdown-submenu ul {
+        position: static;
+        float: none;
+        margin-left: 15px;
+    }
+}

@@ -1,0 +1,287 @@
+[
+    {
+        "model": "goods.products",
+        "pk": 22,
+        "fields": {
+            "name": "GARDINA2 02 белый глянец 2,2 м.",
+            "slug": "gardina2-02-belyi-glynec-2-2-m",
+            "description": "Профиль для изготовления скрытых карнизных ниш с двумя пазами для установки штор и гардин. Для гарпунной системы крепления полотна с боковой заправкой.\r\n                                  \r\nЦВЕТ - Белый глянец\r\n\r\nДЛИНА - 2,2 м.\r\n\r\nКОЛ-ВО В УПАКОВКЕ- 4 шт.\r\n\r\nЦЕНА ЗА 1 метр",
+            "image": "goods_images/GARDINA2_02_1_Lldaxqv.jpg",
+            "price": "825.00",
+            "discount": "0.00",
+            "quantity": 100,
+            "category": 16,
+            "subcategory": 4
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 23,
+        "fields": {
+            "name": "GARDINA3 03 Белый глянец 2,2м.",
+            "slug": "gardina3-03-belyj-glyanec-2-2-m",
+            "description": "Профиль для изготовления скрытых карнизных ниш с тремя пазами для установки штор и гардин. Для гарпунной системы крепления полотна с боковой заправкой.\r\n\r\n\r\nЦвет - белый глянец.\r\n\r\n\r\nДлина - 2,2 м \r\n\r\n\r\nКоличество в упаковке - 4 шт.",
+            "image": "goods_images/GARDINA3_03_2.jpg",
+            "price": "1067.00",
+            "discount": "0.00",
+            "quantity": 91,
+            "category": 16,
+            "subcategory": 4
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 24,
+        "fields": {
+            "name": "GARDINA3 04 белый глянец 2,2 м.",
+            "slug": "gardina3-04-belyj-glyanec-2-2-m",
+            "description": "Профиль для изготовления скрытых карнизных ниш с двумя пазами для установки штор и гардин. Для гарпунной системы крепления полотна с боковой заправкой.\r\n\r\n\r\nЦВЕТ - Белый глянец\r\n\r\n\r\nДЛИНА - 2,2 м.\r\n\r\n\r\nКОЛ-ВО В УПАКОВКЕ- 4 шт.\r\n\r\n\r\nЦЕНА ЗА 1 метр",
+            "image": "goods_images/GARDINA3_04_1.jpg",
+            "price": "924.00",
+            "discount": "0.00",
+            "quantity": 100,
+            "category": 16,
+            "subcategory": 4
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 25,
+        "fields": {
+            "name": "GARDINA2 02 белый глянец 3.2 м.",
+            "slug": "gardina2-02-belyj-glyanec-3-2-m",
+            "description": "Профиль для изготовления скрытых карнизных ниш с двумя пазами для установки штор и гардин. Для гарпунной системы крепления полотна с боковой заправкой.\r\n                                  \r\nЦВЕТ - Белый глянец\r\n\r\nДЛИНА - 3,2м.\r\n\r\nКОЛ-ВО В УПАКОВКЕ- 4 шт.\r\n\r\nЦЕНА ЗА 1 метр",
+            "image": "goods_images/GARDINA2_02_2.jpg",
+            "price": "825.00",
+            "discount": "0.00",
+            "quantity": 100,
+            "category": 16,
+            "subcategory": 4
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 26,
+        "fields": {
+            "name": "GARDINA3 03 Черный мат. 2,2м.",
+            "slug": "gardina3-03-chernyj-mat-22m",
+            "description": "Профиль для изготовления скрытых карнизных ниш с тремя пазами для установки штор и гардин. Для гарпунной системы крепления полотна с боковой заправкой.\r\n\r\n\r\nЦвет - Черный мат.\r\n\r\n\r\nДлина - 2,2 м \r\n\r\n\r\nКоличество в упаковке - 4 шт.",
+            "image": "goods_images/GARDINA3_03_1.jpg",
+            "price": "1067.00",
+            "discount": "0.00",
+            "quantity": 100,
+            "category": 16,
+            "subcategory": 4
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 27,
+        "fields": {
+            "name": "GARDINA3 04 белый глянец 3,2 м.",
+            "slug": "gardina3-04-belyj-glyanec-3-2-m",
+            "description": "Профиль для изготовления скрытых карнизных ниш с двумя пазами для установки штор и гардин. Для гарпунной системы крепления полотна с боковой заправкой.\r\n\r\n\r\nЦВЕТ - Белый глянец\r\n\r\n\r\nДЛИНА - 3,2 м.\r\n\r\n\r\nКОЛ-ВО В УПАКОВКЕ- 4 шт.\r\n\r\n\r\nЦЕНА ЗА 1 метр",
+            "image": "goods_images/GARDINA3_04_1_EYAXIPc.jpg",
+            "price": "924.00",
+            "discount": "0.00",
+            "quantity": 100,
+            "category": 16,
+            "subcategory": 4
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 28,
+        "fields": {
+            "name": "Кронштейн 75 X 100",
+            "slug": "kronshtejn-75-x-100",
+            "description": "",
+            "image": "goods_images/i_i1pxUtV.jpg",
+            "price": "17.00",
+            "discount": "0.00",
+            "quantity": 100,
+            "category": 23,
+            "subcategory": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 29,
+        "fields": {
+            "name": "Кронштейн 100 X 125",
+            "slug": "kronshtejn-100-x-125",
+            "description": "",
+            "image": "goods_images/i_JTNFy12.jpg",
+            "price": "25.00",
+            "discount": "0.00",
+            "quantity": 100,
+            "category": 23,
+            "subcategory": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 30,
+        "fields": {
+            "name": "Кронштейн 125 X 150",
+            "slug": "kronshtejn-125-x-150",
+            "description": "",
+            "image": "goods_images/i_NzfMEf0.jpg",
+            "price": "33.00",
+            "discount": "0.00",
+            "quantity": 100,
+            "category": 23,
+            "subcategory": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 31,
+        "fields": {
+            "name": "Кронштейн 150 X 200",
+            "slug": "kronshtejn-150-x-200",
+            "description": "",
+            "image": "goods_images/i_h1XwsqL.jpg",
+            "price": "38.00",
+            "discount": "0.00",
+            "quantity": 40,
+            "category": 23,
+            "subcategory": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 32,
+        "fields": {
+            "name": "Кронштейн 200 X 250",
+            "slug": "kronshtejn-200-x-250",
+            "description": "",
+            "image": "goods_images/i_PzGWDa0.jpg",
+            "price": "64.00",
+            "discount": "0.00",
+            "quantity": 40,
+            "category": 23,
+            "subcategory": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 33,
+        "fields": {
+            "name": "Кронштейн 300 X 350",
+            "slug": "kronshtejn-300-x-350",
+            "description": "",
+            "image": "goods_images/i_gP269WY.jpg",
+            "price": "87.00",
+            "discount": "0.00",
+            "quantity": 40,
+            "category": 23,
+            "subcategory": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 34,
+        "fields": {
+            "name": "Дырокол",
+            "slug": "dyrokol",
+            "description": "Ручной ПУМ 6 мм. для алюминиевого профиля.",
+            "image": "goods_images/дырокол.jpg",
+            "price": "3200.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 23,
+            "subcategory": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 35,
+        "fields": {
+            "name": "Просекатель",
+            "slug": "prosekatel",
+            "description": "15x8 мм. для алюминиевых гардин, карнизов.",
+            "image": "goods_images/просекатель.jpg",
+            "price": "4200.00",
+            "discount": "0.00",
+            "quantity": 10,
+            "category": 23,
+            "subcategory": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 36,
+        "fields": {
+            "name": "Лопатка для ЕВРО 05 S",
+            "slug": "lopatka-dlya-evro-05-s",
+            "description": "",
+            "image": "goods_images/1194_lopatka-dlya-evro-05-s.jpg",
+            "price": "1350.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 23,
+            "subcategory": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 37,
+        "fields": {
+            "name": "Шпатель ГАРДА",
+            "slug": "shpatel-garda",
+            "description": "Все виды ткани",
+            "image": "goods_images/шпатель_гарда.jpg",
+            "price": "4000.00",
+            "discount": "0.00",
+            "quantity": 20,
+            "category": 23,
+            "subcategory": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 38,
+        "fields": {
+            "name": "Шпатель ГНОМ",
+            "slug": "shpatel-gnom",
+            "description": "Для ткани. Толщина стали 0.45 мм.",
+            "image": "goods_images/гном.jpg",
+            "price": "4000.00",
+            "discount": "0.00",
+            "quantity": 20,
+            "category": 23,
+            "subcategory": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 39,
+        "fields": {
+            "name": "Шпатель РОКЕР",
+            "slug": "shpatel-roker",
+            "description": "Для ткани и ПВХ. Для докатки полотна в трудных местах. Рабочий край 0,3 мм.",
+            "image": "goods_images/шпатель_рокер.jpg",
+            "price": "2500.00",
+            "discount": "0.00",
+            "quantity": 20,
+            "category": 23,
+            "subcategory": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 40,
+        "fields": {
+            "name": "Шпатель ДЕЛЬФИН",
+            "slug": "shpatel-delfin",
+            "description": "Для ткани и ПВХ. Толщина стали 0,5 мм.",
+            "image": "goods_images/Шпатель_ДЕЛЬФИН.jpg",
+            "price": "2150.00",
+            "discount": "0.00",
+            "quantity": 20,
+            "category": 23,
+            "subcategory": null
+        }
+    }
+]

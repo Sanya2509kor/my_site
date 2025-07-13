@@ -25,7 +25,9 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
             <div class="container">
-                <a class="navbar-brand" href={% url "main:index" %}>Home</a>
+                <a class="navbar-brand" href={% url "main:index" %} 
+                style="background: linear-gradient(to right, #ff0000, #0000ff); -webkit-background-clip: text; color: transparent;">
+                СеАл</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -82,9 +84,9 @@
         </nav>
     </header>
     <section>
-        <div class="container">
+        <div class="container-fluid">
             <!-- Каталог и корзина с фиксированным расположением на странице -->
-            <div class="row mt-1 position-fixed z-3">
+            <div class="row py-2 z-3">
                 <!-- Каталог -->
                 <div class="dropdown mb-2">
                     <button class="btn btn-secondary dropdown-toggle btn-dark" type="button" data-bs-toggle="dropdown"
@@ -95,8 +97,39 @@
                     </button>
                     <ul class="dropdown-menu bg-dark" data-bs-theme="dark">
                         {% tag_categories as categories %}
+                        {% tag_subcategories as subcategories %}
+                        
                         {% for category in categories %}
-                            <li><a class="dropdown-item text-white" href={% url "catalog:index" category.slug %}>{{ category.name }}</a></li>
+                            <!-- Проверяем наличие подкатегорий -->
+                            {% if category.has_subcategories %}
+                                <li class="dropdown-submenu">
+                                    <a class="dropdown-item text-white dropdown-toggle" 
+                                    >
+                                        {{ category.name }}
+                                    </a>
+                                    <ul class="dropdown-menu bg-dark">
+                                        {% for subcategory in subcategories %}
+                                            {% if subcategory.category == category %}
+                                                <li>
+                                                    <a class="dropdown-item text-white" 
+                                                    href="{% url 'catalog:index' category.slug subcategory.slug %}">
+                                                        {{ subcategory.name }}
+                                                    </a>
+                                                </li>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </ul>
+                                </li>
+                            <!-- Категория с подкатегориями - делаем выпадающее подменю -->   
+                            {% else %}
+                                <!-- Если подкатегорий нет, просто выводим ссылку -->
+                                <li>
+                                    <a class="dropdown-item text-white" 
+                                    href="{% url 'catalog:index' category.slug %}">
+                                        {{ category.name }}
+                                    </a>
+                                </li>
+                            {% endif %}
                         {% endfor %}
                     </ul>
                 </div>
@@ -124,6 +157,26 @@
     <script src={% static "deps/js/jquery-events.js" %}></script>
     <script src={% static "deps/js/jquery-ajax.js" %}></script>
     <script src={% static "deps/js/bootstrap/bootstrap.bundle.min.js" %}></script>
+    <script>
+        $(document).ready(function(){
+            // Обрабатываем и клики и тач-события
+            $('.dropdown-submenu a.dropdown-toggle').on("click touchstart", function(e){
+                // Для мобильных всегда показываем подменю
+                //if ($(window).width() <= 992 || e.type === 'touchstart') {
+                    e.preventDefault();
+                    $(this).next('ul').toggle();
+                    e.stopPropagation();
+                //}
+            });
+            
+            // Закрываем все подменю при клике вне меню
+            $(document).on("click touchstart", function(e){
+                if (!$(e.target).closest('.dropdown-submenu').length) {
+                    $('.dropdown-submenu ul').hide();
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

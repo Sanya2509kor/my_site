@@ -11,7 +11,7 @@ class CatalogView(ListView):
     # queryset = Products.objects.all().order_by("-id")
     template_name = 'goods/catalog.html'
     context_object_name = 'goods'
-    paginate_by = 30
+    paginate_by = 15
     allow_empty = True
 
 
@@ -19,6 +19,10 @@ class CatalogView(ListView):
         context = super().get_context_data(**kwargs)
         context['title'] = 'Главная'
         context['slug_url'] = self.kwargs.get("category_slug") 
+
+        # if 'goods' in context:
+        #     for product in context['goods']:
+        #         product.related_products_list = product.related_products.all()[:4]  # Ограничиваем до 4 товаров
         return context
     
     def get_queryset(self):
@@ -29,7 +33,7 @@ class CatalogView(ListView):
         query = self.request.GET.get("q")
 
         if category_slug == 'all':
-            goods = Products.objects.all()
+            goods = Products.objects.all().order_by('-id')
         elif query:
             goods = q_search(query)
         else:
@@ -46,7 +50,7 @@ class CatalogView(ListView):
 
         goods = goods.filter(quantity__gt=0)
 
-        return goods
+        return goods.prefetch_related('related_products')  # Оптимизация запросов
     
     
 # def catalog(request, category_slug=None):
@@ -92,6 +96,9 @@ class ProductView(DetailView):
     slug_url_kwarg = 'product_slug'
     context_object_name = 'product'
 
+    queryset = Products.objects.prefetch_related('related_products')  # Оптимизация
+
+
     def get_object(self, queryset=None):
         product = Products.objects.get(slug=self.kwargs.get(self.slug_url_kwarg))
         return product
@@ -100,6 +107,7 @@ class ProductView(DetailView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['title'] = self.object.name
+        context['related_products'] = self.object.related_products.all()[:6]  # Ограничиваем до 6 товаров
         return context
 
 
@@ -111,3 +119,52 @@ class ProductView(DetailView):
 #         "product": product, 
 #     }
 #     return render(request, 'goods/product.html', context=context)
+
+
+
+class SubCatalogView(ListView):
+    model = Products
+    # queryset = Products.objects.all().order_by("-id")
+    template_name = 'goods/catalog.html'
+    context_object_name = 'goods'
+    paginate_by = 15
+    allow_empty = True
+
+
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['title'] = 'Главная'
+        context['slug_url'] = self.kwargs.get("subcategory_slug") 
+
+        # if 'goods' in context:
+        #     for product in context['goods']:
+        #         product.related_products_list = product.related_products.all()[:4]  # Ограничиваем до 4 товаров
+        return context
+    
+    def get_queryset(self):
+        
+        subcategory_slug = self.kwargs.get("subcategory_slug")
+        on_sale = self.request.GET.get("on_sale")
+        order_by = self.request.GET.get("order_by")
+        query = self.request.GET.get("q")
+
+        if subcategory_slug == 'all':
+            goods = Products.objects.all()
+        elif query:
+            goods = q_search(query)
+        else:
+            goods = Products.objects.filter(subcategory__slug=subcategory_slug)
+            # if not goods.exists():
+            #     raise Http404()
+        
+
+        if on_sale:
+            goods = goods.filter(discount__gt=0)
+
+        if order_by and order_by != "default":
+            goods = goods.order_by(order_by)
+
+        goods = goods.filter(quantity__gt=0)
+
+        return goods.prefetch_related('related_products')  # Оптимизация запросов

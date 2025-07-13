@@ -12,7 +12,7 @@ class IndexView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['title'] = 'Home - Главная'
-        context['content'] = 'Магазин Натяжных Потолков'
+        context['content'] = 'СеАл'
         return context
 
 # def index(request):
