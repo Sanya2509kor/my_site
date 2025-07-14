@@ -1,5 +1,6 @@
 from django.db import models
 from django.urls import reverse
+from django.utils.text import slugify
 
 
 class Categories(models.Model):
@@ -53,15 +54,46 @@ class SubCategories(models.Model):
 
 
 class Products(models.Model):
-    name = models.CharField(max_length=150, unique=True, verbose_name='Название')
+    COLOR = [
+        ('Без покраски', 'Без покраски'),
+        ('Белый','Белый'),
+        ('Черный', 'Черный'),
+        ('Белый глянец','Белый глянец'),
+        ('Белый мат.','Белый мат.'),
+        ('Черный мат.', 'Черный мат.'),
+        ('Белый муар', 'Белый муар'),
+        ('Черный муар', 'Черный муар'),
+    ]
+    
+    SIZES = [
+        ('2м.', '2м.'),
+        ('2,2м.', '2,2м.'),
+        ('2,5м.', '2,5м.'),
+        ('3м.', '3м.'),
+        ('3.2м.', '3.2м.'),
+        ('3.6м.', '3.6м.'),
+        ('3м.', '3м.'),
+        ('2000 мм.', '2000 мм.'),
+        ('40x40', '40x40'),
+        ('60x40', '60x40'),
+        ('120x80', '120x80'),
+
+
+    ]
+
+    name = models.CharField(max_length=150, verbose_name='Название')
     slug = models.SlugField(max_length=200, unique=True, blank=True, null=True, verbose_name='URL')
     description = models.TextField(blank=True, null=True, verbose_name='Описание')
+    color = models.CharField(max_length=30, choices=COLOR, verbose_name="Цвет детали", blank=True, null=True)
+    size = models.CharField(max_length=30, choices=SIZES, verbose_name='Размер детали', blank=True, null=True)
     image = models.ImageField(upload_to='goods_images', blank=True, null=True, verbose_name='Изображение')
+    image_schem = models.ImageField(upload_to='goods_images_schems', blank=True, null=True, verbose_name='Изображение_схемы')
     price = models.DecimalField(default=0.00, max_digits=7, decimal_places=2, verbose_name='Цена')
     discount = models.DecimalField(default=0.00, max_digits=4, decimal_places=2, verbose_name='Скидка в %')
     quantity = models.PositiveIntegerField(default=0, verbose_name='Количество')
     category = models.ForeignKey(to=Categories, on_delete=models.CASCADE, verbose_name='Категория')
     subcategory = models.ForeignKey(to=SubCategories, on_delete=models.CASCADE, verbose_name='Подкатегория', blank=True, null=True)
+    
 
     related_products = models.ManyToManyField(
         'self',
@@ -76,7 +108,7 @@ class Products(models.Model):
         db_table = 'Product'
         verbose_name = 'Продукт'
         verbose_name_plural = 'Продукты'
-        ordering = ("id", )
+        ordering = ("name", "color", "size")
 
     def __str__(self):
         return f'{self.name}'
@@ -94,6 +126,35 @@ class Products(models.Model):
             return round(self.price - self.price * self.discount / 100, 2)
         
         return self.price
+    
+    def get_color(self):
+        if self.color:
+            return self.color
+        return False
+    
+    def get_size(self):
+        if self.size:
+            return self.size
+        return False
+    
+    
+    # создает уникальный URL
+    def save(self, *args, **kwargs):
+        if not self.slug:  # Если slug не задан, генерируем его
+            base_slug = slugify(self.name)
+            color_slug = slugify(self.color) if self.color else ''
+            size_slug = slugify(self.size) if self.size else ''
+            
+            self.slug = f"{base_slug}-{color_slug}-{size_slug}" if (color_slug or size_slug) else base_slug
+            
+            # Убедимся, что slug уникален (если уже есть такой, добавим число в конец)
+            original_slug = self.slug
+            counter = 1
+            while Products.objects.filter(slug=self.slug).exclude(pk=self.pk).exists():
+                self.slug = f"{original_slug}-{counter}"
+                counter += 1
+        
+        super().save(*args, **kwargs)
     
 
 
