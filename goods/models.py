@@ -77,9 +77,26 @@ class Products(models.Model):
         ('40x40', '40x40'),
         ('60x40', '60x40'),
         ('120x80', '120x80'),
-
-
     ]
+
+    WATT = [
+        ('6W', '6W'),
+        ('9W', '9W'),
+        ('10W', '10W'),
+        ('12W', '12W'),
+        ('18W', '18W'),
+        ('20W', '20W'),
+        ('24W', '24W'),
+        ('30W', '30W'),
+        ('40W', '40W'),
+    ]
+
+    BRIGHTNESS = [
+        ('3000K', '3000K'),
+        ('4000K', '4000K'),
+    ]
+
+
 
     name = models.CharField(max_length=150, verbose_name='Название')
     slug = models.SlugField(max_length=200, unique=True, blank=True, null=True, verbose_name='URL')
@@ -94,6 +111,9 @@ class Products(models.Model):
     category = models.ForeignKey(to=Categories, on_delete=models.CASCADE, verbose_name='Категория')
     subcategory = models.ForeignKey(to=SubCategories, on_delete=models.CASCADE, verbose_name='Подкатегория', blank=True, null=True)
     
+    #для света
+    bright = models.CharField(max_length=30, choices=BRIGHTNESS, verbose_name='Яркость', blank=True, null=True)
+    power = models.CharField(max_length=30, choices=WATT, verbose_name='Мощность', blank=True, null=True)
 
     related_products = models.ManyToManyField(
         'self',
@@ -136,6 +156,29 @@ class Products(models.Model):
         if self.size:
             return self.size
         return False
+    
+    def get_power(self):
+        if self.power:
+            return self.power
+        return False
+    
+    def get_bright(self):
+        if self.bright:
+            return self.bright
+        return False
+    
+    def get_full_name(self):
+        full_name = self.name
+        if self.color:
+            full_name += ' ' + self.color
+        if self.size:
+            full_name += ' ' + self.size
+        if self.bright:
+            full_name += ' ' + self.bright
+        if self.power:
+            full_name += ' ' + self.power
+        return full_name
+            
     
     
     # создает уникальный URL

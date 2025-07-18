@@ -86,7 +86,7 @@
                             {% if product.headline %}
                                 {{ product.headline }} 
                             {% else %}
-                                {{ product.name }} {% if product.get_color %}{{product.get_color}}{% endif %}{% if product.get_size %} {{product.get_size}} {% endif %}
+                                {{ product.get_full_name }}
                             {% endif %}
                         {% endautoescape %}
                     </p>

@@ -60,6 +60,7 @@ class ProductsAdmin(admin.ModelAdmin):
         "image_schem",
         ("price", "discount"),
         "quantity",
+        ('power', 'bright'),
     ]
     inlines = [ProductRelationshipInline]
     

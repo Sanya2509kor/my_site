@@ -20,7 +20,7 @@
             <div class="col-md-8">
                 <p class="product_id mt-3">id: {{ product.display_id }}</p>
                 <!-- Перенесём сюда часть контента из card-body -->
-                <h5 class="card-title">{{ product.name }} {% if product.get_color %}{{product.get_color}}{% endif %}{% if product.get_size %} {{product.get_size}} {% endif %}</h5>
+                <h5 class="card-title">{{ product.get_full_name }}</h5>
                 <div class="product-description" style="white-space: pre-wrap; margin-right: 20px; margin-left: 10px;">{{ product.description }}</div>
                 {% if product.get_color %}
                 <div>
@@ -35,6 +35,22 @@
                     <hr>
                     <span style="display: inline-block; margin-left: 10px;">Длина</span>
                     <span style="float: right; margin-right: 100px;">{{ product.get_size }}</span>
+                    <hr>
+                </div>
+                {% endif %}
+                {% if product.get_bright %}
+                <div>
+                    <hr>
+                    <span style="display: inline-block; margin-left: 10px;">Температура</span>
+                    <span style="float: right; margin-right: 100px;">{{ product.get_bright }}</span>
+                    <hr>
+                </div>
+                {% endif %}
+                {% if product.get_power %}
+                <div>
+                    <hr>
+                    <span style="display: inline-block; margin-left: 10px;">Мощность</span>
+                    <span style="float: right; margin-right: 100px;">{{ product.get_power }}</span>
                     <hr>
                 </div>
                 {% endif %}
@@ -119,7 +135,7 @@
                         </a>
                         <div class="card-body">
                             <h5 class="card-title">
-                                <a href="{{ related.get_absolute_url }}" class="text-dark">{{ related.name }} {% if related.get_color %}{{related.get_color}}{% endif %}{% if related.get_size %} {{related.get_size}} {% endif %}</a>
+                                <a href="{{ related.get_absolute_url }}" class="text-dark">{{ related.get_full_name }}</a>
                             </h5>
                             <p class="card-text">
                                 <strong>{{ related.sell_price }} ₽</strong>
