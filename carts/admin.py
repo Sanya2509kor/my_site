@@ -1,6 +1,6 @@
 from django.contrib import admin
-
 from carts.models import Cart
+
 
 
 class CartTabAdmin(admin.TabularInline):
@@ -15,6 +15,7 @@ class CartTabAdmin(admin.TabularInline):
 class CartAdmin(admin.ModelAdmin):
     list_display = ['user_display', 'product_display', 'quantity', 'created_timestamp']
     list_filter = ['created_timestamp', 'user', 'product__name', ]
+    
 
     def user_display(self, obj):
         if obj.user:

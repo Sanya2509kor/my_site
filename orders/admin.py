@@ -1,9 +1,41 @@
 from django.contrib import admin
-
+from django.http import HttpResponse
+from django.template.loader import render_to_string
 from orders.models import Order, OrderItem
 
-# admin.site.register(Order)
-# admin.site.register(OrderItem)
+def print_order(modeladmin, request, queryset):
+    # Проверяем, что выбран только один заказ
+    if queryset.count() != 1:
+        modeladmin.message_user(request, "Пожалуйста, выберите только один заказ для печати.", level='ERROR')
+        return
+    
+    order = queryset.first()
+    order_items = OrderItem.objects.filter(order=order)
+    
+    # Подготавливаем данные для печати
+    context = {
+        'order': order,
+        'order_items': order_items,
+        'total_price': sum(item.product_price() for item in order_items),
+    }
+    
+    # Рендерим HTML шаблон
+    html = render_to_string('orders/print_order.html', context)
+    return HttpResponse(html)
+    
+    # # Генерация PDF
+    # response = HttpResponse(content_type='application/pdf')
+    # response['Content-Disposition'] = f'attachment; filename="order_{order.id}.pdf"'
+    
+    # from weasyprint import HTML
+    # HTML(string=html).write_pdf(response)
+    
+    # return response
+
+print_order.short_description = "Печать заказа"
+
+
+
 
 class OrderItemTabulareAdmin(admin.TabularInline):
     model = OrderItem
@@ -13,6 +45,11 @@ class OrderItemTabulareAdmin(admin.TabularInline):
         "name",
     )
     extra = 0
+
+    def product_price(self, instance):
+        return instance.product_price()
+    product_price.short_description = "Общая цена"
+    
 
 
 @admin.register(OrderItem)
@@ -24,6 +61,7 @@ class OrderItemAdmin(admin.ModelAdmin):
         "name",
     )
     ordering = ('-id',)
+    
 
 
 class OrderTabulareAdmin(admin.TabularInline):
@@ -72,3 +110,8 @@ class OrderAdmin(admin.ModelAdmin):
     inlines = (OrderItemTabulareAdmin,)
 
     ordering = ('-id',)
+    actions = [print_order]
+
+    def total_price_display(self, obj):
+        return sum(item.product_price() for item in obj.orderitem_set.all())
+    total_price_display.short_description = "Общая сумма заказа"

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Заказ №{{ order.id }}</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { color: #333; }
+        .header { margin-bottom: 20px; }
+        .customer-info { margin-bottom: 30px; }
+        .order-items { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+        .order-items th, .order-items td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        .order-items th { background-color: #f2f2f2; }
+        .total { font-weight: bold; font-size: 1.2em; text-align: right; }
+        @media print {
+            .no-print { display: none; }
+            body { margin: 0; padding: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Заказ №{{ order.id }}</h1>
+        <p>Дата заказа: {{ order.created_timestamp|date:"d.m.Y H:i" }}</p>
+        <p>Статус: {{ order.get_status_display }}</p>
+    </div>
+
+    <div class="customer-info">
+        <h2>Информация о покупателе</h2>
+        <p>Имя: {{ order.user.first_name }} {{ order.user.last_name }}</p>
+        <p>Телефон: {{ order.phone_number }}</p>
+        {% if order.requires_delivery %}
+            <p>Адрес доставки: {{ order.delivery_address }}</p>
+        {% else %}
+            <p>Самовывоз</p>
+        {% endif %}
+        <p>Способ оплаты: {% if order.payment_on_get %}При получении{% else %}Онлайн оплата{% endif %}</p>
+        <p>Оплачен: {% if order.is_paid %}Да{% else %}Нет{% endif %}</p>
+    </div>
+
+    <h2>Состав заказа</h2>
+    <table class="order-items">
+        <thead>
+            <tr>
+                <th>Товар</th>
+                <th>Цена</th>
+                <th>Количество</th>
+                <th>Сумма</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in order_items %}
+            <tr>
+                <td>{{ item.product.get_full_name }}</td>
+                <td>{{ item.price }} ₽</td>
+                <td>{{ item.quantity }}</td>
+                <td>{{ item.product_price }} ₽</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <div class="total">
+        Итого: {{ total_price }} ₽
+    </div>
+
+    <div class="no-print" style="margin-top: 30px;">
+        <button onclick="window.print()">Печать</button>
+        <button onclick="window.history.back()">Закрыть</button>
+    </div>
+
+    <script>
+        // Автоматически открываем диалог печати при загрузке страницы
+        window.onload = function() {
+            setTimeout(function() {
+                window.print();
+            }, 500);
+        };
+    </script>
+</body>
+</html>  

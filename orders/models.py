@@ -5,6 +5,12 @@ from goods.models import Products
 from users.models import User
 
 
+class AdminNotification(models.Model):
+    last_checked_order = models.ForeignKey('Order', on_delete=models.SET_NULL, null=True)
+    last_update = models.DateTimeField(auto_now=True)
+
+
+
 class OrderitemQueryset(models.QuerySet):
 
     def total_price(self):

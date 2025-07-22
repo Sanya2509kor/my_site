@@ -1,0 +1,122 @@
+{% extends "admin/base_site.html" %}
+{% load static %}
+
+{% block extrahead %}
+{{ block.super }}
+<script>
+// В вашем admin/base_site.html
+let audio = null;
+let soundAllowed = false;
+let hasPendingNotification = false;
+
+function initAudio() {
+    try {
+        audio = new Audio('{% static "admin/notification.mp3" %}');
+        audio.load();
+        
+        // Разрешаем звук после первого клика пользователя
+        document.addEventListener('click', handleFirstInteraction, { once: true });
+    } catch (e) {
+        console.error('Audio init error:', e);
+    }
+}
+
+function handleFirstInteraction() {
+    soundAllowed = true;
+    // Проигрываем звук ТОЛЬКО если есть ожидающее уведомление
+    if (hasPendingNotification) {
+        playNotification();
+        hasPendingNotification = false;
+    }
+}
+
+function playNotification() {
+    if (!soundAllowed) {
+        hasPendingNotification = true;
+        console.log('Sound delayed - waiting for user interaction');
+        return;
+    }
+    
+    if (!audio) {
+        console.log('Audio not initialized');
+        return;
+    }
+
+    try {
+        audio.currentTime = 0; // Перематываем на начало
+        audio.play().catch(e => console.log('Notification play failed:', e));
+    } catch (e) {
+        console.error('Audio play error:', e);
+    }
+}
+
+// Функция проверки новых заказов
+function checkNewOrders() {
+    fetch('/check-new-orders/')
+        .then(response => {
+            if (!response.ok) throw new Error('Network response was not ok');
+            return response.json();
+        })
+        .then(data => {
+            if (data.has_new_orders) {
+                console.log('New order detected!');
+                playNotification();
+                showVisualNotification();
+            }
+            setTimeout(checkNewOrders, 10000); // Проверка каждые 10 секунд
+        })
+        .catch(e => {
+            console.error('Check orders error:', e);
+            setTimeout(checkNewOrders, 30000); // При ошибке проверяем реже
+        });
+}
+
+// Визуальное уведомление
+function showVisualNotification() {
+    if (document.querySelector('.new-order-notification')) return;
+    
+    const notification = document.createElement('div');
+    notification.className = 'new-order-notification';
+    notification.style = `
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 15px;
+        background: #4CAF50;
+        color: white;
+        border-radius: 5px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        z-index: 9999;
+        animation: fadeIn 0.5s;
+    `;
+    notification.textContent = 'Новый заказ!';
+    document.body.appendChild(notification);
+    
+    setTimeout(() => {
+        notification.style.animation = 'fadeOut 0.5s';
+        setTimeout(() => notification.remove(), 500);
+    }, 5000);
+}
+
+// Стили для анимации
+const style = document.createElement('style');
+style.textContent = `
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeOut {
+        from { opacity: 1; }
+        to { opacity: 0; }
+    }
+`;
+document.head.appendChild(style);
+
+// Инициализация при загрузке
+document.addEventListener('DOMContentLoaded', () => {
+    initAudio();
+    // Запускаем проверку через 2 секунды после загрузки
+    setTimeout(checkNewOrders, 2000);
+});
+</script>
+{% endblock %}

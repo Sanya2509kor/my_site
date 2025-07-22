@@ -20,12 +20,14 @@ from django.urls import include, path
 from django.conf.urls.static import static
 
 from app import settings
+from orders.views import check_new_orders
 
 
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('check-new-orders/', check_new_orders, name='check_new_orders'),
     path('', include('main.urls', namespace='main')),
     path('catalog/', include('goods.urls', namespace='catalog')),
     path('user/', include('users.urls', namespace='user')),

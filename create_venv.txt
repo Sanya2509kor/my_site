@@ -16,6 +16,7 @@ pip install
     django-debug-toolbar
     traitlets
     Pillow
+    weasyprint
 
 python manage.py makemigrations
 python manage.py migrate  

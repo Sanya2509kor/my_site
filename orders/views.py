@@ -1,6 +1,7 @@
 import re
 from django import forms
 from django.forms import ValidationError
+from django.http import JsonResponse
 from django.shortcuts import redirect, render
 from django.db import transaction
 from django.contrib import messages
@@ -11,7 +12,7 @@ from django.views.generic import FormView
 
 from orders.forms import CreateOrderForm
 from carts.models import Cart
-from orders.models import Order, OrderItem
+from orders.models import AdminNotification, Order, OrderItem
 
 
 class CreateOrderView(LoginRequiredMixin, FormView):
@@ -96,6 +97,24 @@ class CreateOrderView(LoginRequiredMixin, FormView):
         context['title'] = 'Оформление заказа'
         context['order'] = True
         return context
+    
+
+
+
+
+def check_new_orders(request):
+    if not request.user.is_staff:
+        return JsonResponse({'error': 'Not authorized'}, status=403)
+    
+    notification = AdminNotification.objects.first()
+    if not notification:
+        return JsonResponse({'has_new_orders': False})
+    
+    has_new = Order.objects.filter(
+        created_timestamp__gt=notification.last_update
+    ).exists()
+    
+    return JsonResponse({'has_new_orders': has_new})
     
 
 # @login_required

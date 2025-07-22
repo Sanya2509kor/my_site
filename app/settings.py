@@ -28,7 +28,9 @@ SECRET_KEY = 'django-insecure-t^p9+8ubt*!azg^)a_35vjif!q%1tnj(k!j&9xk1jm4f(77c!b
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '*'
+]
 
 
 # Application definition
@@ -42,7 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.postgres',
 
-    "debug_toolbar",
+    'debug_toolbar',
+    'sslserver',
     
     'main',
     'goods',
@@ -63,6 +66,8 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 
     "debug_toolbar.middleware.DebugToolbarMiddleware",
+
+    'orders.middleware.NewOrderNotificationMiddleware',
 
 ]
 
