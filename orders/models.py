@@ -1,4 +1,3 @@
-from turtle import mode
 from django.db import models
 
 from goods.models import Products

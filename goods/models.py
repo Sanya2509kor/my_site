@@ -58,42 +58,12 @@ class Products(models.Model):
         ('Без покраски', 'Без покраски'),
         ('Белый','Белый'),
         ('Черный', 'Черный'),
+        ('Серебро', 'Серебро'),
         ('Белый глянец','Белый глянец'),
         ('Белый мат.','Белый мат.'),
         ('Черный мат.', 'Черный мат.'),
         ('Белый муар', 'Белый муар'),
         ('Черный муар', 'Черный муар'),
-    ]
-    
-    SIZES = [
-        ('2м.', '2м.'),
-        ('2,2м.', '2,2м.'),
-        ('2,5м.', '2,5м.'),
-        ('3м.', '3м.'),
-        ('3.2м.', '3.2м.'),
-        ('3.6м.', '3.6м.'),
-        ('3м.', '3м.'),
-        ('2000 мм.', '2000 мм.'),
-        ('40x40', '40x40'),
-        ('60x40', '60x40'),
-        ('120x80', '120x80'),
-    ]
-
-    WATT = [
-        ('6W', '6W'),
-        ('9W', '9W'),
-        ('10W', '10W'),
-        ('12W', '12W'),
-        ('18W', '18W'),
-        ('20W', '20W'),
-        ('24W', '24W'),
-        ('30W', '30W'),
-        ('40W', '40W'),
-    ]
-
-    BRIGHTNESS = [
-        ('3000K', '3000K'),
-        ('4000K', '4000K'),
     ]
 
 
@@ -102,18 +72,18 @@ class Products(models.Model):
     slug = models.SlugField(max_length=200, unique=True, blank=True, null=True, verbose_name='URL')
     description = models.TextField(blank=True, null=True, verbose_name='Описание')
     color = models.CharField(max_length=30, choices=COLOR, verbose_name="Цвет детали", blank=True, null=True)
-    size = models.CharField(max_length=30, choices=SIZES, verbose_name='Размер детали', blank=True, null=True)
+    size = models.CharField(max_length=30, verbose_name='Размер детали', blank=True, null=True)
     image = models.ImageField(upload_to='goods_images', blank=True, null=True, verbose_name='Изображение')
     image_schem = models.ImageField(upload_to='goods_images_schems', blank=True, null=True, verbose_name='Изображение_схемы')
-    price = models.DecimalField(default=0.00, max_digits=7, decimal_places=2, verbose_name='Цена')
+    price = models.DecimalField(default=1000.00, max_digits=7, decimal_places=2, verbose_name='Цена')
     discount = models.DecimalField(default=0.00, max_digits=4, decimal_places=2, verbose_name='Скидка в %')
-    quantity = models.PositiveIntegerField(default=0, verbose_name='Количество')
+    quantity = models.PositiveIntegerField(default=50, verbose_name='Количество')
     category = models.ForeignKey(to=Categories, on_delete=models.CASCADE, verbose_name='Категория')
     subcategory = models.ForeignKey(to=SubCategories, on_delete=models.CASCADE, verbose_name='Подкатегория', blank=True, null=True)
     
     #для света
-    bright = models.CharField(max_length=30, choices=BRIGHTNESS, verbose_name='Яркость', blank=True, null=True)
-    power = models.CharField(max_length=30, choices=WATT, verbose_name='Мощность', blank=True, null=True)
+    bright = models.CharField(max_length=30, verbose_name='Яркость K', blank=True, null=True)
+    power = models.CharField(max_length=30, verbose_name='Мощность W', blank=True, null=True)
 
     related_products = models.ManyToManyField(
         'self',
@@ -212,8 +182,6 @@ class ProductRelationship(models.Model):
         related_name='to_products',
         on_delete=models.CASCADE
     )
-    # дополнительные поля связи, если нужно
-    # например: relation_type = models.CharField(max_length=100, blank=True)
     
     class Meta:
         unique_together = ('from_product', 'to_product')

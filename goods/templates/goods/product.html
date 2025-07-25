@@ -12,7 +12,7 @@
             <!-- Миниатюра -->
             <div class="col-md-4">
                 <img src="{{ product.image.url }}"
-                    class="img-thumbnail custom-image" style="height: 400px;" data-bs-toggle="modal" data-bs-target="#imageModal1">
+                    class="img-thumbnail custom-image" style="height: 400px; width: 100%; object-fit: contain; object-position: center;"  data-bs-toggle="modal" data-bs-target="#imageModal1">
             </div>
             
             
@@ -20,7 +20,7 @@
             <div class="col-md-8">
                 <p class="product_id mt-3">id: {{ product.display_id }}</p>
                 <!-- Перенесём сюда часть контента из card-body -->
-                <h5 class="card-title">{{ product.get_full_name }}</h5>
+                <h5 class="card-title">{{ product.name }}</h5>
                 <div class="product-description" style="white-space: pre-wrap; margin-right: 20px; margin-left: 10px;">{{ product.description }}</div>
                 {% if product.get_color %}
                 <div>
@@ -87,7 +87,7 @@
                     </div>
                     <div class="modal-body">
                         <img src="{{ product.image.url }}"
-                            class="img-fluid" alt="Изображение 1">
+                            class="img-fluid" alt="Изображение 1" style="height: 400px; width: 100%; object-fit: contain; object-position: center;" >
                     </div>
                 </div>
             </div>
@@ -106,7 +106,7 @@
                         </div>
                         <div class="modal-body">
                             <img src="{{ product.image_schem.url }}"
-                                class="img-fluid" alt="Изображение 1">
+                                class="img-fluid" alt="Изображение 2" style="height: 400px; width: 100%; object-fit: contain; object-position: center;" >
                         </div>
                     </div>
                 </div>

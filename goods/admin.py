@@ -1,5 +1,6 @@
 from django.contrib import admin
 from goods.models import Categories, Products, SubCategories, ProductRelationship
+from django import forms
 
 
 # admin.site.register(Categories)
@@ -41,11 +42,15 @@ class ProductRelationshipInline(admin.TabularInline):
 
 
 
+
+
+
 @admin.register(Products)
 class ProductsAdmin(admin.ModelAdmin):
-    prepopulated_fields = {'slug': ('name', )}
+    # form = ProductAdminForm
+    # prepopulated_fields = {'slug': ('name', )}
     list_display = ['name', 'color', 'size', 'quantity', 'price', 'discount',]
-    list_editable = ['discount', 'color', 'size', 'price',]
+    list_editable = ['discount', 'color', 'size', 'price', 'quantity']
     search_fields = ['name', 'description']
     list_filter = ['discount', 'quantity', 'category', 'color', 'size']
     fields = [
@@ -62,14 +67,21 @@ class ProductsAdmin(admin.ModelAdmin):
         "quantity",
         ('power', 'bright'),
     ]
+
+    ordering = ('-id',)
+    
     inlines = [ProductRelationshipInline]
     
     # Для отображения всех связанных товаров в списке
     def get_queryset(self, request):
-        return super().get_queryset(request).prefetch_related('related_products')
-
+        qs = super().get_queryset(request).prefetch_related('related_products')
+        # изменил чтобы не показывал товар с 0 количеством
+        qs = qs.exclude(quantity=0)
+        return qs
     
     # Чтобы избежать проблем с отображением m2m поля
     def get_form(self, request, obj=None, **kwargs):
         form = super().get_form(request, obj, **kwargs)
         return form
+    
+

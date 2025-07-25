@@ -94,8 +94,18 @@ WSGI_APPLICATION = 'app.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
+# для деплоя
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'seal',
+#         'USER': 'postgres',
+#         'PASSWORD': 'itpoY!Gh!l2E',
+#         'HOST': 'kanoosnodulap.beget.app',
+#         'PORT': '5432',
+#     }
+# }
 
-# на макбуке
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -106,18 +116,6 @@ DATABASES = {
         'PORT': '5432',
     }
 }
-
-# # на пк
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'home',
-#         'USER': 'aleksandr',
-#         'PASSWORD': '89526136205Sa',
-#         'HOST': 'localhost',
-#         'PORT': '5432',
-#     }
-# }
 
 
 # Password validation
@@ -144,7 +142,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'ru-ru'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Krasnoyarsk'
 
 USE_I18N = True
 
@@ -155,6 +153,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = 'static/'
+
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
