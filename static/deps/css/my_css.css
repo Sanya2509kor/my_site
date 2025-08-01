@@ -1,9 +1,10 @@
 body {
-  background-image: url("../images/bg-image.jpg");
+  /* background-image: url("../images/bg_image.jpg"); */
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
+  background-color: rgb(255, 255, 255);
   height: 100%;
 }
 
@@ -51,5 +52,13 @@ body {
         position: static;
         float: none;
         margin-left: 15px;
+    }
+    .modal {
+        width: 90%;
+        margin: auto;
+    }
+    .navbar-nav .nav-link {
+        display: block;
+        padding: 0.5rem 1.5rem;
     }
 }

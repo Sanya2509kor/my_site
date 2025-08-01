@@ -1,1 +1,254 @@
-[{"model": "goods.subcategories", "pk": 4, "fields": {"name": "Карнизные", "slug": "karniznye", "category": 16}}, {"model": "goods.subcategories", "pk": 5, "fields": {"name": "Световые", "slug": "svetovye", "category": 16}}, {"model": "goods.subcategories", "pk": 6, "fields": {"name": "Теневые", "slug": "tenevye", "category": 16}}, {"model": "goods.subcategories", "pk": 7, "fields": {"name": "Парящие", "slug": "paryashie", "category": 16}}, {"model": "goods.subcategories", "pk": 8, "fields": {"name": "Трековые", "slug": "trekovye", "category": 16}}, {"model": "goods.subcategories", "pk": 9, "fields": {"name": "Контурные", "slug": "konturnye", "category": 16}}, {"model": "goods.subcategories", "pk": 10, "fields": {"name": "Закладные", "slug": "zakladnye", "category": 16}}, {"model": "goods.subcategories", "pk": 11, "fields": {"name": "Бесщелевые", "slug": "besshelevye", "category": 16}}, {"model": "goods.subcategories", "pk": 12, "fields": {"name": "Классические", "slug": "klassicheskie", "category": 16}}, {"model": "goods.subcategories", "pk": 13, "fields": {"name": "Нишевые", "slug": "nishevye", "category": 16}}, {"model": "goods.subcategories", "pk": 14, "fields": {"name": "Многоуровневые", "slug": "mnogourovnevye", "category": 16}}, {"model": "goods.subcategories", "pk": 15, "fields": {"name": "Другие", "slug": "drugie", "category": 16}}]
+[
+    {
+        "model": "goods.subcategories",
+        "pk": 4,
+        "fields": {
+            "name": "Карнизные",
+            "slug": "karniznye",
+            "category": 16
+        }
+    },
+    {
+        "model": "goods.subcategories",
+        "pk": 5,
+        "fields": {
+            "name": "Световые",
+            "slug": "svetovye",
+            "category": 16
+        }
+    },
+    {
+        "model": "goods.subcategories",
+        "pk": 6,
+        "fields": {
+            "name": "Теневые",
+            "slug": "tenevye",
+            "category": 16
+        }
+    },
+    {
+        "model": "goods.subcategories",
+        "pk": 7,
+        "fields": {
+            "name": "Парящие",
+            "slug": "paryashie",
+            "category": 16
+        }
+    },
+    {
+        "model": "goods.subcategories",
+        "pk": 8,
+        "fields": {
+            "name": "Трековые",
+            "slug": "trekovye",
+            "category": 16
+        }
+    },
+    {
+        "model": "goods.subcategories",
+        "pk": 9,
+        "fields": {
+            "name": "Контурные",
+            "slug": "konturnye",
+            "category": 16
+        }
+    },
+    {
+        "model": "goods.subcategories",
+        "pk": 10,
+        "fields": {
+            "name": "Закладные",
+            "slug": "zakladnye",
+            "category": 16
+        }
+    },
+    {
+        "model": "goods.subcategories",
+        "pk": 11,
+        "fields": {
+            "name": "Бесщелевые",
+            "slug": "besshelevye",
+            "category": 16
+        }
+    },
+    {
+        "model": "goods.subcategories",
+        "pk": 12,
+        "fields": {
+            "name": "Классические",
+            "slug": "klassicheskie",
+            "category": 16
+        }
+    },
+    {
+        "model": "goods.subcategories",
+        "pk": 13,
+        "fields": {
+            "name": "Нишевые",
+            "slug": "nishevye",
+            "category": 16
+        }
+    },
+    {
+        "model": "goods.subcategories",
+        "pk": 14,
+        "fields": {
+            "name": "Многоуровневые",
+            "slug": "mnogourovnevye",
+            "category": 16
+        }
+    },
+    {
+        "model": "goods.subcategories",
+        "pk": 15,
+        "fields": {
+            "name": "Другие",
+            "slug": "drugie",
+            "category": 16
+        }
+    },
+    {
+        "model": "goods.subcategories",
+        "pk": 16,
+        "fields": {
+            "name": "Трековые системы",
+            "slug": "trekovye-sistemy",
+            "category": 20
+        }
+    },
+    {
+        "model": "goods.subcategories",
+        "pk": 17,
+        "fields": {
+            "name": "Светильники",
+            "slug": "svetilniki",
+            "category": 20
+        }
+    },
+    {
+        "model": "goods.subcategories",
+        "pk": 18,
+        "fields": {
+            "name": "Лампы",
+            "slug": "lampy",
+            "category": 20
+        }
+    },
+    {
+        "model": "goods.subcategories",
+        "pk": 19,
+        "fields": {
+            "name": "Люстры",
+            "slug": "lyustry",
+            "category": 20
+        }
+    },
+    {
+        "model": "goods.subcategories",
+        "pk": 20,
+        "fields": {
+            "name": "Платформы",
+            "slug": "platformy",
+            "category": 24
+        }
+    },
+    {
+        "model": "goods.subcategories",
+        "pk": 21,
+        "fields": {
+            "name": "Термокольца и термоквадраты",
+            "slug": "termokolca-i-termokvadraty",
+            "category": 24
+        }
+    },
+    {
+        "model": "goods.subcategories",
+        "pk": 22,
+        "fields": {
+            "name": "Обводы и Заглушки для труб",
+            "slug": "obvody-i-zaglushki-dlya-trub",
+            "category": 24
+        }
+    },
+    {
+        "model": "goods.subcategories",
+        "pk": 23,
+        "fields": {
+            "name": "Вентиляционные решетки",
+            "slug": "ventilyacionnye-reshetki",
+            "category": 24
+        }
+    },
+    {
+        "model": "goods.subcategories",
+        "pk": 24,
+        "fields": {
+            "name": "Крепеж",
+            "slug": "krepezh",
+            "category": 24
+        }
+    },
+    {
+        "model": "goods.subcategories",
+        "pk": 25,
+        "fields": {
+            "name": "Багет / профиль",
+            "slug": "baget-profil",
+            "category": 24
+        }
+    },
+    {
+        "model": "goods.subcategories",
+        "pk": 26,
+        "fields": {
+            "name": "Гарпун и Вставка",
+            "slug": "garpun-i-vstavka",
+            "category": 24
+        }
+    },
+    {
+        "model": "goods.subcategories",
+        "pk": 27,
+        "fields": {
+            "name": "Экраны",
+            "slug": "ekrany",
+            "category": 24
+        }
+    },
+    {
+        "model": "goods.subcategories",
+        "pk": 28,
+        "fields": {
+            "name": "Торцевые заглушки",
+            "slug": "torcevye-zaglushki",
+            "category": 24
+        }
+    },
+    {
+        "model": "goods.subcategories",
+        "pk": 29,
+        "fields": {
+            "name": "Крючки и Тросы",
+            "slug": "kryuchki-i-trosy",
+            "category": 24
+        }
+    },
+    {
+        "model": "goods.subcategories",
+        "pk": 30,
+        "fields": {
+            "name": "Приспособления",
+            "slug": "prisposobleniya",
+            "category": 24
+        }
+    },
+    {
+        "model": "goods.subcategories",
+        "pk": 31,
+        "fields": {
+            "name": "Соединители",
+            "slug": "soediniteli",
+            "category": 24
+        }
+    }
+]

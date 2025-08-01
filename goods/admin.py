@@ -3,14 +3,9 @@ from goods.models import Categories, Products, SubCategories, ProductRelationshi
 from django import forms
 
 
-# admin.site.register(Categories)
-# admin.site.register(Products)
-
-
-
 @admin.register(Categories)
 class CategoriesAdmin(admin.ModelAdmin):
-    prepopulated_fields = {'slug': ('name', )}
+    prepopulated_fields = {'slug': ('name', ),}
     list_display = ['name', ]
 
 
@@ -57,7 +52,7 @@ class ProductsAdmin(admin.ModelAdmin):
         "name", 
         "category",
         "subcategory",
-        "slug", 
+        # "slug", 
         "description",
         "color",
         "size",

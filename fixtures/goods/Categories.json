@@ -78,5 +78,21 @@
             "name": "Комплектующие",
             "slug": "komplektuyushie"
         }
+    },
+    {
+        "model": "goods.categories",
+        "pk": 25,
+        "fields": {
+            "name": "Электрика",
+            "slug": "elektrika"
+        }
+    },
+    {
+        "model": "goods.categories",
+        "pk": 26,
+        "fields": {
+            "name": "Светодиодные ленты",
+            "slug": "svetodiodnye-lenty"
+        }
     }
 ]
