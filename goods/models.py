@@ -81,7 +81,7 @@ class Products(models.Model):
     discount = models.DecimalField(default=0.00, max_digits=4, decimal_places=2, verbose_name='Скидка в %')
     quantity = models.PositiveIntegerField(default=50, verbose_name='Количество')
     category = models.ForeignKey(to=Categories, on_delete=models.CASCADE, verbose_name='Категория', default=20)
-    subcategory = models.ForeignKey(to=SubCategories, on_delete=models.CASCADE, verbose_name='Подкатегория', blank=True, null=True, default=18)
+    subcategory = models.ForeignKey(to=SubCategories, on_delete=models.CASCADE, verbose_name='Подкатегория', blank=True, null=True, default=25)
     
     #для света
     bright = models.CharField(max_length=30, verbose_name='Яркость K', blank=True, null=True)

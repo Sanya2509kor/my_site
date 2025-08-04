@@ -57,7 +57,7 @@ class ProductsAdmin(admin.ModelAdmin):
         "color",
         "size",
         "image",
-        "image_schem",
+        # "image_schem",
         ("price", "discount"),
         "quantity",
         ('power', 'bright'),
