@@ -51,6 +51,9 @@ class Order(models.Model):
     def __str__(self):
         return f"Заказ № {self.pk} | Покупатель {self.user.first_name} {self.user.last_name}"
     
+    def total_price(self):
+        return sum(item.product_price() for item in self.orderitem_set.all())
+    
 
 class OrderItem(models.Model):
     order = models.ForeignKey(to=Order, on_delete=models.CASCADE, default=1, verbose_name="Заказ")

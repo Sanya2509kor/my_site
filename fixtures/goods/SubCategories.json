@@ -250,5 +250,14 @@
             "slug": "soediniteli",
             "category": 24
         }
+    },
+    {
+        "model": "goods.subcategories",
+        "pk": 32,
+        "fields": {
+            "name": "Стабилы",
+            "slug": "stabily",
+            "category": 24
+        }
     }
 ]

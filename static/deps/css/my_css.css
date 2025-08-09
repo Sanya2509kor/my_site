@@ -1,5 +1,5 @@
 body {
-  /* background-image: url("../images/bg_image.jpg"); */
+  background-image: url("../images/bg-image.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
@@ -48,7 +48,10 @@ body {
 
 /* #646363;  4b4747 */
 @media (max-width: 992px) {
-    .dropdown-submenu ul {
+    body {
+      background-image: url("../images/bg-image1.jpg");
+    }
+      .dropdown-submenu ul {
         position: static;
         float: none;
         margin-left: 15px;

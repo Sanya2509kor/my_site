@@ -2072,7 +2072,7 @@
             "image_schem": "goods_images_schems/lzl_1.png.png",
             "price": "68.00",
             "discount": "0.00",
-            "quantity": 72,
+            "quantity": 63,
             "category": 16,
             "subcategory": 15,
             "bright": null,
@@ -11208,7 +11208,7 @@
             "description": "Люстра MX10005/4B",
             "color": "Белый",
             "size": "355*355*75 мм",
-            "image": "",
+            "image": "goods_images/sydnu5lmfhenm5i5aby0fczonmvrfx9t.webp",
             "image_schem": "",
             "price": "1000.00",
             "discount": "0.00",
@@ -12208,7 +12208,7 @@
             "description": "Платформа для люстр д. 200 Круглая",
             "color": "Белый",
             "size": null,
-            "image": "",
+            "image": "goods_images/tb98vl5ulic2n2zvhgdsv5uvla98okkj.webp",
             "image_schem": "",
             "price": "1000.00",
             "discount": "0.00",
@@ -15673,7 +15673,7 @@
             "price": "1000.00",
             "discount": "0.00",
             "quantity": 50,
-            "category": 20,
+            "category": 24,
             "subcategory": 24,
             "bright": null,
             "power": null
@@ -15693,7 +15693,7 @@
             "price": "1000.00",
             "discount": "0.00",
             "quantity": 50,
-            "category": 20,
+            "category": 24,
             "subcategory": 24,
             "bright": null,
             "power": null
@@ -15713,7 +15713,7 @@
             "price": "1000.00",
             "discount": "0.00",
             "quantity": 50,
-            "category": 20,
+            "category": 24,
             "subcategory": 24,
             "bright": null,
             "power": null
@@ -15733,7 +15733,7 @@
             "price": "1000.00",
             "discount": "0.00",
             "quantity": 50,
-            "category": 20,
+            "category": 24,
             "subcategory": 24,
             "bright": null,
             "power": null
@@ -15753,7 +15753,7 @@
             "price": "1000.00",
             "discount": "0.00",
             "quantity": 50,
-            "category": 20,
+            "category": 24,
             "subcategory": 24,
             "bright": null,
             "power": null
@@ -15773,7 +15773,7 @@
             "price": "1000.00",
             "discount": "0.00",
             "quantity": 50,
-            "category": 20,
+            "category": 24,
             "subcategory": 24,
             "bright": null,
             "power": null
@@ -15793,7 +15793,7 @@
             "price": "1000.00",
             "discount": "0.00",
             "quantity": 50,
-            "category": 20,
+            "category": 24,
             "subcategory": 24,
             "bright": null,
             "power": null
@@ -15813,7 +15813,7 @@
             "price": "1000.00",
             "discount": "0.00",
             "quantity": 50,
-            "category": 20,
+            "category": 24,
             "subcategory": 24,
             "bright": null,
             "power": null
@@ -15833,7 +15833,7 @@
             "price": "1000.00",
             "discount": "0.00",
             "quantity": 50,
-            "category": 20,
+            "category": 24,
             "subcategory": 24,
             "bright": null,
             "power": null
@@ -15853,7 +15853,7 @@
             "price": "1000.00",
             "discount": "0.00",
             "quantity": 50,
-            "category": 20,
+            "category": 24,
             "subcategory": 24,
             "bright": null,
             "power": null
@@ -15873,7 +15873,7 @@
             "price": "1000.00",
             "discount": "0.00",
             "quantity": 50,
-            "category": 20,
+            "category": 24,
             "subcategory": 24,
             "bright": null,
             "power": null
@@ -15893,7 +15893,7 @@
             "price": "1000.00",
             "discount": "0.00",
             "quantity": 50,
-            "category": 20,
+            "category": 24,
             "subcategory": 24,
             "bright": null,
             "power": null
@@ -15904,7 +15904,7 @@
         "pk": 819,
         "fields": {
             "name": "Сушилка для обуви",
-            "slug": "",
+            "slug": "sushilka",
             "description": "Сушилка для обуви",
             "color": "Черный",
             "size": null,
@@ -15913,7 +15913,7 @@
             "price": "1000.00",
             "discount": "0.00",
             "quantity": 50,
-            "category": 20,
+            "category": 24,
             "subcategory": 24,
             "bright": null,
             "power": null
@@ -15933,7 +15933,7 @@
             "price": "1000.00",
             "discount": "0.00",
             "quantity": 50,
-            "category": 20,
+            "category": 24,
             "subcategory": 24,
             "bright": null,
             "power": null
@@ -15953,7 +15953,7 @@
             "price": "1000.00",
             "discount": "0.00",
             "quantity": 50,
-            "category": 20,
+            "category": 24,
             "subcategory": 24,
             "bright": null,
             "power": null
@@ -15973,7 +15973,7 @@
             "price": "1000.00",
             "discount": "0.00",
             "quantity": 50,
-            "category": 20,
+            "category": 24,
             "subcategory": 24,
             "bright": null,
             "power": null
@@ -15993,7 +15993,7 @@
             "price": "1000.00",
             "discount": "0.00",
             "quantity": 50,
-            "category": 20,
+            "category": 24,
             "subcategory": 24,
             "bright": null,
             "power": null
@@ -16013,7 +16013,7 @@
             "price": "1000.00",
             "discount": "0.00",
             "quantity": 50,
-            "category": 20,
+            "category": 24,
             "subcategory": 24,
             "bright": null,
             "power": null
@@ -16033,7 +16033,7 @@
             "price": "1000.00",
             "discount": "0.00",
             "quantity": 50,
-            "category": 20,
+            "category": 24,
             "subcategory": 24,
             "bright": null,
             "power": null
@@ -16053,7 +16053,7 @@
             "price": "1000.00",
             "discount": "0.00",
             "quantity": 50,
-            "category": 20,
+            "category": 24,
             "subcategory": 24,
             "bright": null,
             "power": null
@@ -16073,7 +16073,7 @@
             "price": "1000.00",
             "discount": "0.00",
             "quantity": 50,
-            "category": 20,
+            "category": 24,
             "subcategory": 24,
             "bright": null,
             "power": null
@@ -16093,7 +16093,7 @@
             "price": "1000.00",
             "discount": "0.00",
             "quantity": 50,
-            "category": 20,
+            "category": 24,
             "subcategory": 24,
             "bright": null,
             "power": null
@@ -16113,7 +16113,7 @@
             "price": "1000.00",
             "discount": "0.00",
             "quantity": 50,
-            "category": 20,
+            "category": 24,
             "subcategory": 24,
             "bright": null,
             "power": null
@@ -16133,7 +16133,7 @@
             "price": "1000.00",
             "discount": "0.00",
             "quantity": 50,
-            "category": 20,
+            "category": 24,
             "subcategory": 24,
             "bright": null,
             "power": null
@@ -16153,7 +16153,7 @@
             "price": "1000.00",
             "discount": "0.00",
             "quantity": 50,
-            "category": 20,
+            "category": 24,
             "subcategory": 24,
             "bright": null,
             "power": null
@@ -16173,7 +16173,7 @@
             "price": "1000.00",
             "discount": "0.00",
             "quantity": 50,
-            "category": 20,
+            "category": 24,
             "subcategory": 24,
             "bright": null,
             "power": null
@@ -16193,7 +16193,7 @@
             "price": "1000.00",
             "discount": "0.00",
             "quantity": 50,
-            "category": 20,
+            "category": 24,
             "subcategory": 24,
             "bright": null,
             "power": null
@@ -16213,7 +16213,7 @@
             "price": "1000.00",
             "discount": "0.00",
             "quantity": 50,
-            "category": 20,
+            "category": 24,
             "subcategory": 24,
             "bright": null,
             "power": null
@@ -16233,7 +16233,7 @@
             "price": "1000.00",
             "discount": "0.00",
             "quantity": 50,
-            "category": 20,
+            "category": 24,
             "subcategory": 24,
             "bright": null,
             "power": null
@@ -16253,7 +16253,7 @@
             "price": "1000.00",
             "discount": "0.00",
             "quantity": 50,
-            "category": 20,
+            "category": 24,
             "subcategory": 24,
             "bright": null,
             "power": null
@@ -16273,7 +16273,7 @@
             "price": "1000.00",
             "discount": "0.00",
             "quantity": 50,
-            "category": 20,
+            "category": 24,
             "subcategory": 24,
             "bright": null,
             "power": null
@@ -16293,7 +16293,7 @@
             "price": "1000.00",
             "discount": "0.00",
             "quantity": 50,
-            "category": 20,
+            "category": 24,
             "subcategory": 24,
             "bright": null,
             "power": null
@@ -16335,6 +16335,2506 @@
             "quantity": 50,
             "category": 20,
             "subcategory": 25,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 841,
+        "fields": {
+            "name": "Вставка TА",
+            "slug": "t--150",
+            "description": "Вставка TА",
+            "color": "Белый",
+            "size": "150 м",
+            "image": "goods_images/1_3hg8ZsC.jpg",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 26,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 842,
+        "fields": {
+            "name": "Вставка Т",
+            "slug": "--150-9",
+            "description": "Вставка Т",
+            "color": "Черный",
+            "size": "150 м",
+            "image": "goods_images/2_CxHXEah.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 26,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 843,
+        "fields": {
+            "name": "Вставка T",
+            "slug": "t--150-1",
+            "description": "Вставка T",
+            "color": "Белый",
+            "size": "150 м",
+            "image": "goods_images/3_ApjBY75.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 26,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 844,
+        "fields": {
+            "name": "Вставка TL 3",
+            "slug": "tl-3--150",
+            "description": "Вставка TL 3",
+            "color": "Черный",
+            "size": "150 м",
+            "image": "goods_images/4_5jErmdi.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 26,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 845,
+        "fields": {
+            "name": "Вставка ТL 2",
+            "slug": "l-2--150",
+            "description": "Вставка ТL 2",
+            "color": "Белый",
+            "size": "150 м",
+            "image": "goods_images/5_ILUQejd.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 26,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 846,
+        "fields": {
+            "name": "Вставка ПРЕМИУМ ТL 5",
+            "slug": "l-5--150",
+            "description": "Вставка ПРЕМИУМ ТL 5",
+            "color": "Белый",
+            "size": "150 м",
+            "image": "goods_images/6_KkXmbPu.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 26,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 847,
+        "fields": {
+            "name": "Вставка ПРЕМИУМ ТL 3",
+            "slug": "l-3--150",
+            "description": "Вставка ПРЕМИУМ ТL 3",
+            "color": "Белый",
+            "size": "150 м",
+            "image": "goods_images/7_CYPYSRP.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 26,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 848,
+        "fields": {
+            "name": "Вставка ПРЕМИУМ ТL 5",
+            "slug": "l-5--150-1",
+            "description": "Вставка ПРЕМИУМ ТL 5",
+            "color": "Черный",
+            "size": "150 м",
+            "image": "goods_images/8_zlryPTk.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 26,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 849,
+        "fields": {
+            "name": "Вставка SL",
+            "slug": "sl--150",
+            "description": "Вставка SL",
+            "color": "Белый",
+            "size": "150 м",
+            "image": "goods_images/9_TSRWFyk.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 26,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 850,
+        "fields": {
+            "name": "Вставка TL 2",
+            "slug": "tl-2--150",
+            "description": "Вставка TL 2",
+            "color": "Черный",
+            "size": "150 м",
+            "image": "goods_images/10_DvHjDCx.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 26,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 851,
+        "fields": {
+            "name": "Гарпун У1",
+            "slug": "1--200",
+            "description": "Гарпун У1",
+            "color": "Белый",
+            "size": "200 м",
+            "image": "goods_images/11_UskLCVS.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 26,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 852,
+        "fields": {
+            "name": "Гарпун Г1",
+            "slug": "1--200-1",
+            "description": "Гарпун Г1",
+            "color": "Белый",
+            "size": "200 м",
+            "image": "goods_images/12_FWqtIh8.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 26,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 853,
+        "fields": {
+            "name": "Гарпун C 1",
+            "slug": "c-1--200",
+            "description": "Гарпун C 1",
+            "color": "Белый",
+            "size": "200 м",
+            "image": "goods_images/13_a1rMtEm.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 26,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 854,
+        "fields": {
+            "name": "Гарпун C 1",
+            "slug": "c-1--200-1",
+            "description": "Гарпун C 1",
+            "color": "Черный",
+            "size": "200 м",
+            "image": "goods_images/14_eSas7wz.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 26,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 855,
+        "fields": {
+            "name": "Гарпун C 1 зеркальный",
+            "slug": "c-1--200-2",
+            "description": "Гарпун C 1 зеркальный",
+            "color": "Серый",
+            "size": "200 м",
+            "image": "goods_images/1_iy795Pq.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 26,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 856,
+        "fields": {
+            "name": "Вставка в разделитель 12 мм.",
+            "slug": "12--150",
+            "description": "Вставка в разделитель 12 мм.",
+            "color": "Белый",
+            "size": "150 м",
+            "image": "goods_images/2_yBLvZWc.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 26,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 857,
+        "fields": {
+            "name": "Вставка ПРЕМИУМ ТL 3",
+            "slug": "l-3--150-1",
+            "description": "Вставка ПРЕМИУМ ТL 3",
+            "color": "Черный",
+            "size": "150 м",
+            "image": "goods_images/3_Lj7rHIO.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 26,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 858,
+        "fields": {
+            "name": "Вставка ТL 3",
+            "slug": "l-3--150-2",
+            "description": "Вставка ТL 3",
+            "color": "Белый",
+            "size": "150 м",
+            "image": "goods_images/4_I8E2ycp.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 26,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 859,
+        "fields": {
+            "name": "Вставка ТL 5",
+            "slug": "l-5--150-2",
+            "description": "Вставка ТL 5",
+            "color": "Белый",
+            "size": "150 м",
+            "image": "goods_images/5_NiHZkl9.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 26,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 860,
+        "fields": {
+            "name": "Вставка SL",
+            "slug": "sl--150-1",
+            "description": "Вставка SL",
+            "color": "Черный",
+            "size": "150 м",
+            "image": "goods_images/6_WIHaXZi.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 26,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 861,
+        "fields": {
+            "name": "Вставка в разделитель 11 мм.",
+            "slug": "11--150",
+            "description": "Вставка в разделитель 11 мм.",
+            "color": "Белый",
+            "size": "150 м",
+            "image": "goods_images/7_EiXjZ2L.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 26,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 862,
+        "fields": {
+            "name": "Гарпун ПРЕМИУМ У 1",
+            "slug": "1--200-2",
+            "description": "Гарпун ПРЕМИУМ У 1",
+            "color": "Белый",
+            "size": "200 м",
+            "image": "goods_images/8_6FcWfv2.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 26,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 863,
+        "fields": {
+            "name": "Гарпун ПРЕМИУМ C 1",
+            "slug": "c-1--200-3",
+            "description": "Гарпун ПРЕМИУМ C 1",
+            "color": "Белый",
+            "size": "200 м",
+            "image": "goods_images/9_nOTvpvz.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 26,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 864,
+        "fields": {
+            "name": "Вставка ПРЕМИУМ МАТОВАЯ ТL 5",
+            "slug": "l-5--150-3",
+            "description": "Вставка ПРЕМИУМ МАТОВАЯ ТL 5",
+            "color": "Черный",
+            "size": "150 м",
+            "image": "goods_images/10_OiAzXvZ.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 26,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 865,
+        "fields": {
+            "name": "Вставка ПРЕМИУМ МАТОВАЯ ТL 3",
+            "slug": "l-3--150-3",
+            "description": "Вставка ПРЕМИУМ МАТОВАЯ ТL 3",
+            "color": "Черный",
+            "size": "150 м",
+            "image": "goods_images/11_pzxAMz1.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 26,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 866,
+        "fields": {
+            "name": "Вставка ПРЕМИУМ Т",
+            "slug": "--150-10",
+            "description": "Вставка ПРЕМИУМ Т",
+            "color": "Черный",
+            "size": "150 м",
+            "image": "goods_images/12_1dzigYo.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 26,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 867,
+        "fields": {
+            "name": "Гарпун N",
+            "slug": "n--200",
+            "description": "Гарпун N",
+            "color": "Белый",
+            "size": "200 м",
+            "image": "goods_images/13_azenWqN.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 26,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 868,
+        "fields": {
+            "name": "Гарпун У1",
+            "slug": "1--200-3",
+            "description": "Гарпун У1",
+            "color": "Черный",
+            "size": "200 м",
+            "image": "goods_images/14_QYpyABV.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 26,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 869,
+        "fields": {
+            "name": "Гарпун У1, Унив-ный (зеркальный)",
+            "slug": "1--200-4",
+            "description": "Гарпун У1, Унив-ный (зеркальный)",
+            "color": "Белый",
+            "size": "200 м",
+            "image": "goods_images/15_C97xVdb.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 26,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 870,
+        "fields": {
+            "name": "Гарпун LS",
+            "slug": "ls--200",
+            "description": "Гарпун LS",
+            "color": "Черный",
+            "size": "200 м",
+            "image": "goods_images/16_zIKZdm3.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 26,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 871,
+        "fields": {
+            "name": "Гарпун LS",
+            "slug": "ls--200-1",
+            "description": "Гарпун LS",
+            "color": "Серый",
+            "size": "200 м",
+            "image": "goods_images/17_43pTngS.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 26,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 872,
+        "fields": {
+            "name": "Гарпун C 1",
+            "slug": "c-1--200-4",
+            "description": "Гарпун C 1",
+            "color": "Серый",
+            "size": "200 м",
+            "image": "goods_images/18_Rx8VF1X.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 26,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 873,
+        "fields": {
+            "name": "Пульт EXPERT 2-х канальный",
+            "slug": "expert-2",
+            "description": "Пульт EXPERT 2-х канальный",
+            "color": null,
+            "size": null,
+            "image": "goods_images/1_147xtZS.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 25,
+            "subcategory": null,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 874,
+        "fields": {
+            "name": "Блок питания с кулером",
+            "slug": "--2236740",
+            "description": "Блок питания с кулером",
+            "color": null,
+            "size": "223*67*40 мм",
+            "image": "goods_images/2_4B6bD53.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 25,
+            "subcategory": null,
+            "bright": null,
+            "power": "300 W"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 875,
+        "fields": {
+            "name": "Блок питания",
+            "slug": "--2236740-1",
+            "description": "Блок питания",
+            "color": null,
+            "size": "223*67*40 мм",
+            "image": "goods_images/3_gYX7yH6.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 25,
+            "subcategory": null,
+            "bright": null,
+            "power": "200W"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 876,
+        "fields": {
+            "name": "Блок питания с кулером",
+            "slug": "--22055113",
+            "description": "Блок питания с кулером",
+            "color": null,
+            "size": "220*55*113 мм",
+            "image": "goods_images/4_V1WfuGZ.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 25,
+            "subcategory": null,
+            "bright": null,
+            "power": "350W"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 877,
+        "fields": {
+            "name": "Блок питания",
+            "slug": "--855840",
+            "description": "Блок питания",
+            "color": null,
+            "size": "85*58*40 мм",
+            "image": "goods_images/5_jt0ioIi.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 25,
+            "subcategory": null,
+            "bright": null,
+            "power": "25W"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 878,
+        "fields": {
+            "name": "Пульт STANDARD 3-х канальный",
+            "slug": "standard-3",
+            "description": "Пульт STANDARD 3-х канальный",
+            "color": null,
+            "size": null,
+            "image": "goods_images/6_6bAefAo.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 25,
+            "subcategory": null,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 879,
+        "fields": {
+            "name": "Пульт STANDARD 2-х канальный",
+            "slug": "standard-2",
+            "description": "Пульт STANDARD 2-х канальный",
+            "color": null,
+            "size": null,
+            "image": "goods_images/7_bJQnAfo.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 25,
+            "subcategory": null,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 880,
+        "fields": {
+            "name": "Пульт PROFI 4-х канальный",
+            "slug": "profi-4",
+            "description": "Пульт PROFI 4-х канальный",
+            "color": null,
+            "size": null,
+            "image": "goods_images/8_0tuvKzg.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 25,
+            "subcategory": null,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 881,
+        "fields": {
+            "name": "Пульт PROFI 3-х канальный",
+            "slug": "profi-3",
+            "description": "Пульт PROFI 3-х канальный",
+            "color": null,
+            "size": null,
+            "image": "goods_images/9_ZJPXdpr.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 25,
+            "subcategory": null,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 882,
+        "fields": {
+            "name": "Пульт PROFI 2-х канальный",
+            "slug": "profi-2",
+            "description": "Пульт PROFI 2-х канальный",
+            "color": null,
+            "size": null,
+            "image": "goods_images/10_cZF63aB.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 25,
+            "subcategory": null,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 883,
+        "fields": {
+            "name": "Пульт EXPERT 3-х канальный",
+            "slug": "expert-3",
+            "description": "Пульт EXPERT 3-х канальный",
+            "color": null,
+            "size": null,
+            "image": "goods_images/11_GpiA1El.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 25,
+            "subcategory": null,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 884,
+        "fields": {
+            "name": "COLIBRI SMART Конвертер WI-FI для трековой системы",
+            "slug": "colibri-smart-wi-fi-1",
+            "description": "COLIBRI SMART Конвертер WI-FI для трековой системы",
+            "color": null,
+            "size": null,
+            "image": "goods_images/12_PLoBNvp.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 25,
+            "subcategory": null,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 885,
+        "fields": {
+            "name": "COLIBRI Пульт для управления смарт системы",
+            "slug": "colibri-5",
+            "description": "COLIBRI Пульт для управления смарт системы",
+            "color": "Черный",
+            "size": null,
+            "image": "goods_images/13_1s800ik.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 25,
+            "subcategory": null,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 886,
+        "fields": {
+            "name": "COLIBRI Пульт для управления смарт системы",
+            "slug": "colibri-6",
+            "description": "COLIBRI Пульт для управления смарт системы",
+            "color": "Белый",
+            "size": null,
+            "image": "goods_images/14_ORvATyo.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 25,
+            "subcategory": null,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 887,
+        "fields": {
+            "name": "COLIBRI SMART Панель управления для трековой системы",
+            "slug": "colibri-smart-2",
+            "description": "COLIBRI SMART Панель управления для трековой системы",
+            "color": "Черный",
+            "size": null,
+            "image": "goods_images/15_Jide39t.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 25,
+            "subcategory": null,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 888,
+        "fields": {
+            "name": "COLIBRI SMART Панель управления для трековой системы",
+            "slug": "colibri-smart-3",
+            "description": "COLIBRI SMART Панель управления для трековой системы",
+            "color": "Белый",
+            "size": null,
+            "image": "goods_images/1_kwnc7xO.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 25,
+            "subcategory": null,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 889,
+        "fields": {
+            "name": "Пульт EXPERT 2-х канальный",
+            "slug": "expert-2-1",
+            "description": "Пульт EXPERT 2-х канальный",
+            "color": null,
+            "size": null,
+            "image": "goods_images/2_9Del7uH.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 25,
+            "subcategory": null,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 890,
+        "fields": {
+            "name": "Пульт STANDARD 3-х канальный",
+            "slug": "standard-3-1",
+            "description": "Пульт STANDARD 3-х канальный",
+            "color": null,
+            "size": null,
+            "image": "goods_images/3_kI7sKAu.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 25,
+            "subcategory": null,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 891,
+        "fields": {
+            "name": "Пульт STANDARD 2-х канальный",
+            "slug": "standard-2-1",
+            "description": "Пульт STANDARD 2-х канальный",
+            "color": null,
+            "size": null,
+            "image": "goods_images/4_UaOfedY.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 25,
+            "subcategory": null,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 892,
+        "fields": {
+            "name": "Пульт PROFI 4-х канальный",
+            "slug": "profi-4-1",
+            "description": "Пульт PROFI 4-х канальный",
+            "color": null,
+            "size": null,
+            "image": "goods_images/5_fOAg559.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 25,
+            "subcategory": null,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 893,
+        "fields": {
+            "name": "Пульт PROFI 3-х канальный",
+            "slug": "profi-3-1",
+            "description": "Пульт PROFI 3-х канальный",
+            "color": null,
+            "size": null,
+            "image": "goods_images/6_6XBY0ew.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 25,
+            "subcategory": null,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 894,
+        "fields": {
+            "name": "Пульт PROFI 2-х канальный",
+            "slug": "profi-2-1",
+            "description": "Пульт PROFI 2-х канальный",
+            "color": null,
+            "size": null,
+            "image": "goods_images/7_HZ76FSR.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 25,
+            "subcategory": null,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 895,
+        "fields": {
+            "name": "Пульт EXPERT 3-х канальный",
+            "slug": "expert-3-1",
+            "description": "Пульт EXPERT 3-х канальный",
+            "color": null,
+            "size": null,
+            "image": "goods_images/8_VegOW56.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 25,
+            "subcategory": null,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 896,
+        "fields": {
+            "name": "Клемма 3х(0.08-2.5(4.0)), 32А",
+            "slug": "3008-2540-32",
+            "description": "Клемма 3х(0.08-2.5(4.0)), 32А",
+            "color": null,
+            "size": null,
+            "image": "goods_images/9_mkFungm.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 25,
+            "subcategory": null,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 897,
+        "fields": {
+            "name": "Клемма 2х(0.08-2.5(4.0)), 32А",
+            "slug": "2008-2540-32",
+            "description": "Клемма 2х(0.08-2.5(4.0)), 32А",
+            "color": null,
+            "size": null,
+            "image": "goods_images/10_ANe7aZ6.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 25,
+            "subcategory": null,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 898,
+        "fields": {
+            "name": "Разделительная вставка Flexy PVC 8",
+            "slug": "flexy-pvc-8--8",
+            "description": "Разделительная вставка Flexy PVC 8 для профилей STANDART 01, STANDART 03, STANDART02 60 LED, STANDART02 80 LED, GARDINA2 05, BRUS 03, ECOVENT 01.",
+            "color": "Белый",
+            "size": "8 мм",
+            "image": "goods_images/7_ZQG2Odc.webp",
+            "image_schem": "goods_images_schems/PVC_8__1.png.webp",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 26,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 899,
+        "fields": {
+            "name": "Светорассеивающая вставка Flexy PVC 10",
+            "slug": "flexy-pvc-10--120-130",
+            "description": "Светорассеивающая вставка Flexy PVC 10 для профиля GIPS PLINTUS 01.",
+            "color": null,
+            "size": "120 мм / 130 мм",
+            "image": "goods_images/1_S4to5Dn.jpg",
+            "image_schem": "goods_images_schems/2.png",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 26,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 900,
+        "fields": {
+            "name": "Светорассеивающая вставка Flexy PVC 15",
+            "slug": "flexy-pvc-15--120-130",
+            "description": "Светорассеивающая вставка Flexy PVC 15 для профилей LED 01, LED 02, LED 03, STANDART01 60 LED, STANDART01 80 LED, STANDART02 60 LED, STANDART02 80 LED, GARDINA2 05, LINE 15, IZI KARNIZ2 05.",
+            "color": null,
+            "size": "120 мм / 130 мм",
+            "image": "goods_images/3_THTsSTg.webp",
+            "image_schem": "goods_images_schems/4.png",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 26,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 901,
+        "fields": {
+            "name": "Светорассеивающая вставка Flexy PVC 30",
+            "slug": "flexy-pvc-30--30-500",
+            "description": "Светорассеивающая вставка Flexy PVC 30 для профилей LINE 30, LINE 30 M, LINE SLIM 30.",
+            "color": null,
+            "size": "30 мм*500 мм",
+            "image": "goods_images/5.1.jpg",
+            "image_schem": "goods_images_schems/5.2.png",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 26,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 902,
+        "fields": {
+            "name": "Светорассеивающая вставка Flexy PVC FLY 15",
+            "slug": "flexy-pvc-fly-15--15-120-130",
+            "description": "Светорассеивающая вставка Flexy PVC FLY 15 для профилей FLY 01, FLY 02, GIPS FLY 01, GIPS FLY 02.",
+            "color": null,
+            "size": "15 мм*120 мм / 130 мм",
+            "image": "goods_images/6.1.webp",
+            "image_schem": "goods_images_schems/6.2.png",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 26,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 903,
+        "fields": {
+            "name": "Вставка Flexy PVC BRUS 02",
+            "slug": "flexy-pvc-brus-02--30-500",
+            "description": "Вставка Flexy PVC BRUS 02 для профиля BRUS 02.",
+            "color": null,
+            "size": "30 мм*500 мм",
+            "image": "goods_images/7.1.jpg",
+            "image_schem": "goods_images_schems/7.2.png",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 26,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 904,
+        "fields": {
+            "name": "Flexy NAGUBNIK 01",
+            "slug": "flexy-nagubnik-01",
+            "description": "Пластиковый профиль круглого сечения Flexy NAGUBNIK 01 для защиты полотна от острых и напиленных граней для профиля KONTUR 01.",
+            "color": null,
+            "size": null,
+            "image": "goods_images/8.jpg",
+            "image_schem": "goods_images_schems/9.webp",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 26,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 905,
+        "fields": {
+            "name": "UGOLOK 01",
+            "slug": "ugolok-01--354090",
+            "description": "Монтажный уголок Flexy UGOLOK 01 для крепления профиля к потоку для профилей STANDART 01, STANDART 03, GARDINA2 05, SHTORKA 01, BRUS 03, IZI KARNIZ2 05, IZI KARNIZ 01.",
+            "color": null,
+            "size": "35х40х90 мм",
+            "image": "goods_images/1_M9k5Hm2.jpg",
+            "image_schem": "goods_images_schems/2_6g2wEKh.png",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 24,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 906,
+        "fields": {
+            "name": "05Lset",
+            "slug": "05lset--4040115",
+            "description": "Пластина угловая горизонтальная для соединения профилей FlexyPRO под углом 90 гр.",
+            "color": null,
+            "size": "40х40х1,15 мм",
+            "image": "goods_images/3_DAvy983.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 37,
+            "category": 24,
+            "subcategory": 24,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 907,
+        "fields": {
+            "name": "Саморезы",
+            "slug": "--2915",
+            "description": "Саморезы М2,9х15.",
+            "color": "Белый",
+            "size": "М2,9х15",
+            "image": "goods_images/4.jpg",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 24,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 908,
+        "fields": {
+            "name": "SCREEN 8",
+            "slug": "screen-8--8",
+            "description": "Светорассеивающий экран Flexy SCREEN 8 для профилей GIPS LINE 8, IZI LINE 8.",
+            "color": null,
+            "size": "8 мм",
+            "image": "goods_images/5.jpg",
+            "image_schem": "goods_images_schems/6.png",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 27,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 909,
+        "fields": {
+            "name": "SCREEN 14",
+            "slug": "screen-14--14",
+            "description": "Светорассеивающий экран Flexy SCREEN 14 для профилей LED 01, LED 02, LED 03, STANDART01 60 LED, STANDART01 80 LED, STANDART02 60 LED, STANDART02 80 LED, GARDINA2 05, LINE 15, IZI KARNIZ2 05.",
+            "color": null,
+            "size": "14 мм",
+            "image": "goods_images/7_rRWrqCY.webp",
+            "image_schem": "goods_images_schems/8.webp",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 27,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 910,
+        "fields": {
+            "name": "SCREEN 30",
+            "slug": "screen-30--30",
+            "description": "Светорассеивающий экран Flexy SCREEN 30 для профилей LINE 30, LINE 30 M, LINE SLIM 30.",
+            "color": "Черный",
+            "size": "30 мм",
+            "image": "goods_images/9.jpg",
+            "image_schem": "goods_images_schems/10.png",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 27,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 911,
+        "fields": {
+            "name": "SCREEN 34",
+            "slug": "screen-34--34",
+            "description": "Светорассеивающий экран Flexy SCREEN 34 для профилей TREK 01, GIPS KONTUR 01, GIPS LINE 35.",
+            "color": "Черный",
+            "size": "34 мм",
+            "image": "goods_images/11.jpg",
+            "image_schem": "goods_images_schems/12.png",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 27,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 912,
+        "fields": {
+            "name": "SCREEN 50",
+            "slug": "screen-50--50",
+            "description": "Светорассеивающий экран Flexy SCREEN 50 для профилей LINE 50, SVET 50, GIPS LINE 50.",
+            "color": "Черный",
+            "size": "50 мм",
+            "image": "goods_images/13.jpg",
+            "image_schem": "goods_images_schems/14.png",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 27,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 913,
+        "fields": {
+            "name": "BEGUNKI 01",
+            "slug": "begunki-01",
+            "description": "Тихие крючки для профилей GARDINA2 01, GARDINA2 02, GARDINA3 03, GARDINA3 04, SHTORKA 01.",
+            "color": null,
+            "size": null,
+            "image": "goods_images/15_TTE51rf.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 47,
+            "category": 24,
+            "subcategory": 29,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 914,
+        "fields": {
+            "name": "GLIDER 01",
+            "slug": "glider-01",
+            "description": "Крючки для профилей GARDINA2 05, IZI KARNIZ2 05.",
+            "color": null,
+            "size": null,
+            "image": "goods_images/1_xJpLgk2.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 29,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 915,
+        "fields": {
+            "name": "SoMFY 01",
+            "slug": "somfy-01",
+            "description": "Крючки для профиля IZI KARNIZ 01.",
+            "color": null,
+            "size": null,
+            "image": "goods_images/2_7aMSQxg.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 29,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 916,
+        "fields": {
+            "name": "NANO 01",
+            "slug": "nano-01",
+            "description": "Крючки для профилей GARDINA2 05, IZI KARNIZ2 05.",
+            "color": null,
+            "size": null,
+            "image": "goods_images/3_mtw3HTc.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 29,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 917,
+        "fields": {
+            "name": "STOPOR 01",
+            "slug": "stopor-01",
+            "description": "Стопоры для крючков.",
+            "color": null,
+            "size": null,
+            "image": "goods_images/4_JXBOUfW.jpg",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 29,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 918,
+        "fields": {
+            "name": "TOREC GARDINA2 05 + EURO 05",
+            "slug": "torec-gardina2-05-euro-05--1",
+            "description": "Предназначена для стыковки с теневым профилем EURO 05 с сохранением единого теневого зазора",
+            "color": "Черный муар",
+            "size": "1 мм",
+            "image": "goods_images/5_MZyfa4b.jpg",
+            "image_schem": "goods_images_schems/6_L0cL2HR.png",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 28,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 919,
+        "fields": {
+            "name": "TOREC LINE 15",
+            "slug": "torec-line-15--3",
+            "description": "торцевая заглушка Flexy TOREC LINE 15 для отсечения границы световой линии для профиля LINE 15.",
+            "color": "Белый",
+            "size": "3 мм",
+            "image": "goods_images/7.jpg",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 28,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 920,
+        "fields": {
+            "name": "TOREC LINE 30",
+            "slug": "torec-line-30--3",
+            "description": "Торцевая заглушка Flexy TOREC LINE 30 для отсечения границы световой линии для профиля LINE 30.",
+            "color": "Черный",
+            "size": "3 мм",
+            "image": "goods_images/8_h0hPtqE.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 28,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 921,
+        "fields": {
+            "name": "TOREC LINE 30 M",
+            "slug": "torec-line-30-m--3",
+            "description": "Торцевой элемент для профиля LINE 30 М",
+            "color": "Черный",
+            "size": "3 мм",
+            "image": "goods_images/9_SVOQD9f.jpg",
+            "image_schem": "goods_images_schems/10_EWgz7wU.png",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 28,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 922,
+        "fields": {
+            "name": "TOREC SLIM 30",
+            "slug": "torec-slim-30",
+            "description": "Торцевая заглушка Flexy TOREC SLIM 30 для отсечения границы световой линии для профиля LINE SLIM 30.",
+            "color": null,
+            "size": null,
+            "image": "goods_images/11_gidOjx5.jpg",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 28,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 923,
+        "fields": {
+            "name": "TOREC line 50",
+            "slug": "torec-line-50--3",
+            "description": "Торцевая заглушка Flexy TOREC LINE 50 для отсечения границы световой линии для профиля LINE 50.",
+            "color": "Черный",
+            "size": "3 мм",
+            "image": "goods_images/12.jpg",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 28,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 924,
+        "fields": {
+            "name": "TOREC line 50 W",
+            "slug": "torec-line-50-w",
+            "description": "Торцевая заглушка Flexy TOREC LINE 50 W для отсечения границы световой линии для профиля LINE 50.",
+            "color": null,
+            "size": null,
+            "image": "goods_images/1_ZQ9YXFf.jpg",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 28,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 925,
+        "fields": {
+            "name": "TOREC SVET 30",
+            "slug": "torec-svet-30--1",
+            "description": "Торцевая заглушка Flexy TOREC SVET 30 для отсечения границы световой линии для профиля SVET 30.",
+            "color": "Черный муар",
+            "size": "1 мм",
+            "image": "goods_images/2.jpg",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 28,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 926,
+        "fields": {
+            "name": "TOREC SVET 50",
+            "slug": "torec-svet-50--1",
+            "description": "Торцевая заглушка Flexy TOREC SVET 50 для отсечения границы световой линии для профиля SVET 50.",
+            "color": "Черный муар",
+            "size": "1 мм",
+            "image": "goods_images/3.jpg",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 28,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 927,
+        "fields": {
+            "name": "TOREC TREK 01",
+            "slug": "torec-trek-01--3",
+            "description": "Торцевая заглушка Flexy TOREC TREK 01 для профиля TREK 01.",
+            "color": "Черный",
+            "size": "3 мм",
+            "image": "goods_images/3_Pw2jEHt.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 28,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 928,
+        "fields": {
+            "name": "TOREC TREK 02",
+            "slug": "torec-trek-02--3",
+            "description": "Торцевая заглушка Flexy TOREC TREK 02 для профиля TREK 02.",
+            "color": "Черный",
+            "size": "3 мм",
+            "image": "goods_images/4_rvKQZyI.jpg",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 28,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 929,
+        "fields": {
+            "name": "TOREC TREK 04",
+            "slug": "torec-trek-04--3",
+            "description": "Торцевая заглушка для профиля TREK 04.",
+            "color": "Черный муар",
+            "size": "3 мм",
+            "image": "goods_images/5_rCb8OkR.jpg",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 28,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 930,
+        "fields": {
+            "name": "TOREC TREK 05",
+            "slug": "torec-trek-05--3",
+            "description": "Торцевая заглушка для профиля TREK 05",
+            "color": "Черный муар",
+            "size": "3 мм",
+            "image": "goods_images/6.jpg",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 28,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 931,
+        "fields": {
+            "name": "TOREC TREK 06",
+            "slug": "torec-trek-06--1",
+            "description": "Торцевая заглушка для профиля TREK 06.",
+            "color": "Черный муар",
+            "size": "1 мм",
+            "image": "goods_images/7_Hm59QNb.jpg",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 28,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 932,
+        "fields": {
+            "name": "TOREC GIPS KONTUR 01 IN",
+            "slug": "torec-gips-kontur-01-in--1",
+            "description": "Торцевая заглушка Flexy TOREC GIPS KONTUR 01 IN для профиля GIPS KONTUR 01.",
+            "color": null,
+            "size": "1 мм",
+            "image": "goods_images/8_1KzJmOk.jpg",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 28,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 933,
+        "fields": {
+            "name": "TOREC GIPS KONTUR 01",
+            "slug": "torec-gips-kontur-01--1",
+            "description": "Торцевая заглушка Flexy TOREC GIPS KONTUR 01 для профиля GIPS KONTUR 01.",
+            "color": null,
+            "size": "1 мм",
+            "image": "goods_images/9_WNvU3Xe.jpg",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 28,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 934,
+        "fields": {
+            "name": "TOREC GIPS LINE 8",
+            "slug": "torec-gips-line-8--3",
+            "description": "Торцевая заглушка Flexy TOREC GIPS LINE 8 для световой линии профиля GIPS LINE 8.",
+            "color": "Черный",
+            "size": "3 мм",
+            "image": "goods_images/10.jpg",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 28,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 935,
+        "fields": {
+            "name": "TOREC GIPS LINE 35 IN",
+            "slug": "torec-gips-line-35-in--1",
+            "description": "Торцевая заглушка Flexy TOREC GIPS LINE 35 IN для профиля GIPS LINE 35.",
+            "color": null,
+            "size": "1 мм",
+            "image": "goods_images/11_g3k9GWq.jpg",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 28,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 936,
+        "fields": {
+            "name": "TOREC GIPS LINE 35",
+            "slug": "torec-gips-line-35--1",
+            "description": "Торцевая заглушка Flexy TOREC GIPS LINE 35 для профиля GIPS LINE 35.",
+            "color": null,
+            "size": "1 мм",
+            "image": "goods_images/12_BTp1F6z.jpg",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 28,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 937,
+        "fields": {
+            "name": "TOREC GIPS LINE 50 in",
+            "slug": "torec-gips-line-50-in--1",
+            "description": "Торцевая заглушка Flexy TOREC GIPS LINE 50 IN для профиля GIPS LINE 50.",
+            "color": null,
+            "size": "1 мм",
+            "image": "goods_images/13_jucj9j8.jpg",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 28,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 938,
+        "fields": {
+            "name": "TOREC GIPS LINE 35 IN",
+            "slug": "torec-gips-line-35-in--1-1",
+            "description": "Торцевая заглушка Flexy TOREC GIPS LINE 35 IN для профиля GIPS LINE 35.",
+            "color": null,
+            "size": "1 мм",
+            "image": "goods_images/1_ZHpapIQ.jpg",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 28,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 939,
+        "fields": {
+            "name": "TOREC IZI EURO 04",
+            "slug": "torec-izi-euro-04--3",
+            "description": "Торцевой элемент для профиля IZI EURO 04.",
+            "color": "Черный",
+            "size": "3 мм",
+            "image": "goods_images/2_V6vbEG4.jpg",
+            "image_schem": "goods_images_schems/3.png",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 28,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 940,
+        "fields": {
+            "name": "TOREC IZI KARNIZ2 05",
+            "slug": "torec-izi-karniz2-05",
+            "description": "Торцевой элемент для профиля IZI KARNIZ2 05.",
+            "color": "Черный муар",
+            "size": null,
+            "image": "goods_images/4_Mhtbzjd.webp",
+            "image_schem": "goods_images_schems/5.png",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 28,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 941,
+        "fields": {
+            "name": "TOREC IZI KARNIZ 01",
+            "slug": "torec-izi-karniz-01",
+            "description": "Торцевой элемент для профиля IZI KARNIZ 01.",
+            "color": "Черный муар",
+            "size": null,
+            "image": "goods_images/7_eYUy9in.webp",
+            "image_schem": "goods_images_schems/8_hw7Y6qh.webp",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 28,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 942,
+        "fields": {
+            "name": "TOREC IZI LINE 8",
+            "slug": "torec-izi-line-8",
+            "description": "Торцевой элемент для профиля IZI LINE 8.",
+            "color": "Черный муар",
+            "size": null,
+            "image": "goods_images/9_2YNkfyc.webp",
+            "image_schem": "goods_images_schems/10_CsxDhYW.png",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 28,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 943,
+        "fields": {
+            "name": "TOREC ECOVENT 01",
+            "slug": "torec-ecovent-01",
+            "description": "Торцевой элемент для профиля ECOVENT 01.",
+            "color": null,
+            "size": null,
+            "image": "goods_images/11_rgPPhYT.jpg",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 28,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 944,
+        "fields": {
+            "name": "TOREC IZI COMPAQ 01",
+            "slug": "torec-izi-compaq-01",
+            "description": "Торцевой элемент для профиля IZI COMPAQ 01.",
+            "color": null,
+            "size": null,
+            "image": "goods_images/12_fzDQwnj.jpg",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 28,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 945,
+        "fields": {
+            "name": "TOREC EURO 07",
+            "slug": "torec-euro-07",
+            "description": "Торцевой элемент для профиля EURO 07.",
+            "color": null,
+            "size": null,
+            "image": "goods_images/13_ovc7Li9.jpg",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 28,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 946,
+        "fields": {
+            "name": "STABIL EURO 01",
+            "slug": "stabil-euro-01",
+            "description": "Приспособление для запила профиля Flexy STABIL EURO 01.",
+            "color": null,
+            "size": null,
+            "image": "goods_images/14_60a05iH.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 32,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 947,
+        "fields": {
+            "name": "STABIL EURO 02",
+            "slug": "stabil-euro-02",
+            "description": "Приспособление для запила профиля Flexy STABIL EURO 02",
+            "color": null,
+            "size": null,
+            "image": "goods_images/15.jpg",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 32,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 948,
+        "fields": {
+            "name": "STABIL EURO 05",
+            "slug": "stabil-euro-05",
+            "description": "Приспособление для запила профиля Flexy STABIL EURO 05.",
+            "color": null,
+            "size": null,
+            "image": "goods_images/16.jpg",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 32,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 949,
+        "fields": {
+            "name": "STABIL FLY 01",
+            "slug": "stabil-fly-01",
+            "description": "Приспособление для запила профиля Flexy STABIL FLY 01.",
+            "color": null,
+            "size": null,
+            "image": "goods_images/17.jpg",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 32,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 950,
+        "fields": {
+            "name": "STABIL FLY 02",
+            "slug": "stabil-fly-02",
+            "description": "Приспособление для запила профиля Flexy STABIL FLY 02.",
+            "color": null,
+            "size": null,
+            "image": "goods_images/18.jpg",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 32,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 951,
+        "fields": {
+            "name": "STUSLO 01",
+            "slug": "stuslo-01",
+            "description": "Приспособление Flexy STUSLO 01 для зарезки вставки PVC FLY 15.",
+            "color": null,
+            "size": null,
+            "image": "goods_images/20.jpg",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 30,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 952,
+        "fields": {
+            "name": "SLANEC 01",
+            "slug": "slanec-01",
+            "description": "Приспособление Flexy SLANEC 01 для зарезки экрана SCREEN 30.",
+            "color": null,
+            "size": null,
+            "image": "goods_images/1_k4UpLqv.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 30,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 953,
+        "fields": {
+            "name": "SLANEC 02",
+            "slug": "slanec-02",
+            "description": "Приспособление Flexy SLANEC 02 для зарезки экрана SCREEN 50.",
+            "color": null,
+            "size": null,
+            "image": "goods_images/2_5feqwCF.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 30,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 954,
+        "fields": {
+            "name": "TROS 02",
+            "slug": "tros-02",
+            "description": "Трос Flexy TROS 02 для подвешивания светильников из профилей SVET 30, SVET 50, TREK 01.",
+            "color": null,
+            "size": null,
+            "image": "goods_images/3_kBES0J2.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 29,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 955,
+        "fields": {
+            "name": "Соединитель угловой горизонтальный",
+            "slug": "soedinitelI_yglovoi",
+            "description": "Соединитель угловой горизонтальный для углового соединения профилей SVET 30, SVET 50, TREK 01, IZI TREK 01, IZI KARNIZ2 05.",
+            "color": null,
+            "size": null,
+            "image": "goods_images/4_Cak8lus.jpg",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 31,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 956,
+        "fields": {
+            "name": "Соединитель угловой вертикальный",
+            "slug": "-3",
+            "description": "Соединитель угловой горизонтальный для углового соединения профилей IZI UNI 01, IZI TREK 01, IZI KARNIZ2 05.",
+            "color": null,
+            "size": null,
+            "image": "goods_images/5_Uuu78tg.jpg",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 31,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 957,
+        "fields": {
+            "name": "Соединитель прямой",
+            "slug": "-4",
+            "description": "Соединитель прямой для прямого соединения профилей SVET 30, SVET 50, TREK 01, IZI UNI 01, IZI TREK 01, IZI KARNIZ2 05.",
+            "color": null,
+            "size": null,
+            "image": "goods_images/6_Vl6WhKo.jpg",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 24,
+            "subcategory": 31,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 958,
+        "fields": {
+            "name": "PBL-100-048",
+            "slug": "pbl-100-048",
+            "description": "Блок питания для трековых профилей: 48V, 100W, IP20.",
+            "color": null,
+            "size": null,
+            "image": "goods_images/7_N4GOTo5.jpg",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 25,
+            "subcategory": null,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 959,
+        "fields": {
+            "name": "PBL-150-048",
+            "slug": "pbl-150-048",
+            "description": "Блок питания для трековых профилей: 48V, 150W, IP20.",
+            "color": null,
+            "size": null,
+            "image": "goods_images/8_AEw3K6o.jpg",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 25,
+            "subcategory": null,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 960,
+        "fields": {
+            "name": "PBL-200-048",
+            "slug": "pbl-200-048",
+            "description": "Блок питания для трековых профилей: 48V, 200W, IP20.",
+            "color": null,
+            "size": null,
+            "image": "goods_images/9_vSpiRZN.jpg",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 25,
+            "subcategory": null,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 961,
+        "fields": {
+            "name": "Flexy LIGHT 2038INCONB05",
+            "slug": "flexy-light-2038inconb05",
+            "description": "Коннектор питания Flexy LIGHT 2038INCONB05 вводной для передачи низковольтного напряжения 48 В от блока питания.",
+            "color": "Черный",
+            "size": "85 х 14 x 16 мм",
+            "image": "goods_images/10_nPHsCpH.jpg",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 25,
+            "subcategory": null,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 962,
+        "fields": {
+            "name": "Flexy LIGHT 2038ICONB",
+            "slug": "flexy-light-2038iconb--200-14-x-16",
+            "description": "Коннектор питания Flexy LIGHT 2038ICONB для прямой стыковки трековых профилей TREK 04, TREK 05, IZI TREK 01.",
+            "color": "Черный",
+            "size": "200 х 14 x 16 мм",
+            "image": "goods_images/11_WEXnKOc.jpg",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 25,
+            "subcategory": null,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 963,
+        "fields": {
+            "name": "Flexy LIGHT 2038LCONB",
+            "slug": "flexy-light-2038lconb",
+            "description": "Коннектор питания Flexy LIGHT 2038ICONB для угловой стыковки трековых профилей TREK 04, TREK 05, IZI TREK 01.",
+            "color": null,
+            "size": null,
+            "image": "goods_images/12_z9Uvydm.jpg",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 25,
+            "subcategory": null,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 964,
+        "fields": {
+            "name": "SWG2100-48-12-NW",
+            "slug": "swg2100-48-12-nw--10",
+            "description": "Светодиодная лента высокой эффективности серии PRO SWG2100-48-12-NW для световой линии IZI LINE 8.",
+            "color": null,
+            "size": "10 м",
+            "image": "goods_images/13_62HWpYI.jpg",
+            "image_schem": "goods_images_schems/14.webp",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 26,
+            "subcategory": null,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 965,
+        "fields": {
+            "name": "Раструб VS 55.110",
+            "slug": "vs-55110--30059",
+            "description": "Раструб для стыковки профилей вентиляционной системы FLEXYPRO AIR к системам воздуховодов 55×110, 60×120 или 60×204 с помощью переходника.",
+            "color": "Серый",
+            "size": "300мм/59мм",
+            "image": "goods_images/21_o5lraJg.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 16,
+            "subcategory": 15,
             "bright": null,
             "power": null
         }

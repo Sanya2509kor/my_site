@@ -1,62 +1,204 @@
 {% load static %}
 
+<div class="cart-container">
+    <div class="cart-header">
+        <h2>Ваша корзина</h2>
+        <span class="badge bg-dark">{{ carts.total_quantity }} товар(а)</span>
+    </div>
 
-
-<div class="card mb-3 text-bg-light shadow-lg">
     {% for cart in carts %}
-        <div class="card-header">
-            <h5 class="card-title">{{ cart.product.get_full_name }}</h5>
-        </div>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-                <div class="row text-center">
-                    <div class="col p-0">
-                        <div class="input-group">
-                            <span class="input-group-btn">
-                                <button type="button" class="btn btn-dark btn-sm decrement"
-                                    data-cart-id="{{ cart.id }}"
-                                    data-cart-change-url="{% url "cart:cart_change" %}">
-                                    {% csrf_token %}
-                                    -</button>
-                            </span>
-                            <div>
-                            <input type="text" class="form-control number" value="{{ cart.quantity }}"
-                                readonly>
-                            </div>
-                            <span class="input-group-btn">
-                                <button type="button" class="btn btn-dark btn-sm increment"
-                                    data-cart-id="{{ cart.id }}"
-                                    data-cart-change-url="{% url "cart:cart_change" %}">
-                                    {% csrf_token %}
-                                    +</button>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="col p-0">
-                        <p>x {{ cart.product.sell_price }} = </p>
-                    </div>
-                    <div class="col p-0"><strong>{{ cart.products_price }} Руб</strong></div>
-                    <div class="col p-0">
-                        <a href="{% url "cart:cart_remove"%}" class="remove-from-cart" 
-                        data-cart-id="{{ cart.id }}">
+    <div class="cart-item card shadow-sm mb-3">
+        <div class="card-body">
+            <div class="row align-items-center">
+                <!-- Изображение товара -->
+                <div class="col-md-2 col-3">
+                    <a href="{{ cart.product.get_absolute_url }}">
+                        <img src="{{ cart.product.image.url }}" alt="{{ cart.product.name }}" class="img-fluid rounded">
+                    </a>
+                </div>
+                
+                <!-- Название товара -->
+                <div class="col-md-4 col-9">
+                    <h5 class="cart-item-title">
+                        <a href="{{ cart.product.get_absolute_url }}">{{ cart.product.get_full_name }}</a>
+                    </h5>
+                </div>
+                
+                <!-- Управление количеством -->
+                <div class="col-md-3 col-12 mt-md-0 mt-2">
+                    <div class="quantity-control d-flex align-items-center justify-content-center">
+                        <button type="button" class="btn btn-outline-dark btn-sm cart-btn-decrement"
+                            data-cart-id="{{ cart.id }}"
+                            data-cart-change-url="{% url 'cart:cart_change' %}">
                             {% csrf_token %}
-                            <img class="mx-1" src={% static "deps/icons/trash3-fill.svg" %}
-                                alt="Catalog Icon" width="16" height="16">
+                            -
+                        </button>
+                        
+                        <input type="text" class="form-control text-center mx-2 quantity-input" 
+                               value="{{ cart.quantity }}" readonly>
+                        
+                        <button type="button" class="btn btn-outline-dark btn-sm cart-btn-increment"
+                            data-cart-id="{{ cart.id }}"
+                            data-cart-change-url="{% url 'cart:cart_change' %}">
+                            {% csrf_token %}
+                            +
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Цена и удаление -->
+                <div class="col-md-3 col-12 mt-md-0 mt-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="cart-item-price text-end">
+                            <div class="text-muted small">Цена: {{ cart.product.sell_price }} ₽</div>
+                            <div class="fw-bold">Итого: {{ cart.products_price }} ₽</div>
+                        </div>
+                        
+                        <a href="{% url "cart:cart_remove"%}" class="btn btn-link text-danger cart-btn-remove" 
+                           data-cart-id="{{ cart.id }}">
+                            {% csrf_token %}
+                            <img src="{% static "deps/icons/trash3-fill.svg" %}" alt="Удалить" width="20" height="20">
                         </a>
                     </div>
                 </div>
-            </li>
-        </ul>
-    {% endfor %}
-</div>
-<div class="card mb-3 shadow-lg">
-    <div class="card-footer">
-        <p class="float-left">Итого <strong>{{ carts.total_quantity }}</strong> товар(а) на сумму</p>
-        <h4 class="float-left"><strong>{{ carts.total_price }} Руб</strong></h4>
+            </div>
+        </div>
     </div>
+    {% endfor %}
+
+    <!-- Итоговая сумма -->
+    <div class="cart-total card shadow-sm mt-4">
+        <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <h5 class="mb-0">Общая сумма:</h5>
+                    <small class="text-muted">{{ carts.total_quantity }} товар(а)</small>
+                </div>
+                <h4 class="mb-0 text-dark">{{ carts.total_price }} ₽</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- Кнопка оформления заказа -->
+    {% if carts and not order %}
+    <div class="d-grid gap-2 mt-4">
+        <a class="btn btn-dark btn-lg" href="{% url "orders:create_order" %}">
+            Оформить заказ
+        </a>
+    </div>
+    {% endif %}
 </div>
-{% if carts and not order %}
-    <a class="btn btn-dark" href="{% url "orders:create_order" %}">
-        Оформить заказ
-    </a>
-{% endif %}
+
+<style>
+.cart-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-header h2 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.cart-item {
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+.cart-item:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.cart-item-title {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.cart-item-title a {
+    color: #333;
+    text-decoration: none;
+}
+
+.cart-item-title a:hover {
+    color: #0d6efd;
+}
+
+.quantity-control {
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.quantity-input {
+    width: 50px;
+    height: 38px;
+    padding: 0;
+    font-weight: bold;
+}
+
+.cart-item-price {
+    min-width: 120px;
+}
+
+.cart-total {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.cart-btn-remove {
+    padding: 5px;
+    transition: all 0.2s;
+}
+
+.cart-btn-remove:hover {
+    transform: scale(1.1);
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+    .cart-item .row > div {
+        margin-bottom: 10px;
+    }
+    
+    .cart-item-title {
+        font-size: 1rem;
+    }
+    
+    .quantity-control {
+        max-width: 100%;
+    }
+    
+    .cart-item-price {
+        min-width: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .cart-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .cart-header .badge {
+        margin-top: 10px;
+    }
+    
+    .cart-item .col-3 {
+        padding-right: 5px;
+    }
+    
+    .cart-item .col-9 {
+        padding-left: 5px;
+    }
+}
+</style>

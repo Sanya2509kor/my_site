@@ -44,22 +44,22 @@ class ProductRelationshipInline(admin.TabularInline):
 class ProductsAdmin(admin.ModelAdmin):
     # form = ProductAdminForm
     # prepopulated_fields = {'slug': ('name', )}
-    list_display = ['name', 'color', 'size', 'quantity', 'price', 'discount',]
-    list_editable = ['discount', 'color', 'size', 'price', 'quantity']
+    list_display = ['name', 'color', 'size', 'category', 'subcategory']
+    list_editable = [ 'color', 'size', 'category', 'subcategory']
     search_fields = ['name', 'description']
-    list_filter = ['discount', 'quantity', 'category', 'color', 'size']
+    list_filter = ['discount', 'quantity', 'category', 'subcategory', 'color', 'size']
     fields = [
         "name", 
         "category",
         "subcategory",
-        # "slug", 
+        "slug", 
         "description",
         "color",
         "size",
         "image",
-        # "image_schem",
-        ("price", "discount"),
-        "quantity",
+        "image_schem",
+        # ("price", "discount"),
+        # "quantity",
         ('power', 'bright'),
     ]
 
