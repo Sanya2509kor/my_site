@@ -11078,5 +11078,5265 @@
             "bright": "4200K, 1080Лм",
             "power": "12W"
         }
+    },
+    {
+        "model": "goods.products",
+        "pk": 578,
+        "fields": {
+            "name": "Люстра XI3602/4+4C",
+            "slug": "xi360244c--300300190",
+            "description": "Люстра XI3602/4+4C",
+            "color": "Белый",
+            "size": "300*300*190 мм",
+            "image": "goods_images/1_D0T5YRz.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 19,
+            "bright": "LM4000",
+            "power": "200W"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 579,
+        "fields": {
+            "name": "Люстра DK5805/2+2",
+            "slug": "dk580522--620540140",
+            "description": "Люстра DK5805/2+2",
+            "color": null,
+            "size": "620*540*140 мм",
+            "image": "goods_images/2_kFq1h0U.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 19,
+            "bright": null,
+            "power": "80W"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 580,
+        "fields": {
+            "name": "Люстра LI8845/5A",
+            "slug": "li88455a--67575",
+            "description": "Люстра LI8845/5A",
+            "color": "Белый",
+            "size": "675*75 мм",
+            "image": "goods_images/3_HzCEu0t.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 19,
+            "bright": "LM4000",
+            "power": "90W"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 581,
+        "fields": {
+            "name": "Люстра MX10005/4+1",
+            "slug": "mx1000541--540540120",
+            "description": "Люстра MX10005/4+1",
+            "color": "Черный",
+            "size": "540*540*120 мм",
+            "image": "goods_images/4_KEzjsAD.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 19,
+            "bright": "LM4000",
+            "power": "169W"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 582,
+        "fields": {
+            "name": "Люстра MX10005/4+1",
+            "slug": "mx1000541--540540120-1",
+            "description": "Люстра MX10005/4+1",
+            "color": "Белый",
+            "size": "540*540*120 мм",
+            "image": "goods_images/5_MVdOa8S.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 19,
+            "bright": "LM8000",
+            "power": "169W"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 583,
+        "fields": {
+            "name": "Люстра MX10005/4B",
+            "slug": "mx100054b--35535575",
+            "description": "Люстра MX10005/4B",
+            "color": "Черный",
+            "size": "355*355*75 мм",
+            "image": "goods_images/6_hmfxWyC.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 19,
+            "bright": "LM2000",
+            "power": "88W"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 584,
+        "fields": {
+            "name": "Люстра MX10005/4B",
+            "slug": "mx100054b--35535575-1",
+            "description": "Люстра MX10005/4B",
+            "color": "Белый",
+            "size": "355*355*75 мм",
+            "image": "",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 19,
+            "bright": "LM4000",
+            "power": "88W"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 585,
+        "fields": {
+            "name": "Люстра LI8850/6",
+            "slug": "li88506--1060745135",
+            "description": "Люстра LI8850/6",
+            "color": "Белый",
+            "size": "1060*745*135 мм",
+            "image": "goods_images/8_60kJK8H.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 19,
+            "bright": "LM8000",
+            "power": "168W"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 586,
+        "fields": {
+            "name": "Люстра LI8850/4A",
+            "slug": "li88504a--75057075",
+            "description": "Люстра LI8850/4A",
+            "color": "Белый",
+            "size": "750*570*75 мм",
+            "image": "goods_images/9_S7gW6dB.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 19,
+            "bright": "LM5000",
+            "power": "92W"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 587,
+        "fields": {
+            "name": "Люстра MX10006/5+5",
+            "slug": "mx1000655--72075",
+            "description": "Люстра MX10006/5+5",
+            "color": "Белый",
+            "size": "720*75 мм",
+            "image": "goods_images/10_jkxE7HL.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 19,
+            "bright": "LM13000",
+            "power": "270W"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 588,
+        "fields": {
+            "name": "Люстра MX10006/5",
+            "slug": "mx100065--72075",
+            "description": "Люстра MX10006/5",
+            "color": "Белый",
+            "size": "720*75 мм",
+            "image": "goods_images/11_F9FPMMc.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 19,
+            "bright": "LM8000",
+            "power": "170W"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 589,
+        "fields": {
+            "name": "Люстра MX10029/5",
+            "slug": "mx100295--65075",
+            "description": "Люстра MX10029/5",
+            "color": "Черный",
+            "size": "650*75 мм",
+            "image": "goods_images/12_9EkiY1D.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 19,
+            "bright": "LM3000",
+            "power": "130W"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 590,
+        "fields": {
+            "name": "Люстра LI8832/8",
+            "slug": "li88328--970830195",
+            "description": "Люстра LI8832/8",
+            "color": "Белый",
+            "size": "970*830*195 мм",
+            "image": "goods_images/13_bXCrUNr.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 19,
+            "bright": "LM12000",
+            "power": "256W"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 591,
+        "fields": {
+            "name": "Люстра DK5850/4",
+            "slug": "dk58504--690480120",
+            "description": "Люстра DK5850/4",
+            "color": "Черный",
+            "size": "690*480*120 мм",
+            "image": "goods_images/14_fS2yTDN.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 19,
+            "bright": "LM2000",
+            "power": "132W"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 592,
+        "fields": {
+            "name": "Люстра LI8420/5",
+            "slug": "li84205--60075",
+            "description": "Люстра LI8420/5",
+            "color": "Белый",
+            "size": "600*75 мм",
+            "image": "goods_images/15_p93Zgps.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 19,
+            "bright": "LM5000",
+            "power": "110W"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 593,
+        "fields": {
+            "name": "Люстра LI8463/4+4",
+            "slug": "li846344--650120",
+            "description": "Люстра LI8463/4+4",
+            "color": "Черный",
+            "size": "650*120 мм",
+            "image": "goods_images/1_stVbRRU.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 19,
+            "bright": null,
+            "power": "192W"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 594,
+        "fields": {
+            "name": "Люстра MX10005/4+4B",
+            "slug": "mx1000544b--575575120",
+            "description": "Люстра MX10005/4+4B",
+            "color": "Белый",
+            "size": "575*575*120 мм",
+            "image": "goods_images/2_LWCHijp.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 19,
+            "bright": "LM11000",
+            "power": "224W"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 595,
+        "fields": {
+            "name": "Люстра MX10006/3",
+            "slug": "mx100063--62075",
+            "description": "Люстра MX10006/3",
+            "color": "Белый",
+            "size": "620*75 мм",
+            "image": "goods_images/3_kc0oxVb.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 19,
+            "bright": "LM5000",
+            "power": "102W"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 596,
+        "fields": {
+            "name": "Люстра MX10016/4",
+            "slug": "mx100164--70075",
+            "description": "Люстра MX10016/4",
+            "color": "Белый",
+            "size": "700*75 мм",
+            "image": "goods_images/4_0kI0Yz6.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 19,
+            "bright": "LM6000",
+            "power": "120W"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 597,
+        "fields": {
+            "name": "Люстра MX10029/4",
+            "slug": "mx100294--57075",
+            "description": "Люстра MX10029/4",
+            "color": "Белый",
+            "size": "570*75 мм",
+            "image": "goods_images/5_gBP3vMK.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 19,
+            "bright": "LM5000",
+            "power": "104W"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 598,
+        "fields": {
+            "name": "Люстра LI8832/6",
+            "slug": "li88326--810560150",
+            "description": "Люстра LI8832/6",
+            "color": "Белый",
+            "size": "810*560*150 мм",
+            "image": "goods_images/6_VYhJlt3.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 19,
+            "bright": "LM8000",
+            "power": "168W"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 599,
+        "fields": {
+            "name": "Платформа NEO Белая универсал.",
+            "slug": "neo--60-110",
+            "description": "Платформа NEO Белая универсал.",
+            "color": "Белый",
+            "size": "60-110 мм",
+            "image": "goods_images/1_bwiU9im.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 600,
+        "fields": {
+            "name": "Платформа NEO Серый универсал.",
+            "slug": "neo--60-110-1",
+            "description": "Платформа NEO Серый универсал.",
+            "color": "Серый",
+            "size": "60-110 мм",
+            "image": "goods_images/2_gtpFDcj.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 601,
+        "fields": {
+            "name": "Платформа универсал. прямоугольная",
+            "slug": "--155751658517595",
+            "description": "Платформа универсал. прямоугольная",
+            "color": null,
+            "size": "155*75/165*85/175*95 мм",
+            "image": "goods_images/3_7D9rdVM.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 602,
+        "fields": {
+            "name": "Платформа теневая круг белая под светильник MOON",
+            "slug": "moon--11613019",
+            "description": "Платформа теневая круг белая под светильник MOON",
+            "color": "Белый",
+            "size": "116*130*19мм",
+            "image": "goods_images/4_rD0uCHK.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 603,
+        "fields": {
+            "name": "Платформа для светильника",
+            "slug": "--90",
+            "description": "Платформа для светильника",
+            "color": "Серый",
+            "size": "90 мм",
+            "image": "goods_images/5_4fDtZTr.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 604,
+        "fields": {
+            "name": "Платформа теневая круглая DUO под светильник HANDY",
+            "slug": "duo-handy--2301252",
+            "description": "Платформа теневая круглая DUO под светильник HANDY",
+            "color": "Черный",
+            "size": "230*125*2мм",
+            "image": "goods_images/6_ToEdf4X.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": "10W"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 605,
+        "fields": {
+            "name": "Платформа теневая круглая DUO под светильник HANDY",
+            "slug": "duo-handy--2301252-1",
+            "description": "Платформа теневая круглая DUO под светильник HANDY",
+            "color": "Белый",
+            "size": "230*125*2мм",
+            "image": "goods_images/7_jZeDulr.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": "10W"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 606,
+        "fields": {
+            "name": "Платформа теневая овальная DUO под светильник HANDY",
+            "slug": "duo-handy--2301252-2",
+            "description": "Платформа теневая овальная DUO под светильник HANDY",
+            "color": "Черный",
+            "size": "230*125*2мм",
+            "image": "goods_images/8_qIC1frO.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": "10W"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 607,
+        "fields": {
+            "name": "Платформа теневая овальная DUO под светильник HANDY",
+            "slug": "duo-handy--2301252-3",
+            "description": "Платформа теневая овальная DUO под светильник HANDY",
+            "color": "Белый",
+            "size": "230*125*2мм",
+            "image": "goods_images/9_U5pJB9T.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": "10W"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 608,
+        "fields": {
+            "name": "Платформа теневая круглая одинарная под светильник HANDY",
+            "slug": "handy--1751752",
+            "description": "Платформа теневая круглая одинарная под светильник HANDY",
+            "color": "Черный",
+            "size": "175*175*2мм",
+            "image": "goods_images/10_crcQYJb.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": "28W"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 609,
+        "fields": {
+            "name": "Платформа теневая круглая одинарная под светильник HANDY",
+            "slug": "handy--1751752-1",
+            "description": "Платформа теневая круглая одинарная под светильник HANDY",
+            "color": "Белый",
+            "size": "175*175*2мм",
+            "image": "goods_images/11_cVX1698.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": "28W"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 610,
+        "fields": {
+            "name": "Платформа теневая круглая одинарная под светильник HANDY",
+            "slug": "handy--1501502",
+            "description": "Платформа теневая круглая одинарная под светильник HANDY",
+            "color": "Черный",
+            "size": "150*150*2мм",
+            "image": "goods_images/12_mn9eqkP.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": "20W"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 611,
+        "fields": {
+            "name": "Платформа теневая круглая одинарная под светильник HANDY",
+            "slug": "handy--1501502-1",
+            "description": "Платформа теневая круглая одинарная под светильник HANDY",
+            "color": "Белый",
+            "size": "150*150*2мм",
+            "image": "goods_images/13_7CMQcun.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": "20W"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 612,
+        "fields": {
+            "name": "Платформа теневая круглая одинарная под светильник HANDY",
+            "slug": "handy--1251252",
+            "description": "Платформа теневая круглая одинарная под светильник HANDY",
+            "color": "Черный",
+            "size": "125*125*2мм",
+            "image": "goods_images/14_4t25f9h.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": "10W"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 613,
+        "fields": {
+            "name": "Платформа теневая круглая одинарная под светильник HANDY",
+            "slug": "handy--1251252-1",
+            "description": "Платформа теневая круглая одинарная под светильник HANDY",
+            "color": "Белый",
+            "size": "125*125*2мм",
+            "image": "goods_images/15_Kzc2aPy.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": "10W"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 614,
+        "fields": {
+            "name": "Платформа теневая круг белая под светильник ZOOM",
+            "slug": "zoom--11613020",
+            "description": "Платформа теневая круг белая под светильник ZOOM",
+            "color": "Белый",
+            "size": "116*130*20мм",
+            "image": "goods_images/1_ohhyiyO.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 615,
+        "fields": {
+            "name": "Платформа теневая черная овал DUO под светильник Art GU10",
+            "slug": "duo-art-gu10--1609020",
+            "description": "Платформа теневая черная овал DUO под светильник Art GU10",
+            "color": "Черный",
+            "size": "160*90*20мм",
+            "image": "goods_images/2_Wik8LdN.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 616,
+        "fields": {
+            "name": "Платформа теневая белая овал DUO под светильник Art GU10",
+            "slug": "duo-art-gu10--1609020-1",
+            "description": "Платформа теневая белая овал DUO под светильник Art GU10",
+            "color": "Белый",
+            "size": "160*90*20мм",
+            "image": "goods_images/3_Xw0Ujy4.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 617,
+        "fields": {
+            "name": "Платформа теневая черная овал DUO под светильник Art GX53",
+            "slug": "duo-art-gx53--21511720",
+            "description": "Платформа теневая черная овал DUO под светильник Art GX53",
+            "color": "Черный",
+            "size": "215*117*20мм",
+            "image": "goods_images/4_HHCJdx2.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 618,
+        "fields": {
+            "name": "Платформа теневая белая овал DUO под светильник Art GX53",
+            "slug": "duo-art-gx53--21511720-1",
+            "description": "Платформа теневая белая овал DUO под светильник Art GX53",
+            "color": "Белый",
+            "size": "215*117*20мм",
+            "image": "goods_images/5_vrdw9xb.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 619,
+        "fields": {
+            "name": "Платформа теневая чёрная круг под светильник Art GX53",
+            "slug": "art-gx53--11711720",
+            "description": "Платформа теневая чёрная круг под светильник Art GX53",
+            "color": "Черный",
+            "size": "117*117*20мм",
+            "image": "goods_images/6_IprDXtl.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 620,
+        "fields": {
+            "name": "Платформа теневая белая круг под светильник Art GX53",
+            "slug": "art-gx53--11711720-1",
+            "description": "Платформа теневая белая круг под светильник Art GX53",
+            "color": "Белый",
+            "size": "117*117*20мм",
+            "image": "goods_images/7_WBuqd6k.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 621,
+        "fields": {
+            "name": "Платформа теневая чёрная круг под светильник Art GU10",
+            "slug": "art-gu10--909020",
+            "description": "Платформа теневая чёрная круг под светильник Art GU10",
+            "color": "Черный",
+            "size": "90*90*20мм",
+            "image": "goods_images/8_6kzcRkb.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 622,
+        "fields": {
+            "name": "Платформа теневая белая круг под светильник Art GU10",
+            "slug": "art-gu10--909020-1",
+            "description": "Платформа теневая белая круг под светильник Art GU10",
+            "color": "Белый",
+            "size": "90*90*20мм",
+            "image": "goods_images/9_TKjpJF9.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 623,
+        "fields": {
+            "name": "Платформа теневая чёрная круг DUO под светильник Art GX53",
+            "slug": "duo-art-gx53--21512015",
+            "description": "Платформа теневая чёрная круг DUO под светильник Art GX53",
+            "color": "Черный",
+            "size": "215*120*15мм",
+            "image": "goods_images/1_WuiyV7b.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 624,
+        "fields": {
+            "name": "Платформа теневая чёрная круг DUO под светильник Art GU10",
+            "slug": "duo-art-gu10--1609020-2",
+            "description": "Платформа теневая чёрная круг DUO под светильник Art GU10",
+            "color": "Черный",
+            "size": "160*90*20мм",
+            "image": "goods_images/2_AtvJgbT.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 625,
+        "fields": {
+            "name": "Платформа теневая белая круг DUO под светильник Art GX53",
+            "slug": "duo-art-gx53--21512015-1",
+            "description": "Платформа теневая белая круг DUO под светильник Art GX53",
+            "color": "Белый",
+            "size": "215*120*15мм",
+            "image": "goods_images/3_8WHpgRO.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 626,
+        "fields": {
+            "name": "Платформа теневая белая круг DUO под светильник Art GU10",
+            "slug": "duo-art-gu10--1609020-3",
+            "description": "Платформа теневая белая круг DUO под светильник Art GU10",
+            "color": "Белый",
+            "size": "160*90*20мм",
+            "image": "goods_images/4_TqT4MiR.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 627,
+        "fields": {
+            "name": "Платформа для светильника PRACTIC DUO",
+            "slug": "practic-duo--13023010",
+            "description": "Платформа для светильника PRACTIC DUO",
+            "color": null,
+            "size": "130*230*10мм",
+            "image": "goods_images/5_qgeL9TD.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": "18W"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 628,
+        "fields": {
+            "name": "Платформа для светильника PRACTIC DUO",
+            "slug": "practic-duo--19210510",
+            "description": "Платформа для светильника PRACTIC DUO",
+            "color": null,
+            "size": "192*105*10мм",
+            "image": "goods_images/6_UEGAhvM.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": "12W"
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 629,
+        "fields": {
+            "name": "Платформа универсал. квадрат",
+            "slug": "--50-90",
+            "description": "Платформа универсал. квадрат",
+            "color": null,
+            "size": "50-90 мм",
+            "image": "goods_images/7_o0KTJPC.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 630,
+        "fields": {
+            "name": "Платформа для светильника MR DUO",
+            "slug": "mr-duo--d150x70205x120",
+            "description": "Платформа для светильника MR DUO",
+            "color": null,
+            "size": "D150x70мм/205x120мм",
+            "image": "goods_images/8_u9AaJKd.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 631,
+        "fields": {
+            "name": "Платформа для светильника GX DUO",
+            "slug": "gx-duo--d195x85250x140",
+            "description": "Платформа для светильника GX DUO",
+            "color": null,
+            "size": "D195x85мм/250x140мм",
+            "image": "goods_images/9_E3JVkbJ.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 632,
+        "fields": {
+            "name": "Платформа д/накл.свет.и пожар. датчиков",
+            "slug": "--95-30",
+            "description": "Платформа д/накл.свет.и пожар. датчиков",
+            "color": "Белый",
+            "size": "95 мм/30 мм",
+            "image": "goods_images/10_PiSk3go.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 633,
+        "fields": {
+            "name": "Платформа д/накл.свет.и пожар. датчиков",
+            "slug": "--95-30-1",
+            "description": "Платформа д/накл.свет.и пожар. датчиков",
+            "color": "Серый",
+            "size": "95 мм/30 мм",
+            "image": "goods_images/11_2oH0Vpt.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 634,
+        "fields": {
+            "name": "Платформа для люстр д. 200 Круглая",
+            "slug": "200",
+            "description": "Платформа для люстр д. 200 Круглая",
+            "color": "Белый",
+            "size": null,
+            "image": "",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 635,
+        "fields": {
+            "name": "Платформа для люстр д. 200 КРУГЛАЯ",
+            "slug": "200-1",
+            "description": "Платформа для люстр д. 200 КРУГЛАЯ",
+            "color": "Серый",
+            "size": null,
+            "image": "goods_images/13_LikBYPN.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 636,
+        "fields": {
+            "name": "Платформа для светильника",
+            "slug": "--85",
+            "description": "Платформа для светильника",
+            "color": "Белый",
+            "size": "85 мм",
+            "image": "goods_images/14_YBbyHW2.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 637,
+        "fields": {
+            "name": "Платформа для светильника",
+            "slug": "--90-1",
+            "description": "Платформа для светильника",
+            "color": "Белый",
+            "size": "90 мм",
+            "image": "goods_images/15_n7tXPsH.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 638,
+        "fields": {
+            "name": "Платформа универсал. квадрат",
+            "slug": "--150-200",
+            "description": "Платформа универсал. квадрат",
+            "color": null,
+            "size": "150-200 мм",
+            "image": "goods_images/1_cq3mz3a.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 639,
+        "fields": {
+            "name": "Платформа универсал. квадрат",
+            "slug": "--90-140",
+            "description": "Платформа универсал. квадрат",
+            "color": null,
+            "size": "90-140 мм",
+            "image": "goods_images/2_m75UjAF.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 640,
+        "fields": {
+            "name": "Платформа универсал.",
+            "slug": "--235-305",
+            "description": "Платформа универсал.",
+            "color": null,
+            "size": "235-305 мм",
+            "image": "goods_images/3_4e8LAu9.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 641,
+        "fields": {
+            "name": "Платформа универсал.",
+            "slug": "--165-225",
+            "description": "Платформа универсал.",
+            "color": null,
+            "size": "165-225 мм",
+            "image": "goods_images/4_tkDbIQE.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 642,
+        "fields": {
+            "name": "Платформа для гардин ПУГ универсальная",
+            "slug": "--714",
+            "description": "Платформа для гардин ПУГ универсальная",
+            "color": null,
+            "size": "7*14",
+            "image": "goods_images/5_UgnrN8u.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 643,
+        "fields": {
+            "name": "Платформа для люстр д 150-150",
+            "slug": "150-150",
+            "description": "Платформа для люстр д 150-150",
+            "color": "Белый",
+            "size": null,
+            "image": "goods_images/6_FYMNdi6.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 644,
+        "fields": {
+            "name": "Платформа для люстр д. 150-150",
+            "slug": "150-150-1",
+            "description": "Платформа для люстр д. 150-150",
+            "color": "Серый",
+            "size": null,
+            "image": "goods_images/7_wFJROYF.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 645,
+        "fields": {
+            "name": "Платформа универсал.",
+            "slug": "--60-110",
+            "description": "Платформа универсал.",
+            "color": "Белый",
+            "size": "60-110 мм",
+            "image": "goods_images/8_QN5PCeO.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 646,
+        "fields": {
+            "name": "Платформа универсал.",
+            "slug": "--155-205",
+            "description": "Платформа универсал.",
+            "color": "Белый",
+            "size": "155-205 мм",
+            "image": "goods_images/9_aQDMccw.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 647,
+        "fields": {
+            "name": "Платформа универсал.",
+            "slug": "--155-205-1",
+            "description": "Платформа универсал.",
+            "color": "Серый",
+            "size": "155-205 мм",
+            "image": "goods_images/10_4omTbFf.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 648,
+        "fields": {
+            "name": "Платформа универсал.",
+            "slug": "--100-150",
+            "description": "Платформа универсал.",
+            "color": "Серый",
+            "size": "100-150 мм",
+            "image": "goods_images/11_5fGt71Y.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 649,
+        "fields": {
+            "name": "Платформа универсал.",
+            "slug": "--60-110-1",
+            "description": "Платформа универсал.",
+            "color": "Серый",
+            "size": "60-110 мм",
+            "image": "goods_images/12_CCabqCv.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 650,
+        "fields": {
+            "name": "Платформа для светильника",
+            "slug": "--75",
+            "description": "Платформа для светильника",
+            "color": null,
+            "size": "75 мм",
+            "image": "goods_images/13_QGnLAW0.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 651,
+        "fields": {
+            "name": "Платформа для светильника",
+            "slug": "--80",
+            "description": "Платформа для светильника",
+            "color": null,
+            "size": "80 мм",
+            "image": "goods_images/14_126zKKw.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 652,
+        "fields": {
+            "name": "Платформа для светильника",
+            "slug": "--90-2",
+            "description": "Платформа для светильника",
+            "color": "Серый",
+            "size": "90 мм",
+            "image": "goods_images/1_P39Dj16.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 653,
+        "fields": {
+            "name": "Платформа для светильника",
+            "slug": "--85-1",
+            "description": "Платформа для светильника",
+            "color": "Серый",
+            "size": "85 мм",
+            "image": "goods_images/2_kcxgSiR.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 654,
+        "fields": {
+            "name": "Платформа для светильника",
+            "slug": "--65",
+            "description": "Платформа для светильника",
+            "color": "Серый",
+            "size": "65 мм",
+            "image": "goods_images/3_VJ6VOFl.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 655,
+        "fields": {
+            "name": "Платформа для светильника",
+            "slug": "--60",
+            "description": "Платформа для светильника",
+            "color": "Серый",
+            "size": "60 мм",
+            "image": "goods_images/4_h8KQIGR.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 656,
+        "fields": {
+            "name": "Платформа для светильника",
+            "slug": "--70",
+            "description": "Платформа для светильника",
+            "color": null,
+            "size": "70 мм",
+            "image": "goods_images/5_HxWNuJP.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 657,
+        "fields": {
+            "name": "Платформа для светильника",
+            "slug": "--65-1",
+            "description": "Платформа для светильника",
+            "color": "Белый",
+            "size": "65 мм",
+            "image": "goods_images/6_kVmHoPf.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 658,
+        "fields": {
+            "name": "Платформа для светильника",
+            "slug": "--60-1",
+            "description": "Платформа для светильника",
+            "color": "Белый",
+            "size": "60 мм",
+            "image": "goods_images/7_mPBym1P.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 659,
+        "fields": {
+            "name": "Платформа для светильника",
+            "slug": "--90-3",
+            "description": "Платформа для светильника",
+            "color": "Белый",
+            "size": "90 мм",
+            "image": "goods_images/8_rLO3Q87.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 660,
+        "fields": {
+            "name": "Платформа универсал.",
+            "slug": "--55-105",
+            "description": "Платформа универсал.",
+            "color": null,
+            "size": "55-105 мм",
+            "image": "goods_images/9_wBMBg8m.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 661,
+        "fields": {
+            "name": "Платформа универсал.",
+            "slug": "--100-150-1",
+            "description": "Платформа универсал.",
+            "color": "Белый",
+            "size": "100-150 мм",
+            "image": "goods_images/10_TZURimh.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 20,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 662,
+        "fields": {
+            "name": "Термопрямоугольник",
+            "slug": "--95175",
+            "description": "Термопрямоугольник",
+            "color": null,
+            "size": "95*175 мм",
+            "image": "goods_images/1_QiqYSk2.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 663,
+        "fields": {
+            "name": "Термопрямоугольник",
+            "slug": "--75155",
+            "description": "Термопрямоугольник",
+            "color": null,
+            "size": "75*155 мм",
+            "image": "goods_images/2_rhw1bkc.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 664,
+        "fields": {
+            "name": "Кольцо протек. NEW",
+            "slug": "new--90",
+            "description": "Кольцо протек. NEW",
+            "color": null,
+            "size": "90 мм",
+            "image": "goods_images/3_2Pp8A5Z.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 665,
+        "fields": {
+            "name": "Кольцо протек. NEW ЛАЙТ",
+            "slug": "new--125",
+            "description": "Кольцо протек. NEW ЛАЙТ",
+            "color": null,
+            "size": "125 мм",
+            "image": "goods_images/4_JCf1hwd.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 666,
+        "fields": {
+            "name": "Кольцо протек. NEW ЛАЙТ",
+            "slug": "new--120",
+            "description": "Кольцо протек. NEW ЛАЙТ",
+            "color": null,
+            "size": "120 мм",
+            "image": "goods_images/5_Oun5lAl.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 667,
+        "fields": {
+            "name": "Кольцо протек. NEW ЛАЙТ",
+            "slug": "new--105",
+            "description": "Кольцо протек. NEW ЛАЙТ",
+            "color": null,
+            "size": "105 мм",
+            "image": "goods_images/6_AVB6847.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 668,
+        "fields": {
+            "name": "Кольцо протек. NEW ЛАЙТ",
+            "slug": "new--100",
+            "description": "Кольцо протек. NEW ЛАЙТ",
+            "color": null,
+            "size": "100 мм",
+            "image": "goods_images/7_YM23u70.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 669,
+        "fields": {
+            "name": "Кольцо протек. NEW ЛАЙТ",
+            "slug": "new--70",
+            "description": "Кольцо протек. NEW ЛАЙТ",
+            "color": null,
+            "size": "70 мм",
+            "image": "goods_images/8_2F37Q32.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 670,
+        "fields": {
+            "name": "Кольцо протек. NEW",
+            "slug": "new--45",
+            "description": "Кольцо протек. NEW",
+            "color": null,
+            "size": "45 мм",
+            "image": "goods_images/9_5zjMGf9.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 671,
+        "fields": {
+            "name": "Кольцо протек. NEW",
+            "slug": "new--40",
+            "description": "Кольцо протек. NEW",
+            "color": null,
+            "size": "40 мм",
+            "image": "goods_images/10_tgSbe9T.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 672,
+        "fields": {
+            "name": "Кольцо протек. NEW",
+            "slug": "new--25",
+            "description": "Кольцо протек. NEW",
+            "color": null,
+            "size": "25 мм",
+            "image": "goods_images/11_fBIMPUH.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 673,
+        "fields": {
+            "name": "Кольцо протек. NEW",
+            "slug": "new--10",
+            "description": "Кольцо протек. NEW",
+            "color": null,
+            "size": "10 мм",
+            "image": "goods_images/12_bneKqeq.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 674,
+        "fields": {
+            "name": "Кольцо протек. NEW",
+            "slug": "new--120-1",
+            "description": "Кольцо протек. NEW",
+            "color": null,
+            "size": "120 мм",
+            "image": "goods_images/13_7ReEhXb.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 675,
+        "fields": {
+            "name": "Кольцо протек. NEW",
+            "slug": "new--95",
+            "description": "Кольцо протек. NEW",
+            "color": null,
+            "size": "95 мм",
+            "image": "goods_images/14_kraO9LJ.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 676,
+        "fields": {
+            "name": "Кольцо протек. NEW",
+            "slug": "new--75",
+            "description": "Кольцо протек. NEW",
+            "color": null,
+            "size": "75 мм",
+            "image": "goods_images/15_cfXD6US.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 677,
+        "fields": {
+            "name": "Кольцо протек. NEW",
+            "slug": "new--65",
+            "description": "Кольцо протек. NEW",
+            "color": null,
+            "size": "65 мм",
+            "image": "goods_images/16_tp63tD7.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 678,
+        "fields": {
+            "name": "Кольцо протек. NEW",
+            "slug": "new--35",
+            "description": "Кольцо протек. NEW",
+            "color": null,
+            "size": "35 мм",
+            "image": "goods_images/1_tDuJEp4.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 679,
+        "fields": {
+            "name": "Кольцо протек. NEW",
+            "slug": "new--20",
+            "description": "Кольцо протек. NEW",
+            "color": null,
+            "size": "20 мм",
+            "image": "goods_images/2_0jjRbVE.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 680,
+        "fields": {
+            "name": "Кольцо протек. NEW",
+            "slug": "new--30",
+            "description": "Кольцо протек. NEW",
+            "color": null,
+            "size": "30 мм",
+            "image": "goods_images/3_aYSMd5F.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 681,
+        "fields": {
+            "name": "Кольцо протек. NEW",
+            "slug": "new--125-1",
+            "description": "Кольцо протек. NEW",
+            "color": null,
+            "size": "125 мм",
+            "image": "goods_images/4_FNEbE5p.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 682,
+        "fields": {
+            "name": "Кольцо протек. NEW",
+            "slug": "new--110",
+            "description": "Кольцо протек. NEW",
+            "color": null,
+            "size": "110 мм",
+            "image": "goods_images/5_3h5sE0p.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 683,
+        "fields": {
+            "name": "Кольцо протек. NEW",
+            "slug": "new--105-1",
+            "description": "Кольцо протек. NEW",
+            "color": null,
+            "size": "105 мм",
+            "image": "goods_images/6_VLerrZb.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 684,
+        "fields": {
+            "name": "Кольцо протек. NEW",
+            "slug": "new--55",
+            "description": "Кольцо протек. NEW",
+            "color": null,
+            "size": "55 мм",
+            "image": "goods_images/7_0OWTJnd.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 685,
+        "fields": {
+            "name": "Кольцо протек. NEW",
+            "slug": "new--90-1",
+            "description": "Кольцо протек. NEW",
+            "color": null,
+            "size": "90 мм",
+            "image": "goods_images/8_Ox8FnSZ.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 686,
+        "fields": {
+            "name": "Кольцо протек. NEW",
+            "slug": "new--70-1",
+            "description": "Кольцо протек. NEW",
+            "color": null,
+            "size": "70 мм",
+            "image": "goods_images/9_g1esxox.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 687,
+        "fields": {
+            "name": "Кольцо протек. NEW",
+            "slug": "new--100-1",
+            "description": "Кольцо протек. NEW",
+            "color": null,
+            "size": "100 мм",
+            "image": "goods_images/10_9Vo2ePs.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 688,
+        "fields": {
+            "name": "Кольцо протек. NEW",
+            "slug": "new--85",
+            "description": "Кольцо протек. NEW",
+            "color": null,
+            "size": "85 мм",
+            "image": "goods_images/11_Folc3c0.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 689,
+        "fields": {
+            "name": "Кольцо протек. NEW",
+            "slug": "new--80",
+            "description": "Кольцо протек. NEW",
+            "color": null,
+            "size": "80 мм",
+            "image": "goods_images/12_WLRjW5A.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 690,
+        "fields": {
+            "name": "Кольцо протек. NEW",
+            "slug": "new--60",
+            "description": "Кольцо протек. NEW",
+            "color": null,
+            "size": "60 мм",
+            "image": "goods_images/13_9y676wS.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 691,
+        "fields": {
+            "name": "Кольцо протек.",
+            "slug": "--45",
+            "description": "Кольцо протек.",
+            "color": null,
+            "size": "4,5 мм",
+            "image": "goods_images/14_tOnirxm.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 692,
+        "fields": {
+            "name": "Кольцо протек. прозрачное",
+            "slug": "--230",
+            "description": "Кольцо протек. прозрачное",
+            "color": null,
+            "size": "230 мм",
+            "image": "goods_images/15_3YLKxJx.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 693,
+        "fields": {
+            "name": "Кольцо протек. прозрачное",
+            "slug": "--210",
+            "description": "Кольцо протек. прозрачное",
+            "color": null,
+            "size": "210 мм",
+            "image": "goods_images/16_hPDc3Tp.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 694,
+        "fields": {
+            "name": "Кольцо протек. прозрачное",
+            "slug": "--235",
+            "description": "Кольцо протек. прозрачное",
+            "color": null,
+            "size": "235 мм",
+            "image": "goods_images/17_eljatvt.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 695,
+        "fields": {
+            "name": "Кольцо протек. прозрачное",
+            "slug": "--225",
+            "description": "Кольцо протек. прозрачное",
+            "color": null,
+            "size": "225 мм",
+            "image": "goods_images/18_B854XOe.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 696,
+        "fields": {
+            "name": "Кольцо протек. прозрачное",
+            "slug": "--220",
+            "description": "Кольцо протек. прозрачное",
+            "color": null,
+            "size": "220 мм",
+            "image": "goods_images/19_OdQYNhu.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 697,
+        "fields": {
+            "name": "Кольцо протек. прозрачное",
+            "slug": "--610",
+            "description": "Кольцо протек. прозрачное",
+            "color": null,
+            "size": "610 мм",
+            "image": "goods_images/20_JSi1Cam.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 698,
+        "fields": {
+            "name": "Кольцо протек. прозрачное",
+            "slug": "--580",
+            "description": "Кольцо протек. прозрачное",
+            "color": null,
+            "size": "580 мм",
+            "image": "goods_images/1_z40GJEI.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 699,
+        "fields": {
+            "name": "Кольцо протек. прозрачное",
+            "slug": "--550",
+            "description": "Кольцо протек. прозрачное",
+            "color": null,
+            "size": "550 мм",
+            "image": "goods_images/2_g3kwN8g.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 700,
+        "fields": {
+            "name": "Кольцо протек. прозрачное",
+            "slug": "--520",
+            "description": "Кольцо протек. прозрачное",
+            "color": null,
+            "size": "520 мм",
+            "image": "goods_images/3_tfce8F0.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 701,
+        "fields": {
+            "name": "Кольцо протек. прозрачное",
+            "slug": "--485",
+            "description": "Кольцо протек. прозрачное",
+            "color": null,
+            "size": "485 мм",
+            "image": "goods_images/4_0m5XO7t.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 702,
+        "fields": {
+            "name": "Кольцо протек. прозрачное",
+            "slug": "--455",
+            "description": "Кольцо протек. прозрачное",
+            "color": null,
+            "size": "455 мм",
+            "image": "goods_images/5_ZwXQedf.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 703,
+        "fields": {
+            "name": "Кольцо протек. прозрачное",
+            "slug": "--425",
+            "description": "Кольцо протек. прозрачное",
+            "color": null,
+            "size": "425 мм",
+            "image": "goods_images/6_OLt5P3p.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 704,
+        "fields": {
+            "name": "Кольцо протек. прозрачное",
+            "slug": "--400",
+            "description": "Кольцо протек. прозрачное",
+            "color": null,
+            "size": "400 мм",
+            "image": "goods_images/7_JhjtL2Q.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 705,
+        "fields": {
+            "name": "Кольцо протек. прозрачное",
+            "slug": "--375",
+            "description": "Кольцо протек. прозрачное",
+            "color": null,
+            "size": "375 мм",
+            "image": "goods_images/8_KJjALX9.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 706,
+        "fields": {
+            "name": "Кольцо протек. прозрачное",
+            "slug": "--350",
+            "description": "Кольцо протек. прозрачное",
+            "color": null,
+            "size": "350 мм",
+            "image": "goods_images/9_xiWb85n.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 707,
+        "fields": {
+            "name": "Кольцо протек. прозрачное",
+            "slug": "--325",
+            "description": "Кольцо протек. прозрачное",
+            "color": null,
+            "size": "325 мм",
+            "image": "goods_images/10_EssklOb.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 708,
+        "fields": {
+            "name": "Кольцо протек. прозрачное",
+            "slug": "--300",
+            "description": "Кольцо протек. прозрачное",
+            "color": null,
+            "size": "300 мм",
+            "image": "goods_images/11_rnO6YLn.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 709,
+        "fields": {
+            "name": "Кольцо протек. прозрачное",
+            "slug": "--280",
+            "description": "Кольцо протек. прозрачное",
+            "color": null,
+            "size": "280 мм",
+            "image": "goods_images/12_X22A8vB.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 710,
+        "fields": {
+            "name": "Кольцо протек. прозрачное",
+            "slug": "--250",
+            "description": "Кольцо протек. прозрачное",
+            "color": null,
+            "size": "250 мм",
+            "image": "goods_images/13_ZGCwpne.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 711,
+        "fields": {
+            "name": "Термоквадрат (прозрачный) внутр 230",
+            "slug": "230--250250",
+            "description": "Термоквадрат (прозрачный) внутр 230",
+            "color": null,
+            "size": "250*250 мм",
+            "image": "goods_images/1_k6Ma53V.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 712,
+        "fields": {
+            "name": "Термоквадрат (прозрачный) внутр 205",
+            "slug": "205--225225",
+            "description": "Термоквадрат (прозрачный) внутр 205",
+            "color": null,
+            "size": "225*225 мм",
+            "image": "goods_images/2_9ljCiGf.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 713,
+        "fields": {
+            "name": "Термоквадрат (прозрачный) внутр 200",
+            "slug": "200--220220",
+            "description": "Термоквадрат (прозрачный) внутр 200",
+            "color": null,
+            "size": "220*220 мм",
+            "image": "goods_images/3_Jah5xAK.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 714,
+        "fields": {
+            "name": "Термоквадрат (прозрачный) внутр 177",
+            "slug": "177--190190",
+            "description": "Термоквадрат (прозрачный) внутр 177",
+            "color": null,
+            "size": "190*190 мм",
+            "image": "goods_images/4_Xnb7OF6.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 715,
+        "fields": {
+            "name": "Термоквадрат (прозрачный) внутр 168",
+            "slug": "168--185185",
+            "description": "Термоквадрат (прозрачный) внутр 168",
+            "color": null,
+            "size": "185*185 мм",
+            "image": "goods_images/5_ZinYIHR.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 716,
+        "fields": {
+            "name": "Термоквадрат (прозрачный) внутр 167",
+            "slug": "167--180180",
+            "description": "Термоквадрат (прозрачный) внутр 167",
+            "color": null,
+            "size": "180*180 мм",
+            "image": "goods_images/6_Wc9XNPS.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 717,
+        "fields": {
+            "name": "Термоквадрат (прозрачный) внутр 157",
+            "slug": "157--170170",
+            "description": "Термоквадрат (прозрачный) внутр 157",
+            "color": null,
+            "size": "170*170 мм",
+            "image": "goods_images/7_JPDQ51m.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 718,
+        "fields": {
+            "name": "Термоквадрат (прозрачный) внутр 147",
+            "slug": "147--160160",
+            "description": "Термоквадрат (прозрачный) внутр 147",
+            "color": null,
+            "size": "160*160 мм",
+            "image": "goods_images/8_laEZNFC.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 719,
+        "fields": {
+            "name": "Термоквадрат (прозрачный) внутр 142",
+            "slug": "142--155155",
+            "description": "Термоквадрат (прозрачный) внутр 142",
+            "color": null,
+            "size": "155*155 мм",
+            "image": "goods_images/9_rA3iE25.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 720,
+        "fields": {
+            "name": "Термоквадрат (прозрачный) внутр 138",
+            "slug": "138--150150",
+            "description": "Термоквадрат (прозрачный) внутр 138",
+            "color": null,
+            "size": "150*150 мм",
+            "image": "goods_images/10_NSmXDfL.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 721,
+        "fields": {
+            "name": "Термоквадрат (прозрачный) внутр 128",
+            "slug": "128--140140",
+            "description": "Термоквадрат (прозрачный) внутр 128",
+            "color": null,
+            "size": "140*140 мм",
+            "image": "goods_images/11_EOeOw0p.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 722,
+        "fields": {
+            "name": "Термоквадрат (прозрачный) внутр 118",
+            "slug": "118--130130",
+            "description": "Термоквадрат (прозрачный) внутр 118",
+            "color": null,
+            "size": "130*130 мм",
+            "image": "goods_images/12_s63LIHK.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 723,
+        "fields": {
+            "name": "Термоквадрат (прозрачный) внутр 113",
+            "slug": "113--125125",
+            "description": "Термоквадрат (прозрачный) внутр 113",
+            "color": null,
+            "size": "125*125 мм",
+            "image": "goods_images/13_5ykpZ9Q.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 724,
+        "fields": {
+            "name": "Термоквадрат (прозрачный) внутр 110",
+            "slug": "110--120120",
+            "description": "Термоквадрат (прозрачный) внутр 110",
+            "color": null,
+            "size": "120*120 мм",
+            "image": "goods_images/14_TrTzNnK.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 725,
+        "fields": {
+            "name": "Термоквадрат (прозрачный) внутр 104",
+            "slug": "104--115115",
+            "description": "Термоквадрат (прозрачный) внутр 104",
+            "color": null,
+            "size": "115*115 мм",
+            "image": "goods_images/1_VaJ4dxP.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 726,
+        "fields": {
+            "name": "Термоквадрат (прозрачный) внутр 98",
+            "slug": "98--110110",
+            "description": "Термоквадрат (прозрачный) внутр 98",
+            "color": null,
+            "size": "110*110 мм",
+            "image": "goods_images/2_gkoXLpK.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 727,
+        "fields": {
+            "name": "Термоквадрат (прозрачный) внутр 94",
+            "slug": "94--105105",
+            "description": "Термоквадрат (прозрачный) внутр 94",
+            "color": null,
+            "size": "105*105 мм",
+            "image": "goods_images/3_D81NzSc.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 728,
+        "fields": {
+            "name": "Термоквадрат (прозрачный) внутр 88",
+            "slug": "88--100100",
+            "description": "Термоквадрат (прозрачный) внутр 88",
+            "color": null,
+            "size": "100*100 мм",
+            "image": "goods_images/4_n0Sodym.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 729,
+        "fields": {
+            "name": "Термоквадрат (прозрачный) внутр 84",
+            "slug": "84--9595",
+            "description": "Термоквадрат (прозрачный) внутр 84",
+            "color": null,
+            "size": "95*95 мм",
+            "image": "goods_images/5_F5L3Q1r.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 730,
+        "fields": {
+            "name": "Термоквадрат (прозрачный) внутр 78",
+            "slug": "78--9090",
+            "description": "Термоквадрат (прозрачный) внутр 78",
+            "color": null,
+            "size": "90*90 мм",
+            "image": "goods_images/6_kS04yDF.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 731,
+        "fields": {
+            "name": "Термоквадрат (прозрачный) внутр 70",
+            "slug": "70--8080",
+            "description": "Термоквадрат (прозрачный) внутр 70",
+            "color": null,
+            "size": "80*80 мм",
+            "image": "goods_images/7_USQoXGG.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 732,
+        "fields": {
+            "name": "Термоквадрат (прозрачный) внутр 60",
+            "slug": "60--7070",
+            "description": "Термоквадрат (прозрачный) внутр 60",
+            "color": null,
+            "size": "70*70 мм",
+            "image": "goods_images/8_3h9GiVs.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 733,
+        "fields": {
+            "name": "Термоквадрат (прозрачный) внутр 50",
+            "slug": "50--6060",
+            "description": "Термоквадрат (прозрачный) внутр 50",
+            "color": null,
+            "size": "60*60 мм",
+            "image": "goods_images/9_8MvhRcX.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 734,
+        "fields": {
+            "name": "Термоквадрат (прозрачный) внутр 187",
+            "slug": "187--200200",
+            "description": "Термоквадрат (прозрачный) внутр 187",
+            "color": null,
+            "size": "200*200 мм",
+            "image": "goods_images/10_9wRukkS.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 735,
+        "fields": {
+            "name": "Кольцо протек.",
+            "slug": "--150",
+            "description": "Кольцо протек.",
+            "color": null,
+            "size": "150 мм",
+            "image": "goods_images/11_VbP6tuF.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 736,
+        "fields": {
+            "name": "Кольцо протек.",
+            "slug": "--180",
+            "description": "Кольцо протек.",
+            "color": null,
+            "size": "180 мм",
+            "image": "goods_images/12_Y0TV8w0.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 737,
+        "fields": {
+            "name": "Кольцо протек.",
+            "slug": "--190",
+            "description": "Кольцо протек.",
+            "color": null,
+            "size": "190 мм",
+            "image": "goods_images/13_4WGHeqW.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 738,
+        "fields": {
+            "name": "Кольцо протек.",
+            "slug": "--25",
+            "description": "Кольцо протек.",
+            "color": null,
+            "size": "25 мм",
+            "image": "goods_images/14_ZYrZ9hE.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 739,
+        "fields": {
+            "name": "Кольцо протек.",
+            "slug": "--130",
+            "description": "Кольцо протек.",
+            "color": null,
+            "size": "130 мм",
+            "image": "goods_images/1_HaybB7Z.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 740,
+        "fields": {
+            "name": "Кольцо протек.",
+            "slug": "--140",
+            "description": "Кольцо протек.",
+            "color": null,
+            "size": "140 мм",
+            "image": "goods_images/2_pkOIfjq.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 741,
+        "fields": {
+            "name": "Кольцо протек.",
+            "slug": "--145",
+            "description": "Кольцо протек.",
+            "color": null,
+            "size": "145 мм",
+            "image": "goods_images/3_wXQ0yne.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 742,
+        "fields": {
+            "name": "Кольцо протек.",
+            "slug": "--160",
+            "description": "Кольцо протек.",
+            "color": null,
+            "size": "160 мм",
+            "image": "goods_images/4_siBLZ2x.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 743,
+        "fields": {
+            "name": "Кольцо протек.",
+            "slug": "--165",
+            "description": "Кольцо протек.",
+            "color": null,
+            "size": "165 мм",
+            "image": "goods_images/5_uPtC5SL.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 744,
+        "fields": {
+            "name": "Кольцо протек.",
+            "slug": "--170",
+            "description": "Кольцо протек.",
+            "color": null,
+            "size": "170 мм",
+            "image": "goods_images/6_q72k4MP.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 745,
+        "fields": {
+            "name": "Кольцо протек.",
+            "slug": "--175",
+            "description": "Кольцо протек.",
+            "color": null,
+            "size": "175 мм",
+            "image": "goods_images/7_oVtQQpl.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 746,
+        "fields": {
+            "name": "Кольцо протек.",
+            "slug": "--185",
+            "description": "Кольцо протек.",
+            "color": null,
+            "size": "185 мм",
+            "image": "goods_images/8_kvfAnQT.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 747,
+        "fields": {
+            "name": "Кольцо протек.",
+            "slug": "--135",
+            "description": "Кольцо протек.",
+            "color": null,
+            "size": "135 мм",
+            "image": "goods_images/9_sJXszcw.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 748,
+        "fields": {
+            "name": "Кольцо протек.",
+            "slug": "--155",
+            "description": "Кольцо протек.",
+            "color": null,
+            "size": "155 мм",
+            "image": "goods_images/10_Fuea3bu.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 749,
+        "fields": {
+            "name": "Кольцо протек.",
+            "slug": "--65-2",
+            "description": "Кольцо протек.",
+            "color": null,
+            "size": "65 мм",
+            "image": "goods_images/11_YC3QGKW.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 750,
+        "fields": {
+            "name": "Кольцо протек.",
+            "slug": "--115",
+            "description": "Кольцо протек.",
+            "color": null,
+            "size": "115 мм",
+            "image": "goods_images/12_Vwqnbpq.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 751,
+        "fields": {
+            "name": "Кольцо протек.",
+            "slug": "--50",
+            "description": "Кольцо протек.",
+            "color": null,
+            "size": "50 мм",
+            "image": "goods_images/13_L31Yc61.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 752,
+        "fields": {
+            "name": "Кольцо протек.",
+            "slug": "--60-2",
+            "description": "Кольцо протек.",
+            "color": null,
+            "size": "60 мм",
+            "image": "goods_images/14_Gpz0uM8.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 753,
+        "fields": {
+            "name": "Кольцо протек.",
+            "slug": "--55",
+            "description": "Кольцо протек.",
+            "color": null,
+            "size": "55 мм",
+            "image": "goods_images/1_VBCMhe6.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 754,
+        "fields": {
+            "name": "Кольцо протек.",
+            "slug": "--205",
+            "description": "Кольцо протек.",
+            "color": null,
+            "size": "205 мм",
+            "image": "goods_images/2_RWo1B0g.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 755,
+        "fields": {
+            "name": "Кольцо протек.",
+            "slug": "--200",
+            "description": "Кольцо протек.",
+            "color": null,
+            "size": "200 мм",
+            "image": "goods_images/3_A1rDg5g.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 756,
+        "fields": {
+            "name": "Кольцо протек.",
+            "slug": "--195",
+            "description": "Кольцо протек.",
+            "color": null,
+            "size": "195 мм",
+            "image": "goods_images/4_93hB9qL.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 757,
+        "fields": {
+            "name": "Термопрямоугольник (прозрачный) под платформу ZOOM/SKILL DUO универсал.",
+            "slug": "zoomskill-duo--85165",
+            "description": "Термопрямоугольник (прозрачный) под платформу ZOOM/SKILL DUO универсал.",
+            "color": null,
+            "size": "85*165 мм",
+            "image": "goods_images/5_3JTsYh9.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 758,
+        "fields": {
+            "name": "Кольцо протек. (для GX53)",
+            "slug": "gx53--90",
+            "description": "Кольцо протек. (для GX53)",
+            "color": null,
+            "size": "90 мм",
+            "image": "goods_images/6_7H89lhf.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 759,
+        "fields": {
+            "name": "Кольцо протек.",
+            "slug": "--40",
+            "description": "Кольцо протек.",
+            "color": null,
+            "size": "40 мм",
+            "image": "goods_images/7_6UKE0CW.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 760,
+        "fields": {
+            "name": "Кольцо протек.",
+            "slug": "--75-1",
+            "description": "Кольцо протек.",
+            "color": null,
+            "size": "75 мм",
+            "image": "goods_images/8_nd8tn8R.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 761,
+        "fields": {
+            "name": "Кольцо протек.",
+            "slug": "--70-1",
+            "description": "Кольцо протек.",
+            "color": null,
+            "size": "70 мм",
+            "image": "goods_images/9_rG1w57W.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 762,
+        "fields": {
+            "name": "Кольцо протек.",
+            "slug": "--120",
+            "description": "Кольцо протек.",
+            "color": null,
+            "size": "120 мм",
+            "image": "goods_images/10_JtOGdJc.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 763,
+        "fields": {
+            "name": "Кольцо протек.",
+            "slug": "--35",
+            "description": "Кольцо протек.",
+            "color": null,
+            "size": "35 мм",
+            "image": "goods_images/11_p3jShpE.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 21,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 764,
+        "fields": {
+            "name": "Обвод Для Труб",
+            "slug": "--36",
+            "description": "Обвод Для Труб",
+            "color": "Белый",
+            "size": "36",
+            "image": "goods_images/1_WnJMVN7.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 22,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 765,
+        "fields": {
+            "name": "Обвод Для Труб",
+            "slug": "--32",
+            "description": "Обвод Для Труб",
+            "color": "Белый",
+            "size": "32",
+            "image": "goods_images/2_sel9bvG.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 22,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 766,
+        "fields": {
+            "name": "Обвод Для Труб",
+            "slug": "--22",
+            "description": "Обвод Для Труб",
+            "color": "Белый",
+            "size": "22",
+            "image": "goods_images/3_ckr6S56.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 22,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 767,
+        "fields": {
+            "name": "Обвод Для Труб",
+            "slug": "--28",
+            "description": "Обвод Для Труб",
+            "color": "Белый",
+            "size": "28",
+            "image": "goods_images/4_tEYZW79.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 22,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 768,
+        "fields": {
+            "name": "Заглушки Для Труб",
+            "slug": "--28-1",
+            "description": "Заглушки Для Труб",
+            "color": null,
+            "size": "28",
+            "image": "goods_images/5_DbeD0Yq.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 22,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 769,
+        "fields": {
+            "name": "Заглушки Для Труб",
+            "slug": "--22-1",
+            "description": "Заглушки Для Труб",
+            "color": null,
+            "size": "22",
+            "image": "goods_images/6_A19aKdy.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 22,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 770,
+        "fields": {
+            "name": "Заглушки Для Труб",
+            "slug": "--32-1",
+            "description": "Заглушки Для Труб",
+            "color": null,
+            "size": "32",
+            "image": "goods_images/7_LX34bLz.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 22,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 771,
+        "fields": {
+            "name": "Вент.решетка Вихрь ПЛАСТИК",
+            "slug": "--150-1",
+            "description": "Вент.решетка Вихрь ПЛАСТИК",
+            "color": "Черный",
+            "size": "150 мм",
+            "image": "goods_images/1_AnIW2In.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 23,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 772,
+        "fields": {
+            "name": "Вент.решетка Вихрь ПЛАСТИК",
+            "slug": "--125",
+            "description": "Вент.решетка Вихрь ПЛАСТИК",
+            "color": "Черный",
+            "size": "125 мм",
+            "image": "goods_images/2_EVXCQEt.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 23,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 773,
+        "fields": {
+            "name": "Вент.решетка Вихрь ПЛАСТИК",
+            "slug": "--100",
+            "description": "Вент.решетка Вихрь ПЛАСТИК",
+            "color": "Черный",
+            "size": "100 мм",
+            "image": "goods_images/3_OKWWeRB.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 23,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 774,
+        "fields": {
+            "name": "Вент.решетка Углы ПЛАСТИК",
+            "slug": "--150-2",
+            "description": "Вент.решетка Углы ПЛАСТИК",
+            "color": "Черный",
+            "size": "150 мм",
+            "image": "goods_images/4_ZGAd3SY.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 23,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 775,
+        "fields": {
+            "name": "Вент.решетка Углы ПЛАСТИК",
+            "slug": "--125-1",
+            "description": "Вент.решетка Углы ПЛАСТИК",
+            "color": "Черный",
+            "size": "125 мм",
+            "image": "goods_images/5_PxZseNd.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 23,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 776,
+        "fields": {
+            "name": "Вент.решетка Углы ПЛАСТИК",
+            "slug": "--100-1",
+            "description": "Вент.решетка Углы ПЛАСТИК",
+            "color": "Черный",
+            "size": "100 мм",
+            "image": "goods_images/6_EMHEZDZ.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 23,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 777,
+        "fields": {
+            "name": "Вент.решетка ЗигЗаг ПЛАСТИК",
+            "slug": "--150-3",
+            "description": "Вент.решетка ЗигЗаг ПЛАСТИК",
+            "color": "Черный",
+            "size": "150 мм",
+            "image": "goods_images/7_9t0CfVI.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 23,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 778,
+        "fields": {
+            "name": "Вент.решетка ЗигЗаг ПЛАСТИК",
+            "slug": "--125-2",
+            "description": "Вент.решетка ЗигЗаг ПЛАСТИК",
+            "color": "Черный",
+            "size": "125 мм",
+            "image": "goods_images/8_oZwE51r.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 23,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 779,
+        "fields": {
+            "name": "Вент.решетка ЗигЗаг ПЛАСТИК",
+            "slug": "--100-2",
+            "description": "Вент.решетка ЗигЗаг ПЛАСТИК",
+            "color": "Черный",
+            "size": "100 мм",
+            "image": "goods_images/9_0kFlygS.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 23,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 780,
+        "fields": {
+            "name": "Вент.решетка Кубы ПЛАСТИК",
+            "slug": "--150-4",
+            "description": "Вент.решетка Кубы ПЛАСТИК",
+            "color": "Черный",
+            "size": "150 мм",
+            "image": "goods_images/10_K7YNAdw.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 23,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 781,
+        "fields": {
+            "name": "Вент.решетка Кубы ПЛАСТИК",
+            "slug": "--125-3",
+            "description": "Вент.решетка Кубы ПЛАСТИК",
+            "color": "Черный",
+            "size": "125 мм",
+            "image": "goods_images/11_Izdhyu3.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 23,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 782,
+        "fields": {
+            "name": "Вент.решетка Кубы ПЛАСТИК",
+            "slug": "--100-3",
+            "description": "Вент.решетка Кубы ПЛАСТИК",
+            "color": "Черный",
+            "size": "100 мм",
+            "image": "goods_images/12_BYZ4iEa.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 23,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 783,
+        "fields": {
+            "name": "Вент.решетка Углы ПЛАСТИК",
+            "slug": "--150-5",
+            "description": "Вент.решетка Углы ПЛАСТИК",
+            "color": "Белый",
+            "size": "150 мм",
+            "image": "goods_images/1_tPbMlCW.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 23,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 784,
+        "fields": {
+            "name": "Вент.решетка Углы ПЛАСТИК",
+            "slug": "--125-4",
+            "description": "Вент.решетка Углы ПЛАСТИК",
+            "color": "Белый",
+            "size": "125 мм",
+            "image": "goods_images/2_SJB8pYX.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 23,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 785,
+        "fields": {
+            "name": "Вент.решетка Углы ПЛАСТИК",
+            "slug": "--100-4",
+            "description": "Вент.решетка Углы ПЛАСТИК",
+            "color": "Белый",
+            "size": "100 мм",
+            "image": "goods_images/3_H4hCFxz.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 23,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 786,
+        "fields": {
+            "name": "Вент.решетка Вихрь ПЛАСТИК",
+            "slug": "--150-6",
+            "description": "Вент.решетка Вихрь ПЛАСТИК",
+            "color": "Белый",
+            "size": "150 мм",
+            "image": "goods_images/4_CPI7tHg.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 23,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 787,
+        "fields": {
+            "name": "Вент.решетка Вихрь ПЛАСТИК",
+            "slug": "--125-5",
+            "description": "Вент.решетка Вихрь ПЛАСТИК",
+            "color": "Белый",
+            "size": "125 мм",
+            "image": "goods_images/5_OezNbvr.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 23,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 788,
+        "fields": {
+            "name": "Вент.решетка Вихрь ПЛАСТИК",
+            "slug": "--100-5",
+            "description": "Вент.решетка Вихрь ПЛАСТИК",
+            "color": "Белый",
+            "size": "100 мм",
+            "image": "goods_images/6_K3KL5V4.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 23,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 789,
+        "fields": {
+            "name": "Вент.решетка Кубы ПЛАСТИК",
+            "slug": "--75-2",
+            "description": "Вент.решетка Кубы ПЛАСТИК",
+            "color": "Белый",
+            "size": "75 мм",
+            "image": "goods_images/7_0ipCtBt.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 23,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 790,
+        "fields": {
+            "name": "Вент.решетка Кубы ПЛАСТИК",
+            "slug": "--50-1",
+            "description": "Вент.решетка Кубы ПЛАСТИК",
+            "color": "Белый",
+            "size": "50 мм",
+            "image": "goods_images/8_4Mgwf24.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 23,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 791,
+        "fields": {
+            "name": "Вент.решетка Кубы ПЛАСТИК",
+            "slug": "--150-7",
+            "description": "Вент.решетка Кубы ПЛАСТИК",
+            "color": "Белый",
+            "size": "150 мм",
+            "image": "goods_images/9_fwetOWJ.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 23,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 792,
+        "fields": {
+            "name": "Вент.решетка Кубы ПЛАСТИК",
+            "slug": "--125-6",
+            "description": "Вент.решетка Кубы ПЛАСТИК",
+            "color": "Белый",
+            "size": "125 мм",
+            "image": "goods_images/10_nWyGl1u.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 23,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 793,
+        "fields": {
+            "name": "Вент.решетка Кубы ПЛАСТИК",
+            "slug": "--100-6",
+            "description": "Вент.решетка Кубы ПЛАСТИК",
+            "color": "Белый",
+            "size": "100 мм",
+            "image": "goods_images/11_VTmPNeC.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 23,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 794,
+        "fields": {
+            "name": "Вент.решетка ЗигЗаг ПЛАСТИК",
+            "slug": "--150-8",
+            "description": "Вент.решетка ЗигЗаг ПЛАСТИК",
+            "color": "Белый",
+            "size": "150 мм",
+            "image": "goods_images/12_epigj4U.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 23,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 795,
+        "fields": {
+            "name": "Вент.решетка ЗигЗаг ПЛАСТИК",
+            "slug": "--125-7",
+            "description": "Вент.решетка ЗигЗаг ПЛАСТИК",
+            "color": "Белый",
+            "size": "125 мм",
+            "image": "goods_images/13_m2AUxFE.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 23,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 796,
+        "fields": {
+            "name": "Вент.решетка ЗигЗаг ПЛАСТИК",
+            "slug": "--100-7",
+            "description": "Вент.решетка ЗигЗаг ПЛАСТИК",
+            "color": "Белый",
+            "size": "100 мм",
+            "image": "goods_images/14_KMlvU8C.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 23,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 797,
+        "fields": {
+            "name": "Вент.решетка УНИВЕРСАЛЬНАЯ теневая с клапаном (под трубу 150/125/100мм)",
+            "slug": "150125100",
+            "description": "Вент.решетка УНИВЕРСАЛЬНАЯ теневая с клапаном (под трубу 150/125/100мм)",
+            "color": "Белый",
+            "size": null,
+            "image": "goods_images/1_i6AUaYx.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 23,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 798,
+        "fields": {
+            "name": "Вент.решетка УНИВЕРСАЛЬНАЯ теневая (под трубу 150/125/100мм)",
+            "slug": "150125100-1",
+            "description": "Вент.решетка УНИВЕРСАЛЬНАЯ теневая (под трубу 150/125/100мм)",
+            "color": "Белый",
+            "size": null,
+            "image": "goods_images/2_n4kAkDQ.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 23,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 799,
+        "fields": {
+            "name": "Вент.решетка ТЕНЕВАЯ (под трубу 125 мм)",
+            "slug": "125--150",
+            "description": "Вент.решетка ТЕНЕВАЯ (под трубу 125 мм)",
+            "color": "Белый",
+            "size": "150 мм",
+            "image": "goods_images/3_eZID6TU.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 23,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 800,
+        "fields": {
+            "name": "Вент.решетка МАГНИТНАЯ ПРЯМОУГОЛЬНАЯ",
+            "slug": "--22075",
+            "description": "Вент.решетка МАГНИТНАЯ ПРЯМОУГОЛЬНАЯ",
+            "color": "Белый",
+            "size": "220*75 мм",
+            "image": "goods_images/4_WvROrwy.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 23,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 801,
+        "fields": {
+            "name": "Вент.решетка МАГНИТНАЯ ПРЯМОУГОЛЬНАЯ",
+            "slug": "--22075-1",
+            "description": "Вент.решетка МАГНИТНАЯ ПРЯМОУГОЛЬНАЯ",
+            "color": "Черный",
+            "size": "220*75 мм",
+            "image": "goods_images/5_7D2dr7B.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 23,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 802,
+        "fields": {
+            "name": "Вент.решетка МАГНИТНАЯ",
+            "slug": "--125-8",
+            "description": "Вент.решетка МАГНИТНАЯ",
+            "color": "Черный",
+            "size": "125 мм",
+            "image": "goods_images/6_8dTNRay.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 23,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 803,
+        "fields": {
+            "name": "Вент.решетка МАГНИТНАЯ",
+            "slug": "--125-9",
+            "description": "Вент.решетка МАГНИТНАЯ",
+            "color": "Белый",
+            "size": "125 мм",
+            "image": "goods_images/7_9fsZeYE.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 23,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 804,
+        "fields": {
+            "name": "Вент. решётка с кольцом",
+            "slug": "--50-2",
+            "description": "Вент. решётка с кольцом",
+            "color": "Белый",
+            "size": "50 мм",
+            "image": "goods_images/8_sJ7kCyj.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 23,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 805,
+        "fields": {
+            "name": "Вент.решетка с кольцом",
+            "slug": "--125-10",
+            "description": "Вент.решетка с кольцом",
+            "color": "Белый",
+            "size": "125 мм",
+            "image": "goods_images/9_gyXpXM6.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 23,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 806,
+        "fields": {
+            "name": "Вент.решетка с кольцом",
+            "slug": "--100-8",
+            "description": "Вент.решетка с кольцом",
+            "color": "Белый",
+            "size": "100 мм",
+            "image": "goods_images/10_g6KX8hS.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 23,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 807,
+        "fields": {
+            "name": "Дюбель унив. NEW Синий",
+            "slug": "new--6x40",
+            "description": "Дюбель унив. NEW Синий",
+            "color": null,
+            "size": "6x40",
+            "image": "goods_images/1_jnIq3QT.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 24,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 808,
+        "fields": {
+            "name": "Дюбель унив. NEW Синий",
+            "slug": "new--6x35",
+            "description": "Дюбель унив. NEW Синий",
+            "color": null,
+            "size": "6x35",
+            "image": "goods_images/2_ZL88sZy.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 24,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 809,
+        "fields": {
+            "name": "Дюбель унив. NEW Синий",
+            "slug": "new--6x35-1",
+            "description": "Дюбель унив. NEW Синий",
+            "color": null,
+            "size": "6x35",
+            "image": "goods_images/3_XjU1mg1.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 24,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 810,
+        "fields": {
+            "name": "Дюбель унив. NEW Синий",
+            "slug": "new--6x40-1",
+            "description": "Дюбель унив. NEW Синий",
+            "color": null,
+            "size": "6x40",
+            "image": "goods_images/4_DVOlNGs.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 24,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 811,
+        "fields": {
+            "name": "Дюбель унив. NEW КРАСНЫЙ",
+            "slug": "new--6x40-2",
+            "description": "Дюбель унив. NEW КРАСНЫЙ",
+            "color": null,
+            "size": "6x40",
+            "image": "goods_images/5_dEMyNR9.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 24,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 812,
+        "fields": {
+            "name": "Дюбель унив. NEW КРАСНЫЙ",
+            "slug": "new--6x35-2",
+            "description": "Дюбель унив. NEW КРАСНЫЙ",
+            "color": null,
+            "size": "6x35",
+            "image": "goods_images/6_nopoYoJ.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 24,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 813,
+        "fields": {
+            "name": "Дюбель унив. NEW",
+            "slug": "new--6x40-3",
+            "description": "Дюбель унив. NEW",
+            "color": "Черный",
+            "size": "6x40",
+            "image": "goods_images/7_29J7Mkk.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 24,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 814,
+        "fields": {
+            "name": "Дюбель унив. NEW",
+            "slug": "new--6x40-4",
+            "description": "Дюбель унив. NEW",
+            "color": "Серый",
+            "size": "6x40",
+            "image": "goods_images/8_aMr152t.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 24,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 815,
+        "fields": {
+            "name": "Дюбель унив. NEW КРАСНЫЙ",
+            "slug": "new--6x40-5",
+            "description": "Дюбель унив. NEW КРАСНЫЙ",
+            "color": null,
+            "size": "6x40",
+            "image": "goods_images/9_C6f5brN.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 24,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 816,
+        "fields": {
+            "name": "Дюбель унив. NEW КРАСНЫЙ",
+            "slug": "new--6x35-3",
+            "description": "Дюбель унив. NEW КРАСНЫЙ",
+            "color": null,
+            "size": "6x35",
+            "image": "goods_images/10_ZzG8Uri.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 24,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 817,
+        "fields": {
+            "name": "Дюбель унив. NEW",
+            "slug": "new--6x35-4",
+            "description": "Дюбель унив. NEW",
+            "color": "Черный",
+            "size": "6x35",
+            "image": "goods_images/11_FyIZNv1.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 24,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 818,
+        "fields": {
+            "name": "Дюбель унив. NEW",
+            "slug": "new--6x35-5",
+            "description": "Дюбель унив. NEW",
+            "color": "Серый",
+            "size": "6x35",
+            "image": "goods_images/12_l20Rwzi.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 24,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 819,
+        "fields": {
+            "name": "Сушилка для обуви",
+            "slug": "",
+            "description": "Сушилка для обуви",
+            "color": "Черный",
+            "size": null,
+            "image": "goods_images/13_FyoBzF7.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 24,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 820,
+        "fields": {
+            "name": "Сушилка для обуви",
+            "slug": "-1",
+            "description": "Сушилка для обуви",
+            "color": "Белый",
+            "size": null,
+            "image": "goods_images/14_tyZG7Nw.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 24,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 821,
+        "fields": {
+            "name": "Дюбель унив. Красный",
+            "slug": "--6x51",
+            "description": "Дюбель унив. Красный",
+            "color": null,
+            "size": "6x51",
+            "image": "goods_images/1_gyqZyHD.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 24,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 822,
+        "fields": {
+            "name": "Шприц Андреева",
+            "slug": "-2",
+            "description": "Шприц Андреева",
+            "color": null,
+            "size": null,
+            "image": "goods_images/2_Bpek8LH.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 24,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 823,
+        "fields": {
+            "name": "Дюбель унив.",
+            "slug": "--6x40",
+            "description": "Дюбель унив.",
+            "color": "Черный",
+            "size": "6x40",
+            "image": "goods_images/3_ksX9ZPU.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 24,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 824,
+        "fields": {
+            "name": "Скотч",
+            "slug": "--48150",
+            "description": "Скотч",
+            "color": null,
+            "size": "48мм*150м",
+            "image": "goods_images/4_3v84KwR.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 24,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 825,
+        "fields": {
+            "name": "Дюбель унив.",
+            "slug": "--6x40-1",
+            "description": "Дюбель унив.",
+            "color": "Серый",
+            "size": "6x40",
+            "image": "goods_images/5_5WOVXhQ.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 24,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 826,
+        "fields": {
+            "name": "Дюбель унив.",
+            "slug": "--6x51-1",
+            "description": "Дюбель унив.",
+            "color": "Черный",
+            "size": "6x51",
+            "image": "goods_images/6_sjEpRHi.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 24,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 827,
+        "fields": {
+            "name": "Прямой подвес профилей ПП (60*27)",
+            "slug": "6027--27505",
+            "description": "Прямой подвес профилей ПП (60*27)",
+            "color": null,
+            "size": "275*0,5 мм",
+            "image": "goods_images/7_7ZCAMz0.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 24,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 828,
+        "fields": {
+            "name": "Клей OKONG 20гр",
+            "slug": "okong-20",
+            "description": "Клей OKONG 20гр",
+            "color": null,
+            "size": null,
+            "image": "goods_images/8_NzeWb1E.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 24,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 829,
+        "fields": {
+            "name": "Саморез",
+            "slug": "--4275",
+            "description": "Саморез",
+            "color": null,
+            "size": "4,2*75",
+            "image": "goods_images/9_S9UOdyk.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 24,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 830,
+        "fields": {
+            "name": "Дюбель унив. Красный",
+            "slug": "--6x51-2",
+            "description": "Дюбель унив. Красный",
+            "color": null,
+            "size": "6x51",
+            "image": "goods_images/10_gwceLYI.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 24,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 831,
+        "fields": {
+            "name": "Дюбель гвоздь потай",
+            "slug": "--640",
+            "description": "Дюбель гвоздь потай",
+            "color": null,
+            "size": "6*40",
+            "image": "goods_images/11_0hXw0lY.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 24,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 832,
+        "fields": {
+            "name": "Дюбель унив.",
+            "slug": "--6x35",
+            "description": "Дюбель унив.",
+            "color": "Черный",
+            "size": "6x35",
+            "image": "goods_images/12_fVSMx85.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 24,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 833,
+        "fields": {
+            "name": "Дюбель унив.",
+            "slug": "--6x35-1",
+            "description": "Дюбель унив.",
+            "color": "Черный",
+            "size": "6x35",
+            "image": "goods_images/13_EJJUAQg.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 24,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 834,
+        "fields": {
+            "name": "Дюбель унив.",
+            "slug": "--6x40-2",
+            "description": "Дюбель унив.",
+            "color": "Черный",
+            "size": "6x40",
+            "image": "goods_images/14_LxQ4xBJ.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 24,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 835,
+        "fields": {
+            "name": "Дюбель унив.",
+            "slug": "--6x35-2",
+            "description": "Дюбель унив.",
+            "color": "Серый",
+            "size": "6x35",
+            "image": "goods_images/15_h4ME9HV.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 24,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 836,
+        "fields": {
+            "name": "Дюбель унив.",
+            "slug": "--6x40-3",
+            "description": "Дюбель унив.",
+            "color": "Серый",
+            "size": "6x40",
+            "image": "goods_images/16_jFuwoDv.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 24,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 837,
+        "fields": {
+            "name": "Дюбель унив.",
+            "slug": "--6x35-3",
+            "description": "Дюбель унив.",
+            "color": "Серый",
+            "size": "6x35",
+            "image": "goods_images/17_z7yJwmP.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 24,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 838,
+        "fields": {
+            "name": "Саморез",
+            "slug": "--3551",
+            "description": "Саморез",
+            "color": null,
+            "size": "3,5*51",
+            "image": "goods_images/18_DPSGAOt.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 24,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 839,
+        "fields": {
+            "name": "Угол внешний Теневой багет",
+            "slug": "--80-1",
+            "description": "Угол внешний Теневой багет",
+            "color": null,
+            "size": "80м",
+            "image": "goods_images/1_WbtHrLW.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 25,
+            "bright": null,
+            "power": null
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 840,
+        "fields": {
+            "name": "Угол внутренний Теневой багет",
+            "slug": "--80-2",
+            "description": "Угол внутренний Теневой багет",
+            "color": null,
+            "size": "80м",
+            "image": "goods_images/2_knCfFA6.webp",
+            "image_schem": "",
+            "price": "1000.00",
+            "discount": "0.00",
+            "quantity": 50,
+            "category": 20,
+            "subcategory": 25,
+            "bright": null,
+            "power": null
+        }
     }
 ]
