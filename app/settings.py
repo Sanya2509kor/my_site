@@ -183,3 +183,14 @@ LOGIN_REDIRECT_URL = '/'
 
 DEFAULT_CHARSET = 'utf-8'
 FILE_CHARSET = 'utf-8'
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.yandex.ru'
+EMAIL_PORT = 465  # Попробуйте 465 вместо 587
+EMAIL_USE_SSL = True  # Для порта 465 используйте SSL
+EMAIL_USE_TLS = False  # Отключите TLS если используете SSL
+EMAIL_HOST_USER = 'Korchemkins0@yandex.ru'
+EMAIL_HOST_PASSWORD = 'vqbojxinmdgsskxy'  # Используйте новый пароль
+DEFAULT_FROM_EMAIL = 'Korchemkins0@yandex.ru'
+SERVER_EMAIL = 'Korchemkins0@yandex.ru'

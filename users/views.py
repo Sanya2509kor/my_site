@@ -1,13 +1,11 @@
-from email import message
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.views import LoginView
 from django.views.generic import CreateView, UpdateView, TemplateView
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib import auth, messages
 from django.http import HttpResponseRedirect
-from django.shortcuts import redirect, render
+from django.shortcuts import redirect
 from django.urls import reverse, reverse_lazy
-from traitlets import Instance
 from django.db.models import Prefetch
 
 from carts.models import Cart
@@ -49,42 +47,6 @@ class UserLoginView(LoginView):
                 return HttpResponseRedirect(self.get_success_url())
     
 
-# def login(request):
-#     if request.method == 'POST':
-#         form = UserLoginForm(data=request.POST)
-#         if form.is_valid():
-#             username = request.POST['username']
-#             password = request.POST['password']
-#             user = auth.authenticate(username=username, password=password)
-
-#             session_key = request.session.session_key
-
-#             if user:
-#                 auth.login(request, user)
-#                 messages.success(request, f"{username}, Вы вошли в аккаунт")
-
-#                 if session_key:
-#                     # delete old authorized user carts
-#                     forgot_carts = Cart.objects.filter(user=user)
-#                     if forgot_carts.exists():
-#                         forgot_carts.delete()
-#                     # add new authorized user carts from anonimous session
-#                     Cart.objects.filter(session_key=session_key).update(user=user)
-
-#                 redirect_page = request.POST.get('next', None)
-#                 if redirect_page and redirect_page != reverse('user:logout'):
-#                     return HttpResponseRedirect(request.POST.get('next'))
-#                 return HttpResponseRedirect(reverse('main:index'))
-#     else:
-#         form = UserLoginForm()
-#     context = {
-#         'title': 'Home - Авторизация',
-#         'form': form,
-#     }
-#     return render(request, 'users/login.html', context)
-
-
-
 class UserRegistrationView(CreateView):
     template_name = 'users/registration.html'
     form_class = UserRegistrationForm
@@ -110,31 +72,6 @@ class UserRegistrationView(CreateView):
         messages.success(self.request, f"{user.username}, Вы успешно зарегистрированы и вошли в аккаунт")
         return HttpResponseRedirect(self.success_url)
     
-
-# def registration(request):
-#     if request.method == 'POST':
-#         form = UserRegistrationForm(data=request.POST)
-#         if form.is_valid():
-#             form.save()
-
-#             session_key = request.session.session_key
-
-#             user = form.instance
-#             auth.login(request, user)
-
-#             if session_key:
-#                 Cart.objects.filter(session_key=session_key).update(user=user)
-
-#             messages.success(request, f"{user.username}, Вы успешно зарегистрировались и вошли в аккаунт")
-#             return HttpResponseRedirect(reverse('main:index'))
-#     else:
-#         form = UserRegistrationForm()
-#     context = {
-#         'title': 'Home - Регистация',
-#         'form': form,
-#     }
-#     return render(request, 'users/registration.html', context)
-
 
 class UserProfileView(LoginRequiredMixin, UpdateView):
     template_name = 'users/profile.html'

@@ -1,0 +1,97 @@
+.order-card {
+    transition: box-shadow 0.3s ease;
+}
+
+.order-card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+    .order-header, .order-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .order-info, .order-status, .delivery-info, .payment-method {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    
+    table thead {
+        display: none;
+    }
+    
+    table tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid #dee2e6;
+    }
+    
+    table td {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem;
+        border: none;
+    }
+    
+    table td:before {
+        content: attr(data-label);
+        font-weight: bold;
+        margin-right: 1rem;
+    }
+    
+    table tfoot tr {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+    .accordion-button:not(.collapsed) {
+    background-color: #f8f9fa;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+}
+
+@media (max-width: 768px) {
+    .order-info, .order-status {
+        width: 100%;
+    }
+    
+    .order-info h5 {
+        font-size: 1rem;
+    }
+    
+    table thead {
+        display: none;
+    }
+    
+    table tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+        border-bottom: 1px solid #dee2e6;
+    }
+    
+    table td {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.5rem;
+        border: none;
+    }
+    
+    table td:before {
+        content: attr(data-label);
+        font-weight: bold;
+        margin-right: 1rem;
+    }
+    
+    table tfoot tr {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
