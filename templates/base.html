@@ -47,7 +47,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link  text-white" href="#">Наши работы</a>
+                            <a class="nav-link  text-white" href="{% url "examples:examples" %}">Наши работы</a>
                         </li>
 
                         {% if not user.is_authenticated %}
