@@ -5,6 +5,7 @@ from django.shortcuts import redirect, render
 from django.template.loader import render_to_string
 from django.urls import reverse
 from django.views import View
+from django.db import transaction
 
 from carts.mixins import CartMixin
 from carts.models import Cart
@@ -13,9 +14,13 @@ from carts.utils import get_user_carts
 
 
 class CartAddView(CartMixin, View):
+    @transaction.atomic
     def post(self, request):
         product_id = request.POST.get('product_id')
-        product = Products.objects.get(id=product_id)
+        try:
+            product = Products.objects.get(id=product_id)
+        except Products.DoesNotExist:
+            return JsonResponse({"error": "Товар не найден"}, status=404)
 
         cart = self.get_cart(request, product=product)
 
@@ -26,10 +31,12 @@ class CartAddView(CartMixin, View):
             Cart.objects.create(user=request.user if request.user.is_authenticated else None,
                                 session_key=request.session.session_key if not request.user.is_authenticated else None,
                                 product=product, quantity=1)
-            
+        
+        user_cart = get_user_carts(request)
         response_data = {
         "message": "Товар добавлен в корзину",
         "cart_items_html": self.render_cart(request),
+        "total_quantity": user_cart.total_quantity(),
 
         }
         
@@ -81,16 +88,20 @@ class CartChangeView(CartMixin, View):
      
      def post(self, request):
         cart_id = request.POST.get('cart_id')
+        quantity = request.POST.get('quantity')
 
         cart = self.get_cart(request, cart_id=cart_id)
-        cart.quantity = request.POST.get('quantity')
+        cart.quantity = quantity
         cart.save()
 
+        
+        user_cart = get_user_carts(request)
         quantity = cart.quantity
         response_data = {
             "message": "Колличество изменено",
             "cart_items_html": self.render_cart(request),
-            "quantity": quantity
+            "quantity": quantity,
+            "total_quantity": user_cart.total_quantity()  # Добавлено
         }      
         return JsonResponse(response_data)
 
@@ -155,10 +166,14 @@ def cart_remove(request):
     user_cart = get_user_carts(request)
     cart_items_html = render_to_string("carts/includes/included_cart.html", {"carts": user_cart}, request=request)
 
+
+
     response_data = {
+        'success': True,
         "message": "Товар удален",
         "cart_items_html": cart_items_html,
-        "quantity_deleted": quantity
+        "quantity_deleted": quantity,
+        "total_quantity": user_cart.total_quantity()  # Добавлено
 
     }    
 

@@ -6,157 +6,412 @@
 {% endblock %}
 
 {% block content %}
-<div class="container mt-5">
-    <div class="card mb-5 custom-shadow">
-        <div class="row">
-            <!-- Миниатюра -->
-            <div class="col-md-4">
-                <img src="{{ product.image.url }}"
-                    class="img-thumbnail custom-image" style="height: 400px; width: 100%; object-fit: contain; object-position: center;"  data-bs-toggle="modal" data-bs-target="#imageModal1">
-            </div>
-            
-            
-            <!-- Текст справа от картинки -->
-            <div class="col-md-8">
-                <p class="product_id mt-3">id: {{ product.display_id }}</p>
-                <!-- Перенесём сюда часть контента из card-body -->
-                <h5 class="card-title">{{ product.name }}</h5>
-                <div class="product-description" style="white-space: pre-wrap; margin-right: 20px; margin-left: 10px;">{{ product.description }}</div>
-                {% if product.get_color %}
-                <div>
-                    <hr>
-                    <span style="display: inline-block; margin-left: 10px;">Цвет</span>
-                    <span style="float: right; margin-right: 100px;">{{ product.get_color }}</span>
-                    <hr>
-                </div>
-                {% endif %}
-                {% if product.get_size %}
-                <div>
-                    <hr>
-                    <span style="display: inline-block; margin-left: 10px;">Длина</span>
-                    <span style="float: right; margin-right: 100px;">{{ product.get_size }}</span>
-                    <hr>
-                </div>
-                {% endif %}
-                {% if product.get_bright %}
-                <div>
-                    <hr>
-                    <span style="display: inline-block; margin-left: 10px;">Температура</span>
-                    <span style="float: right; margin-right: 100px;">{{ product.get_bright }}</span>
-                    <hr>
-                </div>
-                {% endif %}
-                {% if product.get_power %}
-                <div>
-                    <hr>
-                    <span style="display: inline-block; margin-left: 10px;">Мощность</span>
-                    <span style="float: right; margin-right: 100px;">{{ product.get_power }}</span>
-                    <hr>
-                </div>
-                {% endif %}
-            </div>
-            {% if product.image_schem %}
-                <div class="col-md-4">
-                    <img src="{{ product.image_schem.url }}"
-                        class="img-thumbnail custom-image" data-bs-toggle="modal" data-bs-target="#imageModal2">
-                </div>
-            {% endif %}
-            <div class="col-md-8">
-                <h4 class="card-text" style="padding: 25px 100px; font-size: 20px;">Цена: <strong>{{ product.sell_price }} Руб</strong></h4>
-                <div class="text-center">
-                    <a href="{% url "cart:cart_add" %}" class="btn btn-info add-to-cart"
-                        data-product-id="{{ product.id }}" style="padding: 15px 100px; font-size: 18px;">
-                        {% csrf_token %}
-                        Добавить в корзину
-                    </a>
-                </div>
-            </div>
-            
-            
-        </div>
-        
-        <!-- Увеличить изображение в модальном окне -->
-        <div class="modal fade" id="imageModal1" tabindex="-1"
-            aria-labelledby="imageModal1Label" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="imageModal1Label">{{ product.name }}</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                            aria-label="Закрыть"></button>
+<div class="container my-5">
+    <!-- Карточка товара -->
+    <div class="product-card">
+        <div class="row g-4">
+            <!-- Основное изображение -->
+            <div class="col-lg-5">
+                <div class="product-gallery">
+                    <img src="{{ product.image.url }}" 
+                         class="product-main-img img-fluid rounded-3" 
+                         alt="{{ product.name }}"
+                         data-bs-toggle="modal" 
+                         data-bs-target="#imageModal1">
+                    
+                    {% if product.image_schem %}
+                    <div class="mt-3">
+                        <img src="{{ product.image_schem.url }}" 
+                             class="product-schematic img-fluid rounded-3" 
+                             alt="Схема {{ product.name }}"
+                             data-bs-toggle="modal" 
+                             data-bs-target="#imageModal2">
                     </div>
-                    <div class="modal-body">
-                        <img src="{{ product.image.url }}"
-                            class="img-fluid" alt="Изображение 1" style="height: 400px; width: 100%; object-fit: contain; object-position: center;" >
-                    </div>
+                    {% endif %}
                 </div>
             </div>
-        </div>
-
-        {% if product.image_schem %}
-                <!-- Увеличить изображение в модальном окне -->
-            <div class="modal fade" id="imageModal2" tabindex="-1"
-                aria-labelledby="imageModal1Label" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="imageModal1Label">{{ product.name }}</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                aria-label="Закрыть"></button>
+            
+            <!-- Информация о товаре -->
+            <div class="col-lg-7">
+                <div class="product-details">
+                    <span class="product-id">Артикул: {{ product.display_id }}</span>
+                    <h1 class="product-title">{{ product.name }}</h1>
+                    
+                    <div class="product-description">
+                        {{ product.description|linebreaks }}
+                    </div>
+                    
+                    <!-- Характеристики -->
+                    <div class="product-specs">
+                        {% if product.get_color %}
+                        <div class="spec-item">
+                            <span class="spec-name">Цвет:</span>
+                            <span class="spec-value">{{ product.get_color }}</span>
                         </div>
-                        <div class="modal-body">
-                            <img src="{{ product.image_schem.url }}"
-                                class="img-fluid" alt="Изображение 2" style="height: 400px; width: 100%; object-fit: contain; object-position: center;" >
+                        {% endif %}
+                        
+                        {% if product.get_size %}
+                        <div class="spec-item">
+                            <span class="spec-name">Длина:</span>
+                            <span class="spec-value">{{ product.get_size }}</span>
                         </div>
+                        {% endif %}
+                        
+                        {% if product.get_bright %}
+                        <div class="spec-item">
+                            <span class="spec-name">Температура:</span>
+                            <span class="spec-value">{{ product.get_bright }}</span>
+                        </div>
+                        {% endif %}
+                        
+                        {% if product.get_power %}
+                        <div class="spec-item">
+                            <span class="spec-name">Мощность:</span>
+                            <span class="spec-value">{{ product.get_power }}</span>
+                        </div>
+                        {% endif %}
                     </div>
-                </div>
-            </div>
-        {% endif %}
-        
-    </div>
-</div>
-
-    <!-- Блок сопутствующих товаров -->
-    {% if related_products %}
-    <div class="card mt-5 mb-4 custom-shadow">
-        <div class="card-header bg-dark text-white">
-            <h4 class="mb-0">С этим товаром покупают</h4>
-        </div>
-        <div class="card-body">
-            <div class="row">
-                {% for related in related_products %}
-                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                    <div class="card h-100">
-                        <a href="{{ related.get_absolute_url }}">
-                            <img src="{{ related.image.url }}" 
-                                 class="card-img-top img-fluid" 
-                                 alt="{{ related.name }}"
-                                 style="height: 200px; object-fit: cover;">
-                        </a>
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <a href="{{ related.get_absolute_url }}" class="text-dark">{{ related.get_full_name }}</a>
-                            </h5>
-                            <p class="card-text">
-                                <strong>{{ related.sell_price }} ₽</strong>
-                                {% if related.discount %}
-                                <span class="text-danger"><s>{{ related.price }} ₽</s></span>
-                                {% endif %}
-                            </p>
-                            <a href="{% url "cart:cart_add" %}" 
-                               class="btn btn-sm btn-dark add-to-cart"
-                               data-product-id="{{ related.id }}">
+                    
+                    <!-- Цена и кнопка -->
+                    <div class="product-price-section mt-4">
+                        <div class="price-wrapper">
+                            <span class="price-label">Цена:</span>
+                            <span class="price-value">{{ product.sell_price }} ₽</span>
+                            {% if product.discount %}
+                            <span class="price-discount">
+                                <s>{{ product.price }} ₽</s>
+                                <span class="badge bg-warning text-dark ms-2">Скидка {{ product.discount }}%</span>
+                            </span>
+                            {% endif %}
+                        </div>
+                        
+                        <div class="d-grid mt-3">
+                            <a href="{% url 'cart:cart_add' %}" 
+                               class="btn btn-primary add-to-cart"
+                               data-product-id="{{ product.id }}">
                                 {% csrf_token %}
-                                Добавить в корзину
+                                <i class="bi bi-cart-plus me-2"></i>Добавить в корзину
                             </a>
                         </div>
                     </div>
                 </div>
-                {% endfor %}
+            </div>
+        </div>
+    </div>
+    
+    <!-- Модальные окна для изображений -->
+    <div class="modal fade" id="imageModal1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content bg-transparent border-0">
+                <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" 
+                        data-bs-dismiss="modal" aria-label="Close"></button>
+                <img src="{{ product.image.url }}" class="img-fluid" alt="{{ product.name }}" style="max-width: 70%; max-height: 70%; margin: 0 auto; display: block;">
+            </div>
+        </div>
+    </div>
+    
+    {% if product.image_schem %}
+    <div class="modal fade" id="imageModal2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content bg-transparent border-0">
+                <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3" 
+                        data-bs-dismiss="modal" aria-label="Close"></button>
+                <img src="{{ product.image_schem.url }}" class="img-fluid" alt="Схема {{ product.name }}" style="max-width: 70%; max-height: 70%; margin: 0 auto; display: block; background-color: black;">
             </div>
         </div>
     </div>
     {% endif %}
+    
+    <!-- Сопутствующие товары -->
+    {% if related_products %}
+    <div class="related-products mt-5">
+        <h3 class="section-title mb-4">
+            <i class="bi bi-arrow-repeat me-2"></i>С этим товаром покупают
+        </h3>
+        
+        <div class="row g-4">
+            {% for related in related_products %}
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="related-product-card">
+                    <a href="{{ related.get_absolute_url }}" class="related-product-img">
+                        <img src="{{ related.image.url }}" 
+                             class="img-fluid" 
+                             alt="{{ related.name }}">
+                        {% if related.discount %}
+                        <span class="discount-badge">-{{ related.discount }}%</span>
+                        {% endif %}
+                    </a>
+                    
+                    <div class="related-product-body">
+                        <h5 class="related-product-title">
+                            <a href="{{ related.get_absolute_url }}">{{ related.get_full_name }}</a>
+                        </h5>
+                        
+                        <div class="related-product-price">
+                            <span class="current-price">{{ related.sell_price }} ₽</span>
+                            {% if related.discount %}
+                            <span class="old-price"><s>{{ related.price }} ₽</s></span>
+                            {% endif %}
+                        </div>
+                        
+                        <a href="{% url 'cart:cart_add' %}" 
+                           class="btn btn-sm btn-outline-dark add-to-cart mt-2"
+                           data-product-id="{{ related.id }}">
+                            {% csrf_token %}
+                            <i class="bi bi-cart-plus"></i> В корзину
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+</div>
 
-{% endblock %}
-
+<style>
+    /* Основные стили продукта */
+    .product-card {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        padding: 30px;
+    }
+    
+    .product-gallery {
+        position: sticky;
+        top: 20px;
+    }
+    
+    .product-main-img {
+        width: 100%;
+        height: 400px;
+        object-fit: contain;
+        object-position: center;
+        background: #0c76e0;
+        padding: 20px;
+        cursor: zoom-in;
+        transition: transform 0.3s;
+    }
+    
+    .product-main-img:hover {
+        transform: scale(1.02);
+    }
+    
+    .product-schematic {
+        max-height: 200px;
+        width: auto;
+        cursor: zoom-in;
+        border: 1px solid #0c76e0;
+    }
+    
+    .product-id {
+        color: #6c757d;
+        font-size: 0.9rem;
+    }
+    
+    .product-title {
+        font-size: 2rem;
+        font-weight: 600;
+        margin: 10px 0 20px;
+        color: #1a1a2e;
+    }
+    
+    .product-description {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #495057;
+        margin-bottom: 25px;
+    }
+    
+    .product-specs {
+        background: #f8f9fa;
+        border-radius: 8px;
+        padding: 20px;
+    }
+    
+    .spec-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .spec-item:last-child {
+        border-bottom: none;
+    }
+    
+    .spec-name {
+        color: #6c757d;
+    }
+    
+    .spec-value {
+        font-weight: 500;
+        color: #1a1a2e;
+    }
+    
+    .product-price-section {
+        border-top: 1px solid #eee;
+        padding-top: 20px;
+    }
+    
+    .price-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .price-label {
+        font-size: 1rem;
+        color: #6c757d;
+    }
+    
+    .price-value {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #1a1a2e;
+    }
+    
+    .price-discount {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .add-to-cart {
+        padding: 12px;
+        font-size: 1.1rem;
+        border-radius: 8px;
+        transition: all 0.3s;
+    }
+    
+    /* Стили для модальных окон с изображениями */
+    .modal-content.bg-transparent {
+        background: transparent !important;
+        box-shadow: none !important;
+    }
+    
+    /* Стили сопутствующих товаров */
+    .section-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #1a1a2e;
+        position: relative;
+        padding-bottom: 10px;
+    }
+    
+    .section-title:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 50px;
+        height: 3px;
+        background: #d4af37;
+    }
+    
+    .related-products {
+        margin-bottom: 50px;
+    }
+    
+    .related-product-card {
+        background: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        transition: all 0.3s;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .related-product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    
+    .related-product-img {
+        display: block;
+        position: relative;
+        height: 200px;
+        overflow: hidden;
+    }
+    
+    .related-product-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        padding: 20px;
+        background: #f8f9fa;
+    }
+    
+    .discount-badge {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: #d4af37;
+        color: #1a1a2e;
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-weight: 600;
+        font-size: 0.8rem;
+    }
+    
+    .related-product-body {
+        padding: 20px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .related-product-title {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+    
+    .related-product-title a {
+        color: #1a1a2e;
+        text-decoration: none;
+    }
+    
+    .related-product-price {
+        margin-top: auto;
+    }
+    
+    .current-price {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: #1a1a2e;
+    }
+    
+    .old-price {
+        font-size: 0.9rem;
+        color: #6c757d;
+        margin-left: 8px;
+    }
+    
+    @media (max-width: 992px) {
+        .product-main-img {
+            height: 350px;
+        }
+        
+        .product-title {
+            font-size: 1.8rem;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .product-card {
+            padding: 20px;
+        }
+        
+        .product-title {
+            font-size: 1.5rem;
+        }
+        
+        .price-value {
+            font-size: 1.8rem;
+        }
+    }
+</style>
+{% endblock  %}

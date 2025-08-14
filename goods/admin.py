@@ -46,7 +46,7 @@ class ProductsAdmin(admin.ModelAdmin):
     # prepopulated_fields = {'slug': ('name', )}
     list_display = ['name', 'color', 'size', 'category', 'subcategory']
     list_editable = [ 'color', 'size', 'category', 'subcategory']
-    search_fields = ['name', 'description']
+    search_fields = ['name', 'description', 'id']
     list_filter = ['discount', 'quantity', 'category', 'subcategory', 'color', 'size']
     fields = [
         "name", 
@@ -58,8 +58,8 @@ class ProductsAdmin(admin.ModelAdmin):
         "size",
         "image",
         "image_schem",
-        # ("price", "discount"),
-        # "quantity",
+        ("price", "discount"),
+        "quantity",
         ('power', 'bright'),
     ]
 

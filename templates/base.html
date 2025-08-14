@@ -3,7 +3,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
@@ -11,6 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href={% static "deps/css/bootstrap/bootstrap.min.css" %}>
     <link rel="stylesheet" href={% static "deps/css/my_css.css" %}>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <!-- Стиль footer-a для главной страницы -->
     {% block css %}{% endblock %}
     <!-- Favicons for different platforms -->
@@ -23,11 +25,12 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1a1a2e;">
             <div class="container">
                 <a class="navbar-brand" href={% url "main:index" %} 
-                style="background: linear-gradient(to right, #ff0000, #0000ff); -webkit-background-clip: text; color: transparent;">
-                СеАл</a>
+                style="font-family: 'Playfair Display', serif; font-size: 1.8rem; color: #d4af37;">
+                    СеАл
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -36,48 +39,48 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item dropdown ">
-                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Информация
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item  text-white" href="{% url "main:delivery" %}">Доставка и оплата</a></li>
-                                <li><a class="dropdown-item  text-white" href="{% url "main:contacts" %}">Контактная информация</a></li>
-                                <li><a class="dropdown-item  text-white" href={% url "main:about" %}>Про нас</a></li>
+                            <ul class="dropdown-menu" style="background-color: #1a1a2e;">
+                                <li><a class="dropdown-item" href="{% url "main:delivery" %}">Доставка и оплата</a></li>
+                                <li><a class="dropdown-item" href="{% url "main:contacts" %}">Контактная информация</a></li>
+                                <li><a class="dropdown-item" href={% url "main:about" %}>Про нас</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link  text-white" href="{% url "examples:examples" %}">Наши работы</a>
+                        <li class="nav-item" style="background-color: #1a1a2e;">
+                            <a class="nav-link" href="{% url "examples:examples" %}">Наши работы</a>
                         </li>
 
                         {% if not user.is_authenticated %}
-                        <li class="nav-item">
+                        <li class="nav-item" style="background-color: #1a1a2e;">
                             <a class="nav-link  text-white" href="{% url "user:login" %}">Войти</a>
                         </li>
                         {% else %}
-                        <li class="nav-item dropdown ">
-                            <a class="nav-link dropdown-toggle text-white" href="#" role="button"
+                        <li class="nav-item dropdown" style="background-color: #1a1a2e;">
+                            <a class="nav-link dropdown-toggle" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Мой профиль
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item  text-white" href="{% url "user:users_cart" %}">Корзина</a></li>
-                                <li><a class="dropdown-item  text-white" href="{% url "user:profile" %}">Личный кабинет</a>
+                            <ul class="dropdown-menu" style="background-color: #1a1a2e;">
+                                <li><a class="dropdown-item" href="{% url "user:users_cart" %}">Корзина</a></li>
+                                <li><a class="dropdown-item" href="{% url "user:profile" %}">Личный кабинет</a>
                                 </li>
                                 {% if user.is_admin or user.is_staff %}
-                                    <li><a class="dropdown-item  text-white" href="{% url "admin:index" %}">Админ панель</a></li>
+                                    <li><a class="dropdown-item" href="{% url "admin:index" %}">Админ панель</a></li>
                                 {% endif %}
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item  text-white" href="{% url "user:logout" %}">Выйти</a></li>
+                                <li><a class="dropdown-item" href="{% url "user:logout" %}">Выйти</a></li>
                             </ul>
                         </li>
                         {% endif %}
                     </ul>
                     <form class="d-flex" role="search" action="{% url "catalog:search" %}" method="get">
-                        <input class="form-control me-2" type="search" name="q" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success text-white" type="submit">Поиск</button>
+                        <input class="form-control me-2" type="search" name="q" placeholder="Поиск" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Поиск</button>
                     </form>
                 </div>
             </div>
@@ -86,16 +89,15 @@
     <section>
         <div class="container">
             <!-- Каталог и корзина с фиксированным расположением на странице -->
-            <div class="row py-2 z-3">
+            <div class="row py-2">
                 <!-- Каталог -->
                 <div class="dropdown mb-2">
-                    <button class="btn btn-secondary dropdown-toggle btn-dark" type="button" data-bs-toggle="dropdown"
+                    <button class="btn btn-outline-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         Каталог
-                        <img class="mx-1" src={% static "deps/icons/grid-fill.svg" %} alt="Catalog Icon" width="16"
-                            height="16">
+                        <i class="bi bi-grid-fill ms-1"></i>
                     </button>
-                    <ul class="dropdown-menu bg-dark" data-bs-theme="dark">
+                    <ul class="dropdown-menu" style="background-color: #1a1a2e;">
                         {% tag_categories as categories %}
                         {% tag_subcategories as subcategories %}
                         
@@ -103,15 +105,15 @@
                             <!-- Проверяем наличие подкатегорий -->
                             {% if category.has_subcategories %}
                                 <li class="dropdown-submenu">
-                                    <a class="dropdown-item text-white dropdown-toggle" 
+                                    <a class="dropdown-item dropdown-toggle" 
                                     >
                                         {{ category.name }}
                                     </a>
-                                    <ul class="dropdown-menu bg-dark">
+                                    <ul class="dropdown-menu" style="background-color: #1d1dbeff;">
                                         {% for subcategory in subcategories %}
                                             {% if subcategory.category == category %}
                                                 <li>
-                                                    <a class="dropdown-item text-white" 
+                                                    <a class="dropdown-item" 
                                                     href="{% url 'catalog:index' category.slug subcategory.slug %}">
                                                         {{ subcategory.name }}
                                                     </a>
@@ -124,7 +126,7 @@
                             {% else %}
                                 <!-- Если подкатегорий нет, просто выводим ссылку -->
                                 <li>
-                                    <a class="dropdown-item text-white" 
+                                    <a class="dropdown-item" 
                                     href="{% url 'catalog:index' category.slug %}">
                                         {{ category.name }}
                                     </a>
@@ -134,7 +136,7 @@
                     </ul>
                 </div>
                 <!-- Значек корзины, вызывает модальное окно -->
-                {% block modal_cart %}{% endblock  %}
+                
                 <!-- Закончилась разметка модального окна -->
             </div>
         </div>
@@ -150,6 +152,7 @@
                     {% block content %}{% endblock  %}
                 </div>
             </div>
+            {% block modal_cart %}{% endblock  %}
         </div>
     </section>
     {% block footer %}{% endblock %}

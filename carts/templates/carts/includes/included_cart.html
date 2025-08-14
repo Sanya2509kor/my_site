@@ -3,47 +3,53 @@
 <link rel="stylesheet" href={% static "deps/css/carts/carts_css.css" %}>
 
 <div class="cart-container">
-    <div class="cart-header">
-        <h2>Ваша корзина</h2>
-        <span class="badge bg-dark">{{ carts.total_quantity }} товар(а)</span>
+    <div class="cart-header d-flex justify-content-between align-items-center mb-4">
+        <h2 class="mb-0"><i class="bi bi-cart3 me-2"></i>Ваша корзина</h2>
+        <span class="badge bg-primary rounded-pill fs-6">{{ carts.total_quantity }} товар(а)</span>
     </div>
 
     {% for cart in carts %}
-    <div class="cart-item card shadow-sm mb-3">
-        <div class="card-body">
+    <div class="cart-item card border-0 shadow-sm mb-3 overflow-hidden">
+        <div class="card-body p-4">
             <div class="row align-items-center">
                 <!-- Изображение товара -->
-                <div class="col-md-2 col-3">
-                    <a href="{{ cart.product.get_absolute_url }}">
-                        <img src="{{ cart.product.image.url }}" alt="{{ cart.product.name }}" class="img-fluid rounded">
+                <div class="col-md-2 col-3 pe-0">
+                    <a href="{{ cart.product.get_absolute_url }}" class="d-block ratio ratio-1x1">
+                        <img src="{{ cart.product.image.url }}" alt="{{ cart.product.name }}" class="img-fluid rounded-3 object-fit-cover">
                     </a>
                 </div>
                 
                 <!-- Название товара -->
-                <div class="col-md-4 col-9">
-                    <h5 class="cart-item-title">
-                        <a href="{{ cart.product.get_absolute_url }}">{{ cart.product.get_full_name }}</a>
+                <div class="col-md-4 col-9 ps-md-3">
+                    <h5 class="cart-item-title mb-1">
+                        <a href="{{ cart.product.get_absolute_url }}" class="text-decoration-none text-dark">
+                            {{ cart.product.get_full_name }}
+                        </a>
                     </h5>
+                    <small class="text-muted d-block">Арт: {{ cart.product.display_id }}</small>
+                    {% if cart.product.discount %}
+                    <span class="badge bg-warning text-dark mt-1">Скидка {{ cart.product.discount }}%</span>
+                    {% endif %}
                 </div>
                 
                 <!-- Управление количеством -->
-                <div class="col-md-3 col-12 mt-md-0 mt-2">
-                    <div class="quantity-control d-flex align-items-center justify-content-center">
-                        <button type="button" class="btn btn-outline-dark btn-sm cart-btn-decrement"
+                <div class="col-md-3 col-12 mt-md-0 mt-3">
+                    <div class="quantity-control d-flex align-items-center">
+                        <button type="button" class="btn btn-outline-secondary btn-sm cart-btn-decrement px-3"
                             data-cart-id="{{ cart.id }}"
                             data-cart-change-url="{% url 'cart:cart_change' %}">
                             {% csrf_token %}
-                            -
+                            <i class="bi bi-dash"></i>
                         </button>
                         
                         <input type="text" class="form-control text-center mx-2 quantity-input" 
                                value="{{ cart.quantity }}" readonly>
                         
-                        <button type="button" class="btn btn-outline-dark btn-sm cart-btn-increment"
+                        <button type="button" class="btn btn-outline-secondary btn-sm cart-btn-increment px-3"
                             data-cart-id="{{ cart.id }}"
                             data-cart-change-url="{% url 'cart:cart_change' %}">
                             {% csrf_token %}
-                            +
+                            <i class="bi bi-plus"></i>
                         </button>
                     </div>
                 </div>
@@ -56,10 +62,10 @@
                             <div class="fw-bold">Итого: {{ cart.products_price }} ₽</div>
                         </div>
                         
-                        <a href="{% url "cart:cart_remove"%}" class="btn btn-link text-danger cart-btn-remove" 
+                        <a href="{% url "cart:cart_remove"%}" class="btn btn-link text-danger p-0 cart-btn-remove" 
                            data-cart-id="{{ cart.id }}">
                             {% csrf_token %}
-                            <img src="{% static "deps/icons/trash3-fill.svg" %}" alt="Удалить" width="20" height="20">
+                            <i class="bi bi-trash-fill fs-5"></i>
                         </a>
                     </div>
                 </div>
@@ -69,14 +75,14 @@
     {% endfor %}
 
     <!-- Итоговая сумма -->
-    <div class="cart-total card shadow-sm mt-4">
-        <div class="card-body">
+    <div class="cart-total card border-0 shadow-sm mt-4">
+        <div class="card-body py-3">
             <div class="d-flex justify-content-between align-items-center">
                 <div>
                     <h5 class="mb-0">Общая сумма:</h5>
                     <small class="text-muted">{{ carts.total_quantity }} товар(а)</small>
                 </div>
-                <h4 class="mb-0 text-dark">{{ carts.total_price }} ₽</h4>
+                <h4 class="mb-0 text-gold">{{ carts.total_price }} ₽</h4>
             </div>
         </div>
     </div>
@@ -84,8 +90,8 @@
     <!-- Кнопка оформления заказа -->
     {% if carts and not order %}
     <div class="d-grid gap-2 mt-4">
-        <a class="btn btn-dark btn-lg" href="{% url "orders:create_order" %}">
-            Оформить заказ
+        <a class="btn btn-dark btn-lg py-3 rounded-pill" href="{% url "orders:create_order" %}">
+            <i class="bi bi-bag-check me-2"></i>Оформить заказ
         </a>
     </div>
     {% endif %}
