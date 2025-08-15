@@ -2,101 +2,131 @@
 {% load static %}
 {% load carts_tags %}
 
+{% block css %}
+<link rel="stylesheet" href="{% static 'deps/css/users/profile_css.css' %}">
+{% endblock %}
+
 {% block content %}
-<link rel="stylesheet" href={% static "deps/css/users/profile_css.css" %}>
+<div class="profile-container">
+    <div class="profile-header">
+        <h1 class="profile-title">
+            <i class="bi bi-person-circle"></i> Мой профиль
+        </h1>
+    </div>
 
-<div class="row">
-    <div class="container mt-5">
-        <div class="row">
-            <!-- Профиль с данными пользователя -->
-            <div class="col-md-5">
-                <div class=" bg-white p-4 mb-4 mx-2 rounded custom-shadow">
-                    <h3 class="text-center mb-4">Профиль пользователя</h3>
-                    <form action="{% url "users:profile" %}" method="post" enctype="multipart/form-data">
-                        {% csrf_token %}
-                        <div class="row">
-                            <div class="col-md-12 mb-3 text-center">
-                                {% if user.image %}
-                                    <img src="{{ user.image.url }}"
-                                        alt="Аватар пользователя" class="img-fluid rounded-circle"
-                                        style="max-width: 150px;">
-                                {% else %}
-                                    <img src="{% static "deps/images/baseavatar.jpg" %}"
-                                        alt="Аватар пользователя" class="img-fluid rounded-circle"
-                                        style="max-width: 150px;">
-                                {% endif %}
-                                <input type="file" class="form-control mt-3" id="id_image"
-                                    name="image"
-                                    accept="image/*">
-                                    {% if form.image.errors %}
-                                        <div class="alert alert-danger alert-dismissible fade show">{{ form.image.errors }}</div>
-                                    {% endif %}
-                            </div>
-                            <div class="col-md-12 mb-3">
-                                <label for="id_first_name" class="form-label">Имя*</label>
-                                <input type="text" class="form-control" id="id_first_name"
-                                    name="first_name"
-                                    placeholder="Введите ваше имя" 
-                                    value="{{form.first_name.value}}"
-                                    required>
-                                    {% if form.first_name.errors %}
-                                        <div class="alert alert-danger alert-dismissible fade show">{{ form.first_name.errors }}</div>
-                                    {% endif %}
-                            </div>
-                            <div class="col-md-12 mb-3">
-                                <label for="id_last_name" class="form-label">Фамилия*</label>
-                                <input type="text" class="form-control" id="id_last_name"
-                                    name="last_name"
-                                    placeholder="Введите вашу фамилию" 
-                                    value="{{form.last_name.value}}" 
-                                    required>
-                                    {% if form.last_name.errors %}
-                                        <div class="alert alert-danger alert-dismissible fade show">{{ form.last_name.errors }}</div>
-                                    {% endif %}
-                            </div>
-                            <div class="col-md-12 mb-3">
-                                <label for="id_username" class="form-label">Имя пользователя*</label>
-                                <input type="text" class="form-control" id="id_username"
-                                    name="username"
-                                    placeholder="Введите ваше имя пользователя" 
-                                    value="{{form.username.value}}" 
-                                    required>
-                                    {% if form.username.errors %}
-                                        <div class="alert alert-danger alert-dismissible fade show">{{ form.username.errors }}</div>
-                                    {% endif %}
-                            </div>
-                            <div class="col-md-12 mb-3">
-                                <label for="id_email" class="form-label">Email*</label>
-                                <input type="email" class="form-control" id="id_email"
-                                    name="email"
-                                    placeholder="Введите ваш email *youremail@example.com" 
-                                    value="{{form.email.value}}"
-                                    required>
-                                    {% if form.email.errors %}
-                                        <div class="alert alert-danger alert-dismissible fade show">{{ form.email.errors }}</div>
-                                    {% endif %}
-                            </div>
+    <div class="profile-content">
+        <!-- Левая колонка - профиль -->
+        <div class="profile-section">
+            <div class="profile-card">
+                <form action="{% url 'users:profile' %}" method="post" enctype="multipart/form-data" class="profile-form">
+                    {% csrf_token %}
+                    <div class="profile-avatar-section">
+                        <div class="avatar-wrapper">
+                            {% if user.image %}
+                            <img src="{{ user.image.url }}" 
+                                class="profile-avatar" 
+                                alt="Аватар пользователя">
+                            {% else %}
+                            <img src="{% static 'deps/images/baseavatar.jpg' %}" 
+                                class="profile-avatar" 
+                                alt="Аватар по умолчанию">
+                            {% endif %}
+                            <label for="id_image" class="avatar-upload-btn">
+                                <i class="bi bi-camera-fill"></i> Изменить
+                            </label>
+                            <input type="file" id="id_image" name="image" accept="image/*" class="d-none">
                         </div>
-                        <button type="submit" class="btn btn-dark">Сохранить</button>
-                    </form>
-                </div>
-            </div>
-            <!-- Корзина -->
-            {% user_carts request as carts %}
-
-            <div class="col-md-7">
-                <div class=" bg-white p-4 mb-4 mx-2 rounded custom-shadow">
-                    <h3 class="text-center mb-4">Корзина</h3>
-                    <div class="container" id="cart-items-container">
-                        <!-- Разметка корзины -->
-                        {% include "carts/includes/included_cart.html" %}
-                        <!-- Закончилась разметка корзины -->
+                        {% if form.image.errors %}
+                        <div class="form-error">{{ form.image.errors }}</div>
+                        {% endif %}
                     </div>
-                </div>
+
+                
+                    
+                    <div class="form-group">
+                        <label for="id_first_name" class="form-label">
+                            <i class="bi bi-person-fill"></i> Имя
+                        </label>
+                        <input type="text" class="form-control" id="id_first_name"
+                               name="first_name" value="{{ form.first_name.value }}"
+                               placeholder="Ваше имя" required>
+                        {% if form.first_name.errors %}
+                        <div class="form-error">{{ form.first_name.errors }}</div>
+                        {% endif %}
+                    </div>
+
+                    <div class="form-group">
+                        <label for="id_last_name" class="form-label">
+                            <i class="bi bi-person-lines-fill"></i> Фамилия
+                        </label>
+                        <input type="text" class="form-control" id="id_last_name"
+                               name="last_name" value="{{ form.last_name.value }}"
+                               placeholder="Ваша фамилия" required>
+                        {% if form.last_name.errors %}
+                        <div class="form-error">{{ form.last_name.errors }}</div>
+                        {% endif %}
+                    </div>
+
+                    <div class="form-group">
+                        <label for="id_username" class="form-label">
+                            <i class="bi bi-person-badge"></i> Имя пользователя
+                        </label>
+                        <input type="text" class="form-control" id="id_username"
+                               name="username" value="{{ form.username.value }}"
+                               placeholder="Логин" required>
+                        {% if form.username.errors %}
+                        <div class="form-error">{{ form.username.errors }}</div>
+                        {% endif %}
+                    </div>
+
+                    <div class="form-group">
+                        <label for="id_email" class="form-label">
+                            <i class="bi bi-envelope-fill"></i> Email
+                        </label>
+                        <input type="email" class="form-control" id="id_email"
+                               name="email" value="{{ form.email.value }}"
+                               placeholder="example@mail.com" required>
+                        {% if form.email.errors %}
+                        <div class="form-error">{{ form.email.errors }}</div>
+                        {% endif %}
+                    </div>
+
+                    <button type="submit" class="btn-save">
+                        <i class="bi bi-check-circle"></i> Сохранить изменения
+                    </button>
+                </form>
             </div>
-            <!-- Оформленные заказы -->
-            {% include "orders/list_orders.html" %}
+        </div>
+
+        <!-- Правая колонка - корзина и заказы -->
+        <div class="profile-actions-section">
+            <!-- Корзина -->
+            {% comment %} <div class="profile-cart-section">
+                <div class="section-header">
+                    <h3>
+                        <i class="bi bi-cart3"></i> Моя корзина
+                    </h3>
+                </div>
+                <div class="cart-container" id="cart-items-container">
+                    {% user_carts request as carts %}
+                    {% include "carts/includes/included_cart.html" %}
+                </div>
+            </div> {% endcomment %}
+
+            <!-- История заказов -->
+            <div class="profile-orders-section">
+                <div class="section-header">
+                    <h3>
+                        <i class="bi bi-receipt"></i> История заказов
+                    </h3>
+                </div>
+                {% include "orders/list_orders.html" %}
+            </div>
         </div>
     </div>
 </div>
 {% endblock %}
+
+{% block modal_cart %}
+{% include "includes/cart_button.html" %}
+{% endblock  %}

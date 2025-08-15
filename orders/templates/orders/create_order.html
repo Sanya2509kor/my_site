@@ -2,102 +2,293 @@
 {% load static %}
 {% load carts_tags %}
 
-{% block content %}
-<div class=" bg-white p-4 mb-4 mx-2 rounded custom-shadow">
-    <div class="container">
-        <h3 class="text-center mb-4">Выбранные товары</h3>
-        <div class="container" id="cart-items-container">
-            <!-- Разметка корзины -->
-            {% user_carts request as carts %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'deps/css/order.css' %}">
+{% endblock %}
 
-            {% include "carts/includes/included_cart.html" %}
-            <!-- Закончилась разметка корзины -->
+{% block content %}
+<div class="order-container">
+    <div class="order-card">
+        <!-- Секция товаров в корзине -->
+        <div class="order-section">
+            <h2 class="section-title">
+                <i class="bi bi-cart-check"></i>
+                Ваши товары
+            </h2>
+            <div id="cart-items-container">
+                {% user_carts request as carts %}
+                {% include "carts/includes/included_cart.html" %}
+            </div>
         </div>
-    </div>
-    <!-- Детали заказа -->
-    <div class="container">
-        <h3 class="text-center">Детали заказа</h3>
-        <div class="card mb-3">
-            <div class="card-body">
-                <form action="{% url "orders:create_order" %}" method="post" id="create_order_form">
-                    {% csrf_token %}
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label for="id_first_name" class="form-label">Имя*:</label>
-                            <input type="text" class="form-control" id="id_first_name"
-                                value="{% if form.first_name.value %}{{ form.first_name.value }}{% endif %}"
-                                name="first_name" required>
-                            {% if form.first_name.errors %}
-                                <div class="alert alert-danger alert-dismissible fade show">{{form.first_name.errors}}</div>
-                            {% endif %}
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="id_last_name" class="form-label">Фамилия*:</label>
-                            <input type="text" class="form-control" id="id_last_name" name="last_name"
-                            value="{% if form.last_name.value %}{{ form.last_name.value }}{% endif %}"
-                            required>
-                            {% if form.last_name.errors %}
-                                <div class="alert alert-danger alert-dismissible fade show">{{form.last_name.errors}}</div>
-                            {% endif %}
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label for="id_phone_number" class="form-label">Номер телефона*:</label>
-                            <input type="text" class="form-control" id="id_phone_number" name="phone_number"
-                                value="{% if form.phone_number.value %}{{ form.phone_number.value }}{% endif %}"
-                                placeholder="(000) 000-0000"
-                                required>
-                            {% if form.phone_number.errors %}
-                                <div class="alert alert-danger alert-dismissible fade show">{{form.phone_number.errors}}</div>
-                            {% endif %}
-                            <div class="alert alert-danger alert-dismissible fade show" style="display: none" id="phone_number_error">Неверный формат номера</div>
-                        </div>
-                        <div class="col-md-12 mb-3">
-                            <label for="delivery" class="form-label">Способ доставки: </label>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="requires_delivery"
-                                    id="id_requires_delivery" value="1" checked>
-                                <label class="form-check-label" for="id_requires_delivery">Нужна
-                                    доставка</label>
+
+        <!-- Секция оформления заказа -->
+        <div class="order-section">
+            <h2 class="section-title">
+                <i class="bi bi-truck"></i>
+                Оформление заказа
+            </h2>
+            
+            <form action="{% url 'orders:create_order' %}" method="post" id="create_order_form" class="order-form">
+                {% csrf_token %}
+                
+                <div class="form-grid">
+                    <!-- Личные данные -->
+                    <div class="form-group">
+                        <label for="id_first_name" class="form-label">Имя*</label>
+                        <input type="text" class="form-control" id="id_first_name" 
+                               name="first_name" required
+                               value="{% if form.first_name.value %}{{ form.first_name.value }}{% endif %}">
+                        {% if form.first_name.errors %}
+                        <div class="form-error">{{ form.first_name.errors }}</div>
+                        {% endif %}
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="id_last_name" class="form-label">Фамилия*</label>
+                        <input type="text" class="form-control" id="id_last_name" 
+                               name="last_name" required
+                               value="{% if form.last_name.value %}{{ form.last_name.value }}{% endif %}">
+                        {% if form.last_name.errors %}
+                        <div class="form-error">{{ form.last_name.errors }}</div>
+                        {% endif %}
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="id_phone_number" class="form-label">Телефон*</label>
+                        <input type="text" class="form-control" id="id_phone_number" 
+                               name="phone_number" required
+                               placeholder="(000) 000-0000"
+                               value="{% if form.phone_number.value %}{{ form.phone_number.value }}{% endif %}">
+                        {% if form.phone_number.errors %}
+                        <div class="form-error">{{ form.phone_number.errors }}</div>
+                        {% endif %}
+                        <div class="form-error" id="phone_number_error" style="display: none;">Неверный формат номера</div>
+                    </div>
+                    
+                    <!-- Доставка -->
+                    <div class="form-group delivery-method">
+                        <label class="form-label">Способ доставки</label>
+                        <div class="delivery-options">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="requires_delivery" 
+                                       id="id_requires_delivery_1" value="1" checked>
+                                <label class="form-check-label" for="id_requires_delivery_1">
+                                    <i class="bi bi-truck"></i> Доставка
+                                </label>
                             </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="requires_delivery"
-                                    id="id_requires_delivery" value="0">
-                                <label class="form-check-label" for="id_requires_delivery">Самовывоз</label>
-                            </div>
-                        </div>
-                        <div class="mb-3" id="deliveryAddressField">
-                            <label for="id_delivery_address" class="form-label">Адрес
-                                доставки*:</label>
-                            <textarea class="form-control" id="id_delivery_address"
-                                name="delivery_address" rows="2">{% if form.delivery_address.value %}{{ form.delivery_address.value }}{% endif %}
-                            </textarea>
-                            {% if form.delivery_address.errors %}
-                                <div class="alert alert-danger alert-dismissible fade show">{{form.delivery_address.errors}}</div>
-                            {% endif %}
-                        </div>
-                        <div class="col-md-12 mb-3">
-                            <label class="form-label">Способ оплаты: </label>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="payment_on_get"
-                                    id="id_payment_on_get" value="0" checked>
-                                <label class="form-check-label" for="id_payment_on_get">Оплата
-                                    картой</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="payment_on_get"
-                                    id="id_payment_on_get" value="1">
-                                <label class="form-check-label" for="id_payment_on_get">Наличными/картой
-                                    при плучении</label>
-                                {% if form.payment_on_get.errors %}
-                                    <div class="alert alert-danger alert-dismissible fade show">{{form.payment_on_get.errors}}</div>
-                                {% endif %}
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="requires_delivery" 
+                                       id="id_requires_delivery_0" value="0">
+                                <label class="form-check-label" for="id_requires_delivery_0">
+                                    <i class="bi bi-shop"></i> Самовывоз
+                                </label>
                             </div>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-dark">Оформить заказ</button>
-                </form>
-            </div>
+                    
+                    <!-- Адрес доставки -->
+                    <div class="form-group" id="deliveryAddressField">
+                        <label for="id_delivery_address" class="form-label">Адрес доставки*</label>
+                        <textarea class="form-control" id="id_delivery_address" 
+                                  name="delivery_address" rows="2">{% if form.delivery_address.value %}{{ form.delivery_address.value }}{% endif %}</textarea>
+                        {% if form.delivery_address.errors %}
+                        <div class="form-error">{{ form.delivery_address.errors }}</div>
+                        {% endif %}
+                    </div>
+                    
+                    <!-- Оплата -->
+                    <div class="form-group payment-method">
+                        <label class="form-label">Способ оплаты</label>
+                        <div class="payment-options">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="payment_on_get" 
+                                       id="id_payment_on_get_0" value="0" checked>
+                                <label class="form-check-label" for="id_payment_on_get_0">
+                                    <i class="bi bi-credit-card"></i> Оплата картой онлайн
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="payment_on_get" 
+                                       id="id_payment_on_get_1" value="1">
+                                <label class="form-check-label" for="id_payment_on_get_1">
+                                    <i class="bi bi-cash"></i> Наличными/картой при получении
+                                </label>
+                            </div>
+                        </div>
+                        {% if form.payment_on_get.errors %}
+                        <div class="form-error">{{ form.payment_on_get.errors }}</div>
+                        {% endif %}
+                    </div>
+                </div>
+                
+                <div class="form-submit">
+                    <button type="submit" class="btn-submit-order">
+                        <i class="bi bi-check-circle"></i> Подтвердить заказ
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
-{% endblock  %}
+
+<style>
+    /* Основные стили */
+.order-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+.order-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+.order-section {
+    padding: 30px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.order-section:last-child {
+    border-bottom: none;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    color: #1a1a2e;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section-title i {
+    color: #d4af37;
+}
+
+/* Форма заказа */
+.order-form {
+    margin-top: 20px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #1a1a2e;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.form-control:focus {
+    border-color: #d4af37;
+    box-shadow: 0 0 0 0.2rem rgba(212, 175, 55, 0.25);
+}
+
+textarea.form-control {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.form-error {
+    color: #dc3545;
+    font-size: 0.85rem;
+    margin-top: 5px;
+}
+
+/* Способы доставки и оплаты */
+.delivery-options, .payment-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.form-check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-check-input {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+}
+
+.form-check-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+/* Кнопка подтверждения */
+.form-submit {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.btn-submit-order {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-submit-order:hover {
+    background: linear-gradient(135deg, #16213e, #1a1a2e);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(26, 26, 46, 0.2);
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+    .order-section {
+        padding: 20px;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .btn-submit-order {
+        width: 100%;
+        justify-content: center;
+    }
+}
+</style>
+
+{% endblock %}

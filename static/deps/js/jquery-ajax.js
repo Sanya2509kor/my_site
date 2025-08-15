@@ -101,56 +101,59 @@ $(document).ready(function () {
     $(document).on("click", ".cart-btn-remove", function (e) {
         e.preventDefault();
         if (isProcessing) return;
-        isProcessing = true;
-
+        
         var button = $(this);
         var cartItem = button.closest('.cart-item');
         
-        // Анимация нажатия
-        button.css('transform', 'scale(0.9)');
+        // Добавляем анимацию тряски
+        button.addClass('shaking');
         
-        $.ajax({
-            type: "POST",
-            url: button.attr("href"),
-            data: {
-                cart_id: button.data("cart-id"),
-                csrfmiddlewaretoken: $("[name=csrfmiddlewaretoken]").val(), // Альтернативный способ
-            },
-            success: function(data) {
-                // Проверка успешного удаления
-                if (data.success) {
-                    // Анимация удаления с fadeOut и slideUp
-                    cartItem.animate(
-                        { 
-                            opacity: 0,
-                            height: 0,
-                            paddingTop: 0,
-                            paddingBottom: 0,
-                            marginBottom: 0
-                        }, 
-                        800,
-                        function() {
+        // Удаляем класс анимации после завершения
+        setTimeout(function() {
+            button.removeClass('shaking');
+            isProcessing = true;
+            
+            $.ajax({
+                type: "POST",
+                url: button.data("cart-remove-url"),
+                data: {
+                    cart_id: button.data("cart-id"),
+                    csrfmiddlewaretoken: $("[name=csrfmiddlewaretoken]").val(),
+                },
+                success: function(data) {
+                    if (data.success) {
+                        // Добавляем анимацию перед удалением
+                        cartItem.css({
+                            'position': 'relative',
+                            'overflow': 'hidden'
+                        }).animate({
+                            'height': 0,
+                            'opacity': 0,
+                            'padding-top': 0,
+                            'padding-bottom': 0,
+                            'margin-bottom': 0
+                        }, 500, function() {
                             $(this).remove();
                             updateCartUI(data);
-
+                            
                             if (data.total_quantity === 0) {
                                 location.reload();
                             }
-                        }
-                    );
-                } else {
-                    console.error("Ошибка удаления:", data.message);
-                    updateCartUI(data);
+                        });
+                    } else {
+                        console.error("Ошибка удаления:", data.message);
+                        updateCartUI(data);
+                    }
+                },
+                error: function(xhr) {
+                    console.error("AJAX ошибка:", xhr.responseText);
+                    button.css('transform', 'scale(1)');
+                },
+                complete: function() {
+                    isProcessing = false;
                 }
-            },
-            error: function(xhr) {
-                console.error("AJAX ошибка:", xhr.responseText);
-                button.animate({ transform: 'scale(1)' }, 200);
-            },
-            complete: function() {
-                isProcessing = false;
-            }
-        });
+            });
+        }, 400); // Задержка для завершения анимации тряски
     });
 
     // Общая функция для изменения количества с анимацией

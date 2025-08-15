@@ -2,11 +2,6 @@
 {% load static %}
 
 
-{% block css %}
-    <link rel="stylesheet" href={% static "deps/css/my_footer_css.css" %}>
-{% endblock  %}
-
-
 {% block modal_cart %}
 {% include "includes/cart_button.html" %}
 {% endblock  %}
@@ -18,14 +13,5 @@
         <p class="m-2">{{ text_on_page }}</p>
     </div>
 {% endblock %}
-
-
-{% block footer %}
-    <footer class="py-4 bg-dark">
-        <div class="container">
-            <p class="m-0 text-center text-white">&copy; СеАл 2025</p>
-        </div>
-    </footer>
-{% endblock  %}
 
 

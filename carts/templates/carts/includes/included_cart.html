@@ -27,9 +27,7 @@
                         </a>
                     </h5>
                     <small class="text-muted d-block">Арт: {{ cart.product.display_id }}</small>
-                    {% if cart.product.discount %}
-                    <span class="badge bg-warning text-dark mt-1">Скидка {{ cart.product.discount }}%</span>
-                    {% endif %}
+                    
                 </div>
                 
                 <!-- Управление количеством -->
@@ -62,15 +60,21 @@
                             <div class="fw-bold">Итого: {{ cart.products_price }} ₽</div>
                         </div>
                         
-                        <a href="{% url "cart:cart_remove"%}" class="btn btn-link text-danger p-0 cart-btn-remove" 
-                           data-cart-id="{{ cart.id }}">
-                            {% csrf_token %}
-                            <i class="bi bi-trash-fill fs-5"></i>
-                        </a>
+                        <button type="button" class="btn btn-link text-danger p-0 cart-btn-remove" 
+                            data-cart-id="{{ cart.id }}"
+                            data-cart-remove-url="{% url 'cart:cart_remove' %}"
+                            aria-label="Удалить товар">
+                                <span class="cart-btn-remove-inner">
+                                    <i class="bi bi-trash-fill fs-5"></i>
+                                </span>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
+        {% if cart.product.discount %}
+            <span class="text-center bg-warning text-dark mt-1">Скидка {{ cart.product.discount }}%</span>
+        {% endif %}
     </div>
     {% endfor %}
 

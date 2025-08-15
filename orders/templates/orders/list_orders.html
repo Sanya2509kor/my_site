@@ -22,9 +22,10 @@
                                 <div class="order-status">
                                     <span class="badge 
                                         {% if order.status == 'В обработке' %}bg-primary
-                                        {% elif order.status == 'Отправлен' %}bg-info
-                                        {% elif order.status == 'Доставлен' %}bg-success
+                                        {% elif order.status == 'В доставке' %}bg-info
+                                        {% elif order.status == 'Завершен' %}bg-success
                                         {% elif order.status == 'Отменен' %}bg-danger
+                                         {% elif order.status == 'Подтвержден' %}bg-warning
                                         {% else %}bg-secondary{% endif %}">
                                         {{ order.status }}
                                     </span>
@@ -36,8 +37,8 @@
                         aria-labelledby="heading{{ order.id }}" data-bs-parent="#ordersAccordion">
                         <div class="accordion-body p-0">
                             <div class="order-details">
-                                <div class="table-responsive">
-                                    <table class="table table-hover mb-0">
+                                <div class="table-responsive" style="overflow-x: auto; overflow-y: hidden;">
+                                    <table class="table table-hover mb-0" style="min-width: 600px;">
                                         <!-- Таблица с товарами -->
                                         <thead class="table-light">
                                             <tr>

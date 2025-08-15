@@ -1,97 +1,214 @@
-.order-card {
-    transition: box-shadow 0.3s ease;
+/* Основные стили профиля */
+.profile-container {
+    max-width: 1400px;
+    margin: 30px auto;
+    padding: 20px;
 }
 
-.order-card:hover {
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+.profile-header {
+    margin-bottom: 30px;
+    text-align: center;
 }
 
+.profile-title {
+    font-family: 'Playfair Display', serif;
+    color: #1a1a2e;
+    font-size: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.profile-title i {
+    color: #d4af37;
+}
+
+.profile-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+}
+
+@media (max-width: 992px) {
+    .profile-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Карточка профиля */
+.profile-card {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    height: 100%;
+}
+
+.profile-avatar-section {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.avatar-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.profile-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #d4af37;
+}
+
+.avatar-upload-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: #1a1a2e;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.avatar-upload-btn:hover {
+    background: #d4af37;
+    color: #1a1a2e;
+    transform: scale(1.1);
+}
+
+/* Форма профиля */
+.profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #1a1a2e;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.form-label i {
+    color: #d4af37;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.form-control:focus {
+    border-color: #d4af37;
+    box-shadow: 0 0 0 0.2rem rgba(212, 175, 55, 0.25);
+}
+
+.form-error {
+    color: #dc3545;
+    font-size: 0.85rem;
+    margin-top: 5px;
+}
+
+.btn-save {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.btn-save:hover {
+    background: linear-gradient(135deg, #16213e, #1a1a2e);
+    transform: translateY(-2px);
+}
+
+/* Секции корзины и заказов */
+.profile-actions-section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.profile-cart-section,
+.profile-orders-section {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+.section-header {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: white;
+    padding: 15px 25px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.section-header h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section-header i {
+    color: #d4af37;
+}
+
+.cart-container {
+    padding: 20px;
+}
+
+/* Адаптация для мобильных */
 @media (max-width: 768px) {
-    .order-header, .order-footer {
-        flex-direction: column;
-        align-items: flex-start;
+    .profile-title {
+        font-size: 1.8rem;
     }
     
-    .order-info, .order-status, .delivery-info, .payment-method {
-        width: 100%;
-        margin-bottom: 0.5rem;
+    .profile-card {
+        padding: 20px;
     }
     
-    table thead {
-        display: none;
+    .profile-avatar {
+        width: 120px;
+        height: 120px;
     }
     
-    table tr {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 1rem;
-        border-bottom: 1px solid #dee2e6;
-    }
-    
-    table td {
-        display: flex;
-        justify-content: space-between;
-        padding: 0.5rem;
-        border: none;
-    }
-    
-    table td:before {
-        content: attr(data-label);
-        font-weight: bold;
-        margin-right: 1rem;
-    }
-    
-    table tfoot tr {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
-
-    .accordion-button:not(.collapsed) {
-    background-color: #f8f9fa;
-    box-shadow: none;
-}
-
-.accordion-button:focus {
-    box-shadow: none;
-    border-color: rgba(0,0,0,.125);
-}
-
-@media (max-width: 768px) {
-    .order-info, .order-status {
-        width: 100%;
-    }
-    
-    .order-info h5 {
-        font-size: 1rem;
-    }
-    
-    table thead {
-        display: none;
-    }
-    
-    table tr {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 1rem;
-        border-bottom: 1px solid #dee2e6;
-    }
-    
-    table td {
-        display: flex;
-        justify-content: space-between;
-        padding: 0.5rem;
-        border: none;
-    }
-    
-    table td:before {
-        content: attr(data-label);
-        font-weight: bold;
-        margin-right: 1rem;
-    }
-    
-    table tfoot tr {
-        flex-direction: row;
-        justify-content: space-between;
+    .form-control {
+        padding: 10px 12px;
     }
 }

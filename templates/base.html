@@ -155,7 +155,29 @@
             {% block modal_cart %}{% endblock  %}
         </div>
     </section>
-    {% block footer %}{% endblock %}
+    <footer class="py-5" style="background-color: #2a2a3e;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-gold">О компании</h5>
+                    <p class="text-light" style="opacity: 0.8;">СеАл — современный магазин с элегантными решениями.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-gold">Контакты</h5>
+                    <p class="text-light" style="opacity: 0.8;"><i class="bi bi-envelope me-2"></i> info@seal.com</p>
+                    <p class="text-light" style="opacity: 0.8;"><i class="bi bi-telephone me-2"></i> +7 (123) 456-7890</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="text-gold">Соцсети</h5>
+                    <a href="#" class="text-light me-3" style="opacity: 0.8;"><i class="bi bi-instagram fs-4"></i></a>
+                    <a href="#" class="text-light me-3" style="opacity: 0.8;"><i class="bi bi-facebook fs-4"></i></a>
+                    <a href="#" class="text-light" style="opacity: 0.8;"><i class="bi bi-telegram fs-4"></i></a>
+                </div>
+            </div>
+            <hr class="my-4" style="border-color: rgba(255,255,255,0.1);">
+            <p class="text-center text-light mb-0" style="opacity: 0.8;">&copy; СеАл 2025. Все права защищены.</p>
+        </div>
+    </footer>
     <script src={% static "deps/js/jquery/jquery-3.7.0.min.js" %}></script>
     <script src={% static "deps/js/bootstrap/bootstrap.bundle.min.js" %}></script>
     <script src={% static "deps/js/jquery-events.js" %}></script>

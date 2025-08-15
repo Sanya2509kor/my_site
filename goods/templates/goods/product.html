@@ -52,7 +52,7 @@
                         
                         {% if product.get_size %}
                         <div class="spec-item">
-                            <span class="spec-name">Длина:</span>
+                            <span class="spec-name">Размер:</span>
                             <span class="spec-value">{{ product.get_size }}</span>
                         </div>
                         {% endif %}
@@ -335,6 +335,8 @@
         position: relative;
         height: 200px;
         overflow: hidden;
+        
+
     }
     
     .related-product-img img {
@@ -342,7 +344,7 @@
         height: 100%;
         object-fit: contain;
         padding: 20px;
-        background: #f8f9fa;
+        background: #0c76e0;
     }
     
     .discount-badge {

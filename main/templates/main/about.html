@@ -1,49 +1,194 @@
 {% extends "base.html" %}
 {% load static %}
 
-
 {% block css %}
-    <link rel="stylesheet" href={% static "deps/css/my_footer_css.css" %}>
-{% endblock  %}
-
+    <style>
+        .about-hero {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e8f0 100%);
+            border-radius: 0 0 20px 20px;
+            padding: 4rem 0;
+            margin-bottom: 3rem;
+        }
+        .about-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+            margin-bottom: 2rem;
+            overflow: hidden;
+        }
+        .about-card:hover {
+            transform: translateY(-5px);
+        }
+        .about-icon {
+            font-size: 2.5rem;
+            color: #6c757d;
+            margin-bottom: 1rem;
+        }
+        .team-member {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .team-img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 1rem;
+        }
+        .values-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        .values-list li {
+            padding: 0.5rem 0;
+            position: relative;
+            padding-left: 2rem;
+        }
+        .values-list li:before {
+            content: "✓";
+            color: #28a745;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+    </style>
+{% endblock %}
 
 {% block modal_cart %}
 {% include "includes/cart_button.html" %}
-{% endblock  %}
-
+{% endblock %}
 
 {% block content %}
-    <div class="mt-5 pt-5 bg-white custom-shadow">
-        <h2 class="m-2"><strong>{{ content }}</strong></h2>
-        <p class="m-2">{{ text_on_page }}</p>
+<section class="about-hero">
+    <div class="container text-center">
+        <h1 class="display-4 fw-bold mb-4">{{ content }}</h1>
+        <p class="lead">{{ text_on_page }}</p>
     </div>
+</section>
+
+<div class="container mb-5">
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="about-card p-4 h-100">
+                <div class="text-center">
+                    <i class="bi bi-building about-icon"></i>
+                    <h3>Наша история</h3>
+                </div>
+                <p>Компания была основана в 2010 году с целью предоставления качественных товаров по доступным ценам. 
+                За годы работы мы выросли из небольшого магазина в крупную сеть с филиалами по всей стране.</p>
+                <p>Наш девиз: "Качество, надежность и преданность клиентам".</p>
+            </div>
+        </div>
+        
+        <div class="col-lg-6">
+            <div class="about-card p-4 h-100">
+                <div class="text-center">
+                    <i class="bi bi-bullseye about-icon"></i>
+                    <h3>Наша миссия</h3>
+                </div>
+                <p>Мы стремимся сделать покупки удобными, приятными и доступными для каждого. 
+                Наша цель - не просто продавать товары, а создавать положительный опыт покупок.</p>
+                
+                <h5 class="mt-4">Наши ценности:</h5>
+                <ul class="values-list">
+                    <li>Честность и прозрачность</li>
+                    <li>Качество продукции</li>
+                    <li>Отличный сервис</li>
+                    <li>Инновационный подход</li>
+                    <li>Забота о клиентах</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="about-card p-4">
+                <div class="text-center">
+                    <i class="bi bi-people about-icon"></i>
+                    <h3>Наша команда</h3>
+                    <p class="mb-4">Профессионалы, которые делают ваш опыт покупок особенным</p>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-3 team-member">
+                        <img src="https://via.placeholder.com/150" alt="Иван Иванов" class="team-img">
+                        <h5>Иван Иванов</h5>
+                        <p class="text-muted">Основатель и CEO</p>
+                    </div>
+                    <div class="col-md-3 team-member">
+                        <img src="https://via.placeholder.com/150" alt="Елена Петрова" class="team-img">
+                        <h5>Елена Петрова</h5>
+                        <p class="text-muted">Менеджер по продажам</p>
+                    </div>
+                    <div class="col-md-3 team-member">
+                        <img src="https://via.placeholder.com/150" alt="Алексей Смирнов" class="team-img">
+                        <h5>Алексей Смирнов</h5>
+                        <p class="text-muted">Технический директор</p>
+                    </div>
+                    <div class="col-md-3 team-member">
+                        <img src="https://via.placeholder.com/150" alt="Ольга Кузнецова" class="team-img">
+                        <h5>Ольга Кузнецова</h5>
+                        <p class="text-muted">Маркетинг</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row mt-4">
+        <div class="col-12">
+            <div class="about-card p-4">
+                <div class="text-center">
+                    <i class="bi bi-award about-icon"></i>
+                    <h3>Наши достижения</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <h2 class="display-4 fw-bold">10+</h2>
+                        <p>Лет на рынке</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h2 class="display-4 fw-bold">5000+</h2>
+                        <p>Довольных клиентов</p>
+                    </div>
+                    <div class="col-md-4">
+                        <h2 class="display-4 fw-bold">100+</h2>
+                        <p>Товаров в каталоге</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
 
 
 {% block footer %}
-    <footer class="py-5" style="background-color: #1a1a2e;">
+<footer class="py-5" style="background-color: #2a2a3e;">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <h5 class="text-gold">О компании</h5>
-                    <p class="text-muted">СеАл — современный магазин с элегантными решениями.</p>
+                    <p class="text-light" style="opacity: 0.8;">СеАл — современный магазин с элегантными решениями.</p>
                 </div>
                 <div class="col-md-4 mb-4">
                     <h5 class="text-gold">Контакты</h5>
-                    <p class="text-muted"><i class="bi bi-envelope me-2"></i> info@seal.com</p>
-                    <p class="text-muted"><i class="bi bi-telephone me-2"></i> +7 (123) 456-7890</p>
+                    <p class="text-light" style="opacity: 0.8;"><i class="bi bi-envelope me-2"></i> info@seal.com</p>
+                    <p class="text-light" style="opacity: 0.8;"><i class="bi bi-telephone me-2"></i> +7 (123) 456-7890</p>
                 </div>
                 <div class="col-md-4 mb-4">
                     <h5 class="text-gold">Соцсети</h5>
-                    <a href="#" class="text-muted me-3"><i class="bi bi-instagram fs-4"></i></a>
-                    <a href="#" class="text-muted me-3"><i class="bi bi-facebook fs-4"></i></a>
-                    <a href="#" class="text-muted"><i class="bi bi-telegram fs-4"></i></a>
+                    <a href="#" class="text-light me-3" style="opacity: 0.8;"><i class="bi bi-instagram fs-4"></i></a>
+                    <a href="#" class="text-light me-3" style="opacity: 0.8;"><i class="bi bi-facebook fs-4"></i></a>
+                    <a href="#" class="text-light" style="opacity: 0.8;"><i class="bi bi-telegram fs-4"></i></a>
                 </div>
             </div>
             <hr class="my-4" style="border-color: rgba(255,255,255,0.1);">
-            <p class="text-center text-muted mb-0">&copy; СеАл 2025. Все права защищены.</p>
+            <p class="text-center text-light mb-0" style="opacity: 0.8;">&copy; СеАл 2025. Все права защищены.</p>
         </div>
     </footer>
-{% endblock  %}
-
-
+{% endblock %}

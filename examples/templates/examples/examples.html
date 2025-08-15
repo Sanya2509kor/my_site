@@ -1,412 +1,484 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block content %}
-<div class="examples-container">
-    <h1 class="examples-title">Наши работы</h1>
-    <p class="examples-subtitle">Примеры выполненных проектов</p>
+{% block css %}
+<link rel="stylesheet" href="{% static 'deps/css/gallery.css' %}">
+{% endblock %}
 
-    <div class="examples-grid">
+{% block content %}
+<div class="gallery-container">
+    <div class="gallery-header">
+        <h1 class="gallery-title">Наши работы</h1>
+        <p class="gallery-subtitle">Примеры выполненных проектов</p>
+    </div>
+
+    <div class="gallery-grid">
         {% for example in examples %}
-        <div class="example-card" data-id="{{ example.id }}" data-images='{% for img in example.prefetched_images %}{{ img.image.url }}{% if not forloop.last %},{% endif %}{% endfor %}'>  
-            <div class="example-card-image">
+        <div class="gallery-card" 
+             data-id="{{ example.id }}" 
+             data-images='{% for img in example.prefetched_images %}{{ img.image.url }}{% if not forloop.last %},{% endif %}{% endfor %}'>
+            <div class="gallery-card-media">
                 {% with example.images.first as first_image %}
                 {% if first_image %}
-                <img src="{{ first_image.image.url }}" alt="{{ example.name }}" loading="lazy">
+                <img src="{{ first_image.image.url }}" 
+                     alt="{{ example.name }}" 
+                     loading="lazy"
+                     class="gallery-card-img">
                 {% else %}
-                <div class="no-image">Нет изображения</div>
+                <div class="gallery-no-image">
+                    <i class="bi bi-image"></i>
+                </div>
                 {% endif %}
                 {% endwith %}
                 
                 {% if example.images.count > 1 %}
-                <div class="image-counter">+{{ example.images.count|add:"-1" }}</div>
+                <div class="gallery-badge">
+                    <i class="bi bi-images"></i> {{ example.images.count }}
+                </div>
                 {% endif %}
-            </div>
-            <div class="example-card-content">
-                <h3>{{ example.name }}</h3>
-                {% if example.description %}
-                <p>{{ example.description }}</p>
-                {% endif %}
+                
+                <div class="gallery-card-overlay">
+                    <h3>{{ example.name }}</h3>
+                    {% if example.description %}
+                    <p>{{ example.description|truncatechars:100 }}</p>
+                    {% endif %}
+                    <button class="gallery-view-btn">
+                        <i class="bi bi-zoom-in"></i> Смотреть
+                    </button>
+                </div>
             </div>
         </div>
         {% endfor %}
     </div>
 </div>
 
-<!-- Модальное окно для просмотра изображений -->
-<div class="image-modal" id="imageModal">
-    <span class="close-modal">&times;</span>
-    <div class="modal-content">
-        <div class="modal-image-container">
-            <img id="modalImage" src="" alt="">
-        </div>
-        <div class="modal-nav">
-            <button class="nav-button prev-button">❮</button>
-            <div class="image-info">
-                <span id="imageCounter">1 из 5</span>
-                <span id="imageTitle">Название работы</span>
+<!-- Модальное окно галереи -->
+<div class="gallery-modal" id="galleryModal">
+    <div class="gallery-modal-content">
+        <button class="gallery-close-btn">
+            <i class="bi bi-x-lg"></i>
+        </button>
+        
+        <div class="gallery-modal-main">
+            <button class="gallery-nav-btn gallery-prev-btn">
+                <i class="bi bi-chevron-left"></i>
+            </button>
+            
+            <div class="gallery-modal-img-container">
+                <img id="galleryModalImage" src="" alt="" class="gallery-modal-img">
+                <div class="gallery-modal-info">
+                    <span id="galleryImageCounter">1 из 1</span>
+                    <span id="galleryImageTitle">Название работы</span>
+                </div>
             </div>
-            <button class="nav-button next-button">❯</button>
+            
+            <button class="gallery-nav-btn gallery-next-btn">
+                <i class="bi bi-chevron-right"></i>
+            </button>
         </div>
-        <div class="thumbnail-container">
-            <div class="thumbnails" id="thumbnails"></div>
-        </div>
+        
+        <div class="gallery-thumbnails" id="galleryThumbnails"></div>
     </div>
 </div>
 
-
-
 <style>
-    /* Основные стили для галереи */
-    .examples-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 2rem;
-        font-family: 'Arial', sans-serif;
-    }
+    /* Основные стили галереи */
+.gallery-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
 
-    .examples-title {
-        text-align: center;
-        font-size: 2.5rem;
-        color: #333;
-        margin-bottom: 0.5rem;
-    }
+.gallery-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
 
-    .examples-subtitle {
-        text-align: center;
+.gallery-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #1a1a2e;
+    margin-bottom: 0.5rem;
+}
+
+.gallery-subtitle {
+    font-size: 1.2rem;
+    color: #d4af37;
+    font-weight: 500;
+}
+
+/* Сетка карточек */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/* Карточка работы */
+.gallery-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.gallery-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.gallery-card-media {
+    position: relative;
+    height: 250px;
+    overflow: hidden;
+}
+
+.gallery-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-card:hover .gallery-card-img {
+    transform: scale(1.05);
+}
+
+.gallery-no-image {
+    width: 100%;
+    height: 100%;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #d4af37;
+    font-size: 3rem;
+}
+
+.gallery-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(26, 26, 46, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.gallery-card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(26, 26, 46, 0.9), transparent);
+    color: white;
+    padding: 1.5rem;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.gallery-card:hover .gallery-card-overlay {
+    transform: translateY(0);
+}
+
+.gallery-card-overlay h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.gallery-card-overlay p {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    opacity: 0.9;
+}
+
+.gallery-view-btn {
+    background: #d4af37;
+    color: #1a1a2e;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 30px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.gallery-view-btn:hover {
+    background: white;
+    transform: translateY(-2px);
+}
+
+/* Модальное окно */
+.gallery-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.gallery-modal-content {
+    width: 100%;
+    max-width: 1200px;
+    max-height: 90vh;
+    background: #1a1a2e;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(255,255,255,0.1);
+    border: none;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    z-index: 10;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.gallery-close-btn:hover {
+    background: #d4af37;
+    color: #1a1a2e;
+}
+
+.gallery-modal-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.gallery-nav-btn {
+    background: rgba(255,255,255,0.1);
+    border: none;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    flex-shrink: 0;
+}
+
+.gallery-nav-btn:hover {
+    background: #d4af37;
+    color: #1a1a2e;
+}
+
+.gallery-modal-img-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    max-height: 70vh;
+}
+
+.gallery-modal-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.gallery-modal-info {
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.gallery-thumbnails {
+    display: flex;
+    gap: 10px;
+    padding: 1rem;
+    overflow-x: auto;
+    background: rgba(0,0,0,0.3);
+}
+
+.gallery-thumbnails img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: all 0.3s;
+    border: 2px solid transparent;
+}
+
+.gallery-thumbnails img:hover,
+.gallery-thumbnails img.active {
+    opacity: 1;
+    border-color: #d4af37;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    
+    .gallery-modal-main {
+        padding: 0.5rem;
+    }
+    
+    .gallery-nav-btn {
+        width: 40px;
+        height: 40px;
         font-size: 1.2rem;
-        color: #641313ff;
-        margin-bottom: 2rem;
     }
-
-    .examples-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 2rem;
+    
+    .gallery-thumbnails img {
+        width: 60px;
+        height: 45px;
     }
-
-    .example-card {
-        background: white;
-        border-radius: 8px;
-        overflow: hidden;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        cursor: pointer;
-    }
-
-    .example-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-    }
-
-    .example-card-image {
-        position: relative;
-        height: 200px;
-        overflow: hidden;
-    }
-
-    .example-card-image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        transition: transform 0.3s ease;
-    }
-
-    .example-card:hover .example-card-image img {
-        transform: scale(1.05);
-    }
-
-    .image-counter {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        background: rgba(0, 0, 0, 0.7);
-        color: white;
-        padding: 5px 10px;
-        border-radius: 20px;
-        font-size: 0.9rem;
-    }
-
-    .example-card-content {
-        padding: 1.5rem;
-    }
-
-    .example-card-content h3 {
-        margin: 0 0 0.5rem 0;
-        color: #333;
-        font-size: 1.3rem;
-    }
-
-    .example-card-content p {
-        margin: 0;
-        color: #666;
-        line-height: 1.5;
-    }
-
-    .no-image {
-        width: 100%;
-        height: 100%;
-        background: #f0f0f0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #999;
-    }
-
-    /* Стили для модального окна */
-    .image-modal {
-        display: none;
-        position: fixed;
-        z-index: 1000;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.9);
-        overflow: auto;
-    }
-
-    .modal-content {
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        max-width: 90%;
-        max-height: 90vh;
-        width: 800px;
-        background: #111;
-        border-radius: 8px;
-        overflow: hidden;
-    }
-
-    .close-modal {
-        position: absolute;
-        top: 20px;
-        right: 30px;
-        color: white;
-        font-size: 35px;
-        font-weight: bold;
-        cursor: pointer;
-        z-index: 1001;
-    }
-
-    .close-modal:hover {
-        color: #ccc;
-    }
-
-    .modal-image-container {
-        flex-grow: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 20px;
-        max-height: 70vh;
-    }
-
-    #modalImage {
-        max-width: 100%;
-        max-height: 100%;
-        object-fit: contain;
-    }
-
-    .modal-nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 20px;
-        background: #222;
-    }
-
-    .nav-button {
-        background: none;
-        border: none;
-        color: white;
-        font-size: 24px;
-        cursor: pointer;
-        padding: 5px 15px;
-        border-radius: 4px;
-    }
-
-    .nav-button:hover {
-        background: rgba(255, 255, 255, 0.1);
-    }
-
-    .image-info {
-        color: white;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #imageCounter {
-        font-size: 0.9rem;
-        color: #aaa;
-    }
-
-    #imageTitle {
-        font-size: 1.1rem;
-        margin-top: 3px;
-    }
-
-    .thumbnail-container {
-        padding: 10px;
-        background: #222;
-        border-top: 1px solid #333;
-    }
-
-    .thumbnails {
-        display: flex;
-        gap: 10px;
-        overflow-x: auto;
-        padding: 5px 0;
-    }
-
-    .thumbnails img {
-        width: 80px;
-        height: 60px;
-        object-fit: cover;
-        cursor: pointer;
-        opacity: 0.6;
-        border: 2px solid transparent;
-        border-radius: 4px;
-    }
-
-    .thumbnails img:hover, .thumbnails img.active {
-        opacity: 1;
-        border-color: #fff;
-    }
-
-    /* Адаптивные стили */
-    @media (max-width: 768px) {
-        .examples-grid {
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        }
-        
-        .modal-content {
-            width: 95%;
-        }
-        
-        .thumbnails img {
-            width: 60px;
-            height: 45px;
-        }
-    }
+}
 </style>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    const exampleCards = document.querySelectorAll('.example-card');
-    const modal = document.getElementById('imageModal');
-    const modalImg = document.getElementById('modalImage');
-    const imageCounter = document.getElementById('imageCounter');
-    const imageTitle = document.getElementById('imageTitle');
-    const thumbnailsContainer = document.getElementById('thumbnails');
-    const closeModal = document.querySelector('.close-modal');
-    const prevButton = document.querySelector('.prev-button');
-    const nextButton = document.querySelector('.next-button');
+    document.addEventListener('DOMContentLoaded', function() {
+    // Элементы галереи
+    const galleryCards = document.querySelectorAll('.gallery-card');
+    const galleryModal = document.getElementById('galleryModal');
+    const modalImage = document.getElementById('galleryModalImage');
+    const imageCounter = document.getElementById('galleryImageCounter');
+    const imageTitle = document.getElementById('galleryImageTitle');
+    const thumbnailsContainer = document.getElementById('galleryThumbnails');
+    const closeBtn = document.querySelector('.gallery-close-btn');
+    const prevBtn = document.querySelector('.gallery-prev-btn');
+    const nextBtn = document.querySelector('.gallery-next-btn');
     
-    let currentImages = [];
+    // Текущие данные галереи
+    let currentGallery = [];
     let currentIndex = 0;
     
-    exampleCards.forEach(card => {
-        card.addEventListener('click', function() {
-            const exampleId = this.getAttribute('data-id');
-            loadExampleImages(exampleId);
-        });
-    });
-    
-    // Получаем все изображения из data-атрибута
-    function loadExampleImages(exampleId) {
-        const exampleCard = document.querySelector(`.example-card[data-id="${exampleId}"]`);
-        const exampleName = exampleCard.querySelector('h3').textContent;
-        const imagesData = exampleCard.getAttribute('data-images');
-        
-        currentImages = imagesData.split(',').filter(url => url.trim() !== '').map(url => {
-            return {
-                url: url.trim(),
-                title: exampleName
-            };
-        });
-        
-        if (currentImages.length > 0) {
-            currentIndex = 0;
-            updateModal();
-            modal.style.display = 'block';
-        }
+    // Открытие модального окна
+    function openGalleryModal(images, title) {
+        currentGallery = images;
+        currentIndex = 0;
+        updateModalContent(title);
+        galleryModal.style.display = 'flex';
+        document.body.style.overflow = 'hidden';
     }
     
-    function updateModal() {
-        if (currentImages.length === 0) return;
+    // Обновление содержимого модального окна
+    function updateModalContent(title) {
+        if (currentGallery.length === 0) return;
         
-        const currentImage = currentImages[currentIndex];
-        modalImg.src = currentImage.url;
-        modalImg.alt = currentImage.title;
-        imageCounter.textContent = `${currentIndex + 1} из ${currentImages.length}`;
-        imageTitle.textContent = currentImage.title;
+        const currentImage = currentGallery[currentIndex];
+        modalImage.src = currentImage;
+        modalImage.alt = title;
+        imageCounter.textContent = `${currentIndex + 1} из ${currentGallery.length}`;
+        imageTitle.textContent = title;
         
         // Обновляем миниатюры
         thumbnailsContainer.innerHTML = '';
-        currentImages.forEach((image, index) => {
+        currentGallery.forEach((img, index) => {
             const thumb = document.createElement('img');
-            thumb.src = image.url;
+            thumb.src = img;
             thumb.alt = `Миниатюра ${index + 1}`;
             if (index === currentIndex) {
                 thumb.classList.add('active');
             }
             thumb.addEventListener('click', () => {
                 currentIndex = index;
-                updateModal();
+                updateModalContent(title);
             });
             thumbnailsContainer.appendChild(thumb);
         });
     }
     
+    // Навигация по галерее
     function showPrevImage() {
-        if (currentImages.length === 0) return;
-        currentIndex = (currentIndex - 1 + currentImages.length) % currentImages.length;
-        updateModal();
+        if (currentGallery.length === 0) return;
+        currentIndex = (currentIndex - 1 + currentGallery.length) % currentGallery.length;
+        updateModalContent(imageTitle.textContent);
     }
     
     function showNextImage() {
-        if (currentImages.length === 0) return;
-        currentIndex = (currentIndex + 1) % currentImages.length;
-        updateModal();
+        if (currentGallery.length === 0) return;
+        currentIndex = (currentIndex + 1) % currentGallery.length;
+        updateModalContent(imageTitle.textContent);
     }
     
     // Закрытие модального окна
-    closeModal.addEventListener('click', function() {
-        modal.style.display = 'none';
+    function closeModal() {
+        galleryModal.style.display = 'none';
+        document.body.style.overflow = '';
+    }
+    
+    // Обработчики событий для карточек
+    galleryCards.forEach(card => {
+        card.addEventListener('click', function(e) {
+            // Проверяем, был ли клик по кнопке "Смотреть"
+            if (!e.target.closest('.gallery-view-btn')) {
+                const images = this.getAttribute('data-images').split(',').filter(url => url.trim() !== '');
+                const title = this.querySelector('h3').textContent;
+                openGalleryModal(images, title);
+            }
+        });
+        
+        // Отдельный обработчик для кнопки "Смотреть"
+        const viewBtn = card.querySelector('.gallery-view-btn');
+        if (viewBtn) {
+            viewBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const card = this.closest('.gallery-card');
+                const images = card.getAttribute('data-images').split(',').filter(url => url.trim() !== '');
+                const title = card.querySelector('h3').textContent;
+                openGalleryModal(images, title);
+            });
+        }
     });
     
-    // Закрытие при клике вне изображения
-    modal.addEventListener('click', function(e) {
-        if (e.target === modal) {
-            modal.style.display = 'none';
+    // Обработчики для модального окна
+    closeBtn.addEventListener('click', closeModal);
+    prevBtn.addEventListener('click', showPrevImage);
+    nextBtn.addEventListener('click', showNextImage);
+    
+    // Закрытие при клике вне контента
+    galleryModal.addEventListener('click', function(e) {
+        if (e.target === this) {
+            closeModal();
         }
     });
     
     // Навигация с клавиатуры
     document.addEventListener('keydown', function(e) {
-        if (modal.style.display === 'block') {
-            if (e.key === 'ArrowLeft') {
+        if (galleryModal.style.display === 'flex') {
+            if (e.key === 'Escape') {
+                closeModal();
+            } else if (e.key === 'ArrowLeft') {
                 showPrevImage();
             } else if (e.key === 'ArrowRight') {
                 showNextImage();
-            } else if (e.key === 'Escape') {
-                modal.style.display = 'none';
             }
         }
     });
-
-    // Навигация по изображениям
-prevButton.addEventListener('click', function(e) {
-    e.stopPropagation(); // Предотвращаем всплытие события
-    showPrevImage();
-});
-
-nextButton.addEventListener('click', function(e) {
-    e.stopPropagation(); // Предотвращаем всплытие события
-    showNextImage();
-});
 });
 </script>
 {% endblock %}
