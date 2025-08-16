@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load product_links %}
 
 {% block modal_cart %}
 {% include "includes/cart_button.html" %}
@@ -38,7 +39,7 @@
                     <h1 class="product-title">{{ product.name }}</h1>
                     
                     <div class="product-description">
-                        {{ product.description|linebreaks }}
+                        {{ product.description_with_links|linebreaks }}
                     </div>
                     
                     <!-- Характеристики -->
@@ -71,6 +72,66 @@
                         </div>
                         {% endif %}
                     </div>
+
+                    <!-- Форма выбора цвета -->
+                     {% if colors %}
+                    <div class="color-selection mt-3">
+                        <label class="form-label">Цвет:</label>
+                        <div class="color-options">
+                            {% for color in colors %}
+                                {% if color.available %}
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="product_color" 
+                                            id="color_{{ color.value }}" value="{{ color.value }}"
+                                            {% if color.current %}checked{% endif %}
+                                            data-url="{% url 'catalog:product' product_slug=base_product_slug %}?color={{ color.value }}{% if current_size %}&size={{ current_size }}{% endif %}">
+                                        <label class="form-check-label" for="color_{{ color.value }}">
+                                            {{ color.name }}
+                                        </label>
+                                    </div>
+                                {% else %}
+                                    <div class="form-check form-check-inline color-disabled">
+                                        <input class="form-check-input" type="radio" disabled>
+                                        <label class="form-check-label text-muted" title="Этот цвет недоступен для выбранного размера">
+                                            {{ color.name }}
+                                        </label>
+                                    </div>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endif %}
+                    
+                    <!-- Форма выбора размера -->
+                     {% if sizes %}
+                    <div class="size-selection mt-3">
+                        <label class="form-label">Размер:</label>
+                        <select class="form-select" name="product_size" aria-label="Выберите размер" id="size-selector">
+                            <option value="">Выберите размер</option>
+                            {% for size in sizes %}
+                                <option value="{{ size }}" {% if current_size == size %}selected{% endif %}
+                                        data-url="{% url 'catalog:product' product_slug=base_product_slug %}?size={{ size }}{% if current_color %}&color={{ current_color }}{% endif %}">
+                                    {{ size }}
+                                </option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    {% endif %}
+                    {% if available_powers %}
+                    <!-- Форма выбора мощности -->
+                    <div class="power-selection mt-3">
+                        <label class="form-label">Мощность:</label>
+                        <select class="form-select" name="product_power" aria-label="Выберите мощность" id="power-selector">
+                            <option value="">Выберите мощность</option>
+                            {% for power in available_powers %}
+                                <option value="{{ power }}" {% if current_power == power %}selected{% endif %}
+                                        data-url="{% url 'catalog:product' product_slug=base_product_slug %}?power={{ power }}{% if current_color %}&color={{ current_color }}{% endif %}{% if current_size %}&size={{ current_size }}{% endif %}">
+                                    {{ power }}
+                                </option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    {% endif %}
                     
                     <!-- Цена и кнопка -->
                     <div class="product-price-section mt-4">
@@ -415,5 +476,98 @@
             font-size: 1.8rem;
         }
     }
+
+    /* Добавьте в секцию стилей */
+    .color-selection {
+        background: #f8f9fa;
+        border-radius: 8px;
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .color-options {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .size-selection {
+        background: #f8f9fa;
+        border-radius: 8px;
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .form-select {
+        max-width: 200px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+    .form-check-input[type="radio"] {
+        cursor: pointer;
+    }
+
+    /* Добавьте в секцию стилей */
+    .color-disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+
+    .color-disabled .form-check-input {
+        cursor: not-allowed;
+    }
+
+    .color-disabled .form-check-label {
+        text-decoration: line-through;
+    }
+
+    .power-selection {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    }
+
+    .form-select {
+        max-width: 200px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
 </style>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Обработка изменения цвета
+        document.querySelectorAll('input[name="product_color"]:not(:disabled)').forEach(radio => {
+            radio.addEventListener('change', function() {
+                if (this.checked) {
+                    window.location.href = this.dataset.url;
+                }
+            });
+        });
+        
+        // Обработка изменения размера
+        const sizeSelector = document.getElementById('size-selector');
+        sizeSelector.addEventListener('change', function() {
+            const selectedOption = this.options[this.selectedIndex];
+            if (selectedOption.value) {
+                window.location.href = selectedOption.dataset.url;
+            }
+        });
+    });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Обработка изменения мощности
+    const powerSelector = document.getElementById('power-selector');
+    if (powerSelector) {
+        powerSelector.addEventListener('change', function() {
+            const selectedOption = this.options[this.selectedIndex];
+            if (selectedOption.value && selectedOption.dataset.url) {
+                window.location.href = selectedOption.dataset.url;
+            }
+        });
+    }
+});
+</script>
 {% endblock  %}

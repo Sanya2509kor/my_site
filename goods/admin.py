@@ -21,6 +21,7 @@ class ProductRelationshipInline(admin.TabularInline):
     extra = 1
     verbose_name = 'Сопутствующий товар'
     verbose_name_plural = 'Сопутствующие товары'
+    autocomplete_fields = ['to_product']  # Добавляем поле автозаполнения
 
 
     # Добавляем кастомную форму для отображения дополнительных полей
@@ -63,7 +64,7 @@ class ProductsAdmin(admin.ModelAdmin):
         ('power', 'bright'),
     ]
 
-    ordering = ('-id',)
+    ordering = ('id',)
     
     inlines = [ProductRelationshipInline]
     

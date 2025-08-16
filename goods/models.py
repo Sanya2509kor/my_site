@@ -1,6 +1,8 @@
+import re
 from django.db import models
 from django.urls import reverse
 from django.utils.text import slugify
+from django.utils.safestring import mark_safe
 
 
 class Categories(models.Model):
@@ -170,6 +172,27 @@ class Products(models.Model):
                 counter += 1
         
         super().save(*args, **kwargs)
+
+
+    def description_with_links(self):
+        pattern = r'\b([A-Z]+[0-9]* [0-9]{2})\b'
+        
+        def replace_match(match):
+            product_code = match.group(1)
+            try:
+                # Используем filter() и first() вместо get()
+                product = Products.objects.filter(
+                    name__contains=product_code
+                ).order_by('id').first()  # Берем первый найденный товар
+                
+                if product:
+                    url = reverse('catalog:product', kwargs={'product_slug': product.slug})
+                    return f'<a href="{url}" class="product-link">{product_code}</a>'
+                return product_code
+            except Exception:
+                return product_code
+        
+        return mark_safe(re.sub(pattern, replace_match, self.description))
     
 
 
